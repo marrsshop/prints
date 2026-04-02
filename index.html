@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott Garrett</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="site-title">Scott Garrett</a>
+    <nav>
+      <a href="index.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button class="filter-btn" data-category="ceramics">Ceramics</button>
+      <button class="filter-btn" data-category="paintings">Paintings</button>
+      <button class="filter-btn" data-category="collages">Collages</button>
+      <button class="filter-btn" data-category="prints">Prints</button>
+    </div>
+
+    <div class="product-grid" id="product-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; Scott Garrett</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
