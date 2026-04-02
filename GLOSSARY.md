@@ -79,7 +79,22 @@ A small piece of server-side code that sits between the website and Stripe. The 
 Software that lets a non-technical person manage website content through a web interface — adding products, changing descriptions, uploading images — without touching any code.
 
 **Decap CMS** (formerly Netlify CMS)
-The CMS planned for this site once it's live. Free and open source. Scott would log in through a browser, see a simple editing interface, and be able to manage all products himself. Changes are saved to GitHub and the live site updates automatically within minutes.
+The CMS used on this site. Free and open source. Scott logs in through a browser at `/admin`, sees a simple editing interface, and can manage all products himself. Changes are saved to GitHub and the live site updates automatically within about a minute.
+
+**OAuth / GitHub OAuth**
+A secure login system that lets a website ("Garrettware CMS") ask GitHub to confirm who you are, without you having to create a separate password. When Scott clicks "Login with GitHub" on the admin page, a small popup asks GitHub to verify his identity. GitHub sends back a token (like a temporary pass) and the CMS uses that to let him in.
+
+**OAuth App**
+A registration on GitHub that gives the Garrettware CMS permission to use GitHub login. It has two keys: a Client ID (safe to share) and a Client Secret (must stay private — stored in Cloudflare, not in the code).
+
+**OAuth Handshake**
+The back-and-forth verification process during login. Decap CMS uses a two-step handshake: first the popup says "I'm authorising with GitHub", Decap confirms it's listening, then the popup sends the actual token. Both steps must happen in order — skip either one and the login silently fails.
+
+**Cloudflare Pages Functions**
+Small pieces of server-side code that run on Cloudflare's network alongside a static site. Used here to handle the OAuth login securely — the two files `functions/api/auth.js` and `functions/api/callback.js` manage the GitHub login flow without exposing the Client Secret in the browser.
+
+**Environment Variables**
+Secret values stored in Cloudflare's settings panel rather than in the code. The GitHub Client ID and Client Secret are stored this way so they never appear in the GitHub repository where anyone could read them.
 
 ---
 

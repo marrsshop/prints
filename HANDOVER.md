@@ -120,13 +120,25 @@ Note: This Stripe account should be entirely Scott's — separate from any other
 
 ---
 
-## CMS for Scott (Future Step)
+## CMS for Scott — Live and Working
 
-Once live, **Decap CMS** can be added so Scott can manage his own products:
-- Scott logs in via a web browser — no code editing required
-- He can add new products, update descriptions, change prices, upload images
-- Changes save to GitHub and the site updates automatically
-- Free and open source
+**Decap CMS** is set up and working at `artofgarrett.pages.dev/admin`.
+
+Scott logs in with his GitHub account (`artofgarrett`). No code editing required — he can add products, update descriptions, change prices and upload images through a browser interface. Changes save to GitHub and the live site updates within ~60 seconds.
+
+### How the login works
+1. Go to `artofgarrett.pages.dev/admin`
+2. Click **Login with GitHub**
+3. A small popup appears asking to authorise — click **Authorize artofgarrett**
+4. The popup closes and the CMS loads
+
+### Technical setup (for reference if rebuilding)
+- GitHub OAuth App registered under the `artofgarrett` GitHub account
+- Authorization callback URL: `https://artofgarrett.pages.dev/api/callback`
+- Two Cloudflare Pages Functions handle the OAuth flow: `functions/api/auth.js` and `functions/api/callback.js`
+- `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` stored as environment variables in Cloudflare Pages settings
+- **Important:** The callback must implement Decap's two-phase handshake — send `"authorizing:github"` first, wait for the echo, then send the token. Skipping this causes silent login failure (especially in Safari).
+- The `admin/index.html` must NOT include the Netlify Identity widget script — it conflicts with GitHub OAuth.
 
 ---
 
