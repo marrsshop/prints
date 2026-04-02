@@ -30,11 +30,29 @@ export async function onRequestGet(context) {
 <script>
   (function() {
     var content = decodeURIComponent("${encoded}");
-    localStorage.setItem('decap-cms-auth', content);
-    if (window.opener) {
-      window.opener.postMessage(content, "*");
+    var origin = window.location.origin;
+
+    function sendAuth() {
+      if (window.opener) {
+        window.opener.postMessage(content, origin);
+      }
+      setTimeout(function() { window.close(); }, 500);
     }
-    setTimeout(function() { window.close(); }, 1000);
+
+    // Step 1: send handshake
+    if (window.opener) {
+      window.opener.postMessage('authorizing:github', origin);
+    }
+
+    // Step 2: wait for echo, then send auth result
+    window.addEventListener('message', function(e) {
+      if (e.data === 'authorizing:github') {
+        sendAuth();
+      }
+    });
+
+    // Fallback in case echo never arrives
+    setTimeout(sendAuth, 5000);
   })();
 </script>
 </body>

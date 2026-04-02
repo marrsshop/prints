@@ -6,21 +6,6 @@
   <title>Scott Garrett — Admin</title>
 </head>
 <body>
-  <script>
-    (function() {
-      var interval = setInterval(function() {
-        var auth = localStorage.getItem('decap-cms-auth');
-        if (auth) {
-          localStorage.removeItem('decap-cms-auth');
-          window.dispatchEvent(new MessageEvent('message', {
-            data: auth,
-            origin: window.location.origin
-          }));
-        }
-      }, 200);
-      setTimeout(function() { clearInterval(interval); }, 120000);
-    })();
-  </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
