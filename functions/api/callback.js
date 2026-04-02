@@ -33,7 +33,7 @@ export async function onRequestGet(context) {
     if (window.opener) {
       window.opener.postMessage(content, "*");
     }
-    window.close();
+    setTimeout(function() { window.close(); }, 1000);
   })();
 </script>
 </body>
