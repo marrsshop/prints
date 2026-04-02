@@ -2,8 +2,8 @@ backend:
   name: github
   repo: artofgarrett/artofgarrett
   branch: main
-
-local_backend: true
+  base_url: https://artofgarrett.pages.dev
+  auth_endpoint: api/auth
 
 editor:
   preview: false
