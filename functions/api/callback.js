@@ -24,16 +24,20 @@ export async function onRequestGet(context) {
 
   const encoded = encodeURIComponent(content);
 
+  const status = tokenData.error ? 'ERROR: ' + JSON.stringify(tokenData) : 'Success — token received. Window closing in 5 seconds...';
   const html = `<!DOCTYPE html>
 <html>
-<body>
+<body style="font-family:sans-serif;padding:40px">
+<p id="msg">${status}</p>
+<p id="opener">Checking opener...</p>
 <script>
   (function() {
+    document.getElementById('opener').textContent = window.opener ? 'opener: OK' : 'opener: NULL (this is the problem)';
     var content = decodeURIComponent("${encoded}");
     if (window.opener) {
       window.opener.postMessage(content, "*");
     }
-    setTimeout(function() { window.close(); }, 1000);
+    setTimeout(function() { window.close(); }, 5000);
   })();
 </script>
 </body>
