@@ -9,21 +9,33 @@
 <body>
 
   <header>
-    <a href="index.html" class="site-title">Scott Garrett</a>
+    <a href="index.html" class="site-title"><img src="images/logo.png" alt="Garrettware"></a>
     <nav>
       <a href="index.html" class="active">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
     </nav>
-  </header>
-
-  <main>
     <div class="filters">
       <button class="filter-btn" data-category="ceramics">Ceramics</button>
       <button class="filter-btn" data-category="paintings">Paintings</button>
       <button class="filter-btn" data-category="collages">Collages</button>
       <button class="filter-btn" data-category="prints">Prints</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="product-detail-panel" class="product-detail-panel" style="display:none">
+      <div class="product-detail-image">
+        <img id="detail-img" src="" alt="">
+      </div>
+      <div class="product-detail-info">
+        <h2 id="detail-name"></h2>
+        <div id="detail-price" class="product-detail-price"></div>
+        <hr class="detail-divider">
+        <div id="detail-description" class="product-detail-description"></div>
+        <button id="detail-add-to-cart" class="btn-add-to-cart">Add to Cart</button>
+      </div>
     </div>
 
     <div class="product-grid" id="product-grid"></div>

@@ -3,7 +3,8 @@ let activeCategory = 'all';
 
 async function loadProducts() {
   const res = await fetch('products.json');
-  allProducts = await res.json();
+  const data = await res.json();
+  allProducts = data.products;
   renderProducts(allProducts);
 }
 
@@ -17,7 +18,7 @@ function renderProducts(products) {
 
   grid.innerHTML = filtered.map(product => `
     <div class="product-card ${product.available ? '' : 'sold-out'}"
-         onclick="window.location='product.html?id=${product.id}'">
+         onclick="showProduct('${product.id}')">
       <div class="product-image">
         <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
         <div class="product-overlay">
@@ -31,6 +32,31 @@ function renderProducts(products) {
       </div>
     </div>
   `).join('');
+}
+
+function showProduct(id) {
+  const product = allProducts.find(p => p.id === id);
+  if (!product) return;
+
+  const panel = document.getElementById('product-detail-panel');
+  document.getElementById('detail-img').src = product.images[0];
+  document.getElementById('detail-img').alt = product.name;
+  document.getElementById('detail-name').textContent = product.name;
+  document.getElementById('detail-price').textContent = product.available ? '£' + product.price.toFixed(2) : 'Sold Out';
+  document.getElementById('detail-description').innerHTML = product.description.replace(/\n/g, '<br>');
+
+  const cartBtn = document.getElementById('detail-add-to-cart');
+  if (product.available) {
+    cartBtn.style.display = 'block';
+    cartBtn.onclick = () => addToCart(product);
+  } else {
+    cartBtn.style.display = 'none';
+  }
+
+  panel.style.display = 'grid';
+  const headerHeight = document.querySelector('header').offsetHeight;
+  const panelTop = panel.getBoundingClientRect().top + window.scrollY - headerHeight;
+  window.scrollTo({ top: panelTop, behavior: 'smooth' });
 }
 
 // Filter buttons — click active filter to deselect and show all

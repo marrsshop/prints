@@ -3,7 +3,8 @@ async function loadProduct() {
   const id = params.get('id');
 
   const res = await fetch('products.json');
-  const products = await res.json();
+  const data = await res.json();
+  const products = data.products;
   const product = products.find(p => p.id === id);
 
   if (!product) {
