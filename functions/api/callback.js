@@ -18,18 +18,26 @@ export async function onRequestGet(context) {
 
   const tokenData = await tokenResponse.json();
 
-  if (tokenData.error) {
-    const html = `<!DOCTYPE html><html><body><script>
-      window.opener.postMessage('authorization:github:error:${JSON.stringify(tokenData)}', '*');
-      window.close();
-    </script></body></html>`;
-    return new Response(html, { headers: { 'Content-Type': 'text/html' } });
-  }
+  const content = tokenData.error
+    ? `authorization:github:error:${JSON.stringify(tokenData)}`
+    : `authorization:github:success:${JSON.stringify({ token: tokenData.access_token, provider: 'github' })}`;
 
-  const html = `<!DOCTYPE html><html><body><script>
-    window.opener.postMessage('authorization:github:success:${JSON.stringify({ token: tokenData.access_token, provider: 'github' })}', '*');
+  const encoded = encodeURIComponent(content);
+
+  const html = `<!DOCTYPE html>
+<html>
+<body>
+<script>
+  (function() {
+    var content = decodeURIComponent("${encoded}");
+    if (window.opener) {
+      window.opener.postMessage(content, "*");
+    }
     window.close();
-  </script></body></html>`;
+  })();
+</script>
+</body>
+</html>`;
 
   return new Response(html, { headers: { 'Content-Type': 'text/html' } });
 }
