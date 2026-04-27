@@ -738,6 +738,17 @@
       ]
     },
     {
+      "available": false,
+      "id": "TEST STAR",
+      "name": "STAR",
+      "category": "prints",
+      "price": 1,
+      "description": "TEST STAR",
+      "images": [
+        "images/star.jpg"
+      ]
+    },
+    {
       "id": "the-look-1",
       "name": "The Look #1",
       "category": "ceramics",
