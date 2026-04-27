@@ -402,7 +402,7 @@
       "category": "paintings",
       "price": 450,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
         "images/paintings/coastal-red-door.jpg"
       ]
@@ -424,7 +424,7 @@
       "category": "paintings",
       "price": 750,
       "available": true,
-      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges \u2014 these are about the whole object of the painting.\n\nUnframed, signed.",
+      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges — these are about the whole object of the painting.\n\nUnframed, signed.",
       "images": [
         "images/paintings/double-beach.jpg"
       ]
@@ -446,7 +446,7 @@
       "category": "paintings",
       "price": 800,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
         "images/paintings/desert-night.jpg"
       ]
@@ -457,7 +457,7 @@
       "category": "paintings",
       "price": 700,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
         "images/paintings/double-desert.jpg"
       ]
@@ -490,7 +490,7 @@
       "category": "paintings",
       "price": 450,
       "available": false,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
         "images/paintings/red-barn.jpg"
       ]
@@ -640,44 +640,44 @@
     },
     {
       "id": "cabin-print-black-red",
-      "name": "Cabin Print \u2014 Black/Red",
+      "name": "Cabin Print — Black/Red",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/cabin-print-black-red.jpg"
       ]
     },
     {
       "id": "cabin-print-blue-yellow",
-      "name": "Cabin Print \u2014 Blue/Yellow",
+      "name": "Cabin Print — Blue/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/cabin-print-blue-yellow.jpg"
       ]
     },
     {
       "id": "cabin-print-brown-blue",
-      "name": "Cabin Print \u2014 Brown/Blue",
+      "name": "Cabin Print — Brown/Blue",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/cabin-print-brown-blue.jpg"
       ]
     },
     {
       "id": "cabin-print-aqua-yellow",
-      "name": "Cabin Print \u2014 Aqua/Yellow",
+      "name": "Cabin Print — Aqua/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/cabin-print-aqua-yellow.jpg"
       ]
@@ -688,7 +688,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/air-beast-sq.jpg"
       ]
@@ -699,7 +699,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/earth-beast-print.jpg"
       ]
@@ -710,7 +710,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/stone-head-1.jpg"
       ]
@@ -721,7 +721,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/stone-head-2.jpg"
       ]
@@ -732,9 +732,240 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
         "images/prints/stone-head-3.jpg"
+      ]
+    },
+    {
+      "id": "the-look-1",
+      "name": "The Look #1",
+      "category": "ceramics",
+      "price": 75,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/the-look-1.jpg"
+      ]
+    },
+    {
+      "id": "rugged-soul",
+      "name": "Rugged Soul",
+      "category": "ceramics",
+      "price": 125,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/rugged-soul.jpg"
+      ]
+    },
+    {
+      "id": "rewilded",
+      "name": "Rewilded",
+      "category": "ceramics",
+      "price": 160,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/rewilded.jpg"
+      ]
+    },
+    {
+      "id": "untethered-soul",
+      "name": "Untethered Soul",
+      "category": "ceramics",
+      "price": 140,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/untethered-soul.jpg"
+      ]
+    },
+    {
+      "id": "knave",
+      "name": "Knave",
+      "category": "ceramics",
+      "price": 150,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/knave.jpg"
+      ]
+    },
+    {
+      "id": "loaded",
+      "name": "Loaded",
+      "category": "ceramics",
+      "price": 140,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/loaded.jpg"
+      ]
+    },
+    {
+      "id": "soul-boy",
+      "name": "Soul Boy",
+      "category": "ceramics",
+      "price": 90,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/soul-boy.jpg"
+      ]
+    },
+    {
+      "id": "beast-man",
+      "name": "Beast Man",
+      "category": "ceramics",
+      "price": 160,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/beast-man.jpg"
+      ]
+    },
+    {
+      "id": "spirit-beast",
+      "name": "Spirit Beast",
+      "category": "ceramics",
+      "price": 150,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/spirit-beast.jpg"
+      ]
+    },
+    {
+      "id": "brooding",
+      "name": "Brooding",
+      "category": "ceramics",
+      "price": 100,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/brooding.jpg"
+      ]
+    },
+    {
+      "id": "double-soul",
+      "name": "Double Soul",
+      "category": "ceramics",
+      "price": 140,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/double-soul.jpg"
+      ]
+    },
+    {
+      "id": "tall-bird",
+      "name": "Tall Bird",
+      "category": "ceramics",
+      "price": 70,
+      "available": true,
+      "description": "",
+      "images": [
+        "images/tall-bird.jpg"
+      ]
+    },
+    {
+      "id": "black-bird-2",
+      "name": "Black Bird 2",
+      "category": "ceramics",
+      "price": 25,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/black-bird-2.jpg"
+      ]
+    },
+    {
+      "id": "bird-man",
+      "name": "Bird Man",
+      "category": "ceramics",
+      "price": 80,
+      "available": true,
+      "description": "",
+      "images": [
+        "images/bird-man.jpg"
+      ]
+    },
+    {
+      "id": "the-birdy-man",
+      "name": "The Birdy Man",
+      "category": "ceramics",
+      "price": 85,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/the-birdy-man.jpg"
+      ]
+    },
+    {
+      "id": "foliate-face-birds-2",
+      "name": "Foliate Face & Birds 2",
+      "category": "ceramics",
+      "price": 90,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/foliate-face-birds-2.jpg"
+      ]
+    },
+    {
+      "id": "foliate-illuminate",
+      "name": "Foliate Illuminate",
+      "category": "ceramics",
+      "price": 95,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/foliate-illuminate.jpg"
+      ]
+    },
+    {
+      "id": "campfire-bear",
+      "name": "Campfire Bear",
+      "category": "ceramics",
+      "price": 150,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/campfire-bear.jpg"
+      ]
+    },
+    {
+      "id": "eric-eve",
+      "name": "Eric & Eve",
+      "category": "ceramics",
+      "price": 180,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/eric-eve.jpg"
+      ]
+    },
+    {
+      "id": "biddenden-maids",
+      "name": "Biddenden Maids",
+      "category": "ceramics",
+      "price": 140,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/biddenden-maids.jpg"
+      ]
+    },
+    {
+      "id": "tree-hugger-vase",
+      "name": "Tree Hugger Vase",
+      "category": "ceramics",
+      "price": 120,
+      "available": false,
+      "description": "",
+      "images": [
+        "images/tree-hugger-vase.jpg"
       ]
     }
   ]
