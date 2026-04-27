@@ -2,7 +2,7 @@ backend:
   name: github
   repo: artofgarrett/artofgarrett
   branch: main
-  base_url: https://artofgarrett.pages.dev
+  base_url: https://scottgarrettartist.com
   auth_endpoint: api/auth
 
 editor:
