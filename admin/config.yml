@@ -41,4 +41,4 @@ collections:
               - label: "Images"
                 name: "images"
                 widget: "list"
-                field: { label: "Image path", name: "image", widget: "string" }
+                field: { label: "Image", name: "image", widget: "image" }
