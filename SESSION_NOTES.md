@@ -11,7 +11,7 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 - **Live site:** scottgarrettartist.com
 - **Admin/CMS:** scottgarrettartist.com/admin
 - **GitHub repo:** github.com/artofgarrett/artofgarrett (Scott owns it, Gaz is collaborator)
-- **Local files:** /Users/gaz/Desktop/SCOTT
+- **Local files:** /Users/gaz/Desktop/work/SCOTT
 
 ---
 
