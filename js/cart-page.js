@@ -40,9 +40,35 @@ function handleRemove(productId) {
   renderCart();
 }
 
-function handleCheckout() {
-  // Stripe checkout will be wired up here once Scott's Stripe account is ready
-  alert('Checkout coming soon — Stripe integration pending.');
+async function handleCheckout() {
+  const cart = getCart();
+  if (cart.length === 0) return;
+
+  const btn = document.querySelector('.btn-checkout');
+  btn.textContent = 'Processing...';
+  btn.disabled = true;
+
+  try {
+    const response = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: cart }),
+    });
+
+    const data = await response.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert('Something went wrong. Please try again.');
+      btn.textContent = 'Checkout';
+      btn.disabled = false;
+    }
+  } catch (err) {
+    alert('Something went wrong. Please try again.');
+    btn.textContent = 'Checkout';
+    btn.disabled = false;
+  }
 }
 
 renderCart();
