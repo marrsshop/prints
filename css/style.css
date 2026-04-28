@@ -1,7 +1,7 @@
 /* ── Type Scale ── */
 :root {
-  --size-nav:         13px;   /* Shop / About / Contact / Cart */
-  --size-filter:      9px;    /* Ceramics / Paintings etc */
+  --size-nav:         9px;    /* Shop / About / Contact / Cart */
+  --size-filter:      13px;   /* Ceramics / Paintings etc */
   --size-product-title: 24px; /* Product name in detail panel */
   --size-product-price: 20px; /* Price in detail panel */
   --size-body:        13px;   /* Description, about/contact text */
@@ -51,7 +51,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 28px;
-  padding: 8px 16px 20px;
+  padding: 8px 16px 40px;
   flex-wrap: nowrap;
 }
 
@@ -227,10 +227,10 @@ main {
 /* ── Inline Product Detail Panel ── */
 .product-detail-panel {
   display: grid;
-  grid-template-columns: auto 400px;
+  grid-template-columns: max-content 300px;
   gap: 64px;
   align-items: start;
-  max-width: 1100px;
+  width: fit-content;
   margin: 40px auto 48px;
 }
 
