@@ -738,23 +738,12 @@
       ]
     },
     {
-      "available": false,
-      "id": "TEST STAR",
-      "name": "STAR",
-      "category": "prints",
-      "price": 1,
-      "description": "TEST STAR",
-      "images": [
-        "images/star.jpg"
-      ]
-    },
-    {
       "id": "the-look-1",
       "name": "The Look #1",
       "category": "ceramics",
       "price": 75,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/the-look-1.jpg"
       ]
@@ -765,7 +754,7 @@
       "category": "ceramics",
       "price": 125,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/rugged-soul.jpg"
       ]
@@ -776,7 +765,7 @@
       "category": "ceramics",
       "price": 160,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/rewilded.jpg"
       ]
@@ -787,7 +776,7 @@
       "category": "ceramics",
       "price": 140,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/untethered-soul.jpg"
       ]
@@ -798,7 +787,7 @@
       "category": "ceramics",
       "price": 150,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/knave.jpg"
       ]
@@ -809,7 +798,7 @@
       "category": "ceramics",
       "price": 140,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/loaded.jpg"
       ]
@@ -820,7 +809,7 @@
       "category": "ceramics",
       "price": 90,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/soul-boy.jpg"
       ]
@@ -831,7 +820,7 @@
       "category": "ceramics",
       "price": 160,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/beast-man.jpg"
       ]
@@ -842,7 +831,7 @@
       "category": "ceramics",
       "price": 150,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/spirit-beast.jpg"
       ]
@@ -853,7 +842,7 @@
       "category": "ceramics",
       "price": 100,
       "available": false,
-      "description": "",
+      "description": "Ceramic",
       "images": [
         "images/brooding.jpg"
       ]
@@ -864,7 +853,7 @@
       "category": "ceramics",
       "price": 140,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/double-soul.jpg"
       ]
@@ -875,7 +864,7 @@
       "category": "ceramics",
       "price": 70,
       "available": true,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/tall-bird.jpg"
       ]
@@ -886,7 +875,7 @@
       "category": "ceramics",
       "price": 25,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/black-bird-2.jpg"
       ]
@@ -897,7 +886,7 @@
       "category": "ceramics",
       "price": 80,
       "available": true,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/bird-man.jpg"
       ]
@@ -908,7 +897,7 @@
       "category": "ceramics",
       "price": 85,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/the-birdy-man.jpg"
       ]
@@ -919,7 +908,7 @@
       "category": "ceramics",
       "price": 90,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/foliate-face-birds-2.jpg"
       ]
@@ -930,7 +919,7 @@
       "category": "ceramics",
       "price": 95,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/foliate-illuminate.jpg"
       ]
@@ -941,7 +930,7 @@
       "category": "ceramics",
       "price": 150,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/campfire-bear.jpg"
       ]
@@ -952,7 +941,7 @@
       "category": "ceramics",
       "price": 180,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/eric-eve.jpg"
       ]
@@ -963,7 +952,7 @@
       "category": "ceramics",
       "price": 140,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/biddenden-maids.jpg"
       ]
@@ -974,7 +963,7 @@
       "category": "ceramics",
       "price": 120,
       "available": false,
-      "description": "",
+      "description": "Slipware Pottery",
       "images": [
         "images/tree-hugger-vase.jpg"
       ]
