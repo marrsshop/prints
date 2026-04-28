@@ -251,7 +251,7 @@ main {
     gap: 24px;
     padding: 28px 0 36px;
   }
-  .product-detail-image { width: 100%; } /* mobile — full width */
+  .product-detail-image { width: calc(100% - 40px); margin: 0 auto; } /* mobile — padded */
   .carousel-column { min-height: unset; }
 }
 
