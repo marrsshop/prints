@@ -35,6 +35,8 @@ collections:
                   - { label: "Paintings", value: "paintings" }
                   - { label: "Collages", value: "collages" }
                   - { label: "Prints", value: "prints" }
+                  - { label: "Drawings", value: "drawings" }
+                  - { label: "Mixed", value: "mixed" }
               - { label: "Price (£)", name: "price", widget: "number", value_type: "int" }
               - { label: "Available", name: "available", widget: "boolean", default: true }
               - { label: "Description", name: "description", widget: "text" }
