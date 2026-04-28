@@ -403,7 +403,7 @@ main {
 .btn-add-to-cart {
   display: block;
   width: 100%;
-  background: #222;
+  background: #ff00ff;
   color: #fff;
   border: none;
   padding: 13px 24px;
@@ -416,7 +416,7 @@ main {
 }
 
 .btn-add-to-cart:hover {
-  background: #444;
+  background: #cc00cc;
 }
 
 .btn-sold-out {
