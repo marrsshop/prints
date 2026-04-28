@@ -1,17 +1,6 @@
 {
   "products": [
     {
-      "id": "fish-rx",
-      "name": "Fish RX",
-      "category": "ceramics",
-      "price": 65,
-      "available": true,
-      "description": "Fish and Slips!\n\nTerracotta clay, black and white slips and oxides.\nHooked and ready to hang on your wall.\n\n24cm x 15cm\n\nComes wrapped in newspaper and takeaway box.\n\nSorry, shipping only to UK... but that's FREE!",
-      "images": [
-        "images/ceramics/fish-rx.jpg"
-      ]
-    },
-    {
       "id": "king",
       "name": "King",
       "category": "ceramics",
@@ -20,6 +9,17 @@
       "description": "Ceramic head (terracotta clay, white slip and oxides) with found metal objects, small hagstone and mounted on a beach stone.\n\nOnly available to UK... but FREE postage!",
       "images": [
         "images/ceramics/king.jpg"
+      ]
+    },
+    {
+      "id": "fish-rx",
+      "name": "Fish RX",
+      "category": "ceramics",
+      "price": 65,
+      "available": true,
+      "description": "Fish and Slips!\n\nTerracotta clay, black and white slips and oxides.\nHooked and ready to hang on your wall.\n\n24cm x 15cm\n\nComes wrapped in newspaper and takeaway box.\n\nSorry, shipping only to UK... but that's FREE!",
+      "images": [
+        "images/ceramics/fish-rx.jpg"
       ]
     },
     {
