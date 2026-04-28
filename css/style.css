@@ -251,10 +251,9 @@ main {
     gap: 24px;
     padding: 28px 0 36px;
   }
-  .product-detail-image {
-    aspect-ratio: 1 / 1;
-    height: auto;
+  .carousel-row {
     min-height: unset;
+    aspect-ratio: 1 / 1;
   }
   .carousel-column { min-height: unset; }
 }
@@ -303,14 +302,13 @@ main {
 .carousel-row {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 10px;
+  min-height: 300px;
 }
 
 .product-detail-image {
   flex: 1;
-  height: 100%;
-  min-height: 280px;
   background: #f4f4f4;
   overflow: hidden;
 }
@@ -338,6 +336,7 @@ main {
 
 .carousel-btn {
   flex-shrink: 0;
+  align-self: center;
   background: none;
   border: none;
   width: 20px;
