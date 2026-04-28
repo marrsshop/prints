@@ -1,6 +1,17 @@
 {
   "products": [
     {
+      "id": "soul-searcher",
+      "name": "Soul Searcher",
+      "category": "ceramics",
+      "price": 120,
+      "available": true,
+      "description": "White clay head sculpture, with oxides and found object (great for displaying a small treasure on!)\n\n24cm x 11cm\n\nFree Shipping to the UK!!",
+      "images": [
+        "images/ceramics/soul-searcher.jpg"
+      ]
+    },
+    {
       "id": "king",
       "name": "King",
       "category": "ceramics",
@@ -20,17 +31,6 @@
       "description": "Fish and Slips!\n\nTerracotta clay, black and white slips and oxides.\nHooked and ready to hang on your wall.\n\n24cm x 15cm\n\nComes wrapped in newspaper and takeaway box.\n\nSorry, shipping only to UK... but that's FREE!",
       "images": [
         "images/ceramics/fish-rx.jpg"
-      ]
-    },
-    {
-      "id": "soul-searcher",
-      "name": "Soul Searcher",
-      "category": "ceramics",
-      "price": 120,
-      "available": true,
-      "description": "White clay head sculpture, with oxides and found object (great for displaying a small treasure on!)\n\n24cm x 11cm\n\nFree Shipping to the UK!!",
-      "images": [
-        "images/ceramics/soul-searcher.jpg"
       ]
     },
     {
