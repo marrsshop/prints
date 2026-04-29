@@ -17,9 +17,9 @@
   /* Type Scale */
   --size-nav:           9px;   /* Shop / About / Contact / Cart */
   --size-filter:        13px;  /* Ceramics / Paintings etc */
-  --size-product-title: 26px;  /* Product name in detail panel */
+  --size-product-title: 28px;  /* Product name in detail panel */
   --size-product-price: 15px;  /* Price in detail panel */
-  --size-body:          16px;  /* Description text */
+  --size-body:          18px;  /* Description text */
   --size-card-label:    11px;  /* Name/price on product cards */
 }
 
