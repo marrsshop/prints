@@ -1,11 +1,26 @@
-/* ── Type Scale ── */
+/* ── Design Tokens — Gallery White ── */
 :root {
-  --size-nav:         9px;    /* Shop / About / Contact / Cart */
-  --size-filter:      13px;   /* Ceramics / Paintings etc */
-  --size-product-title: 24px; /* Product name in detail panel */
-  --size-product-price: 20px; /* Price in detail panel */
-  --size-body:        13px;   /* Description, about/contact text */
-  --size-card-label:  11px;   /* Name/price on product cards */
+  /* Color */
+  --paper:       #ffffff;
+  --ink:         #171413;
+  --accent:      #8a3520;
+  --soft:        #f3efe8;
+  --rule:        rgb(23 20 19 / 0.13);
+  --muted:       rgb(23 20 19 / 0.55);
+  --scrim-paper: rgb(255 255 255 / 0.62);
+
+  /* Type families */
+  --font-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-body:    "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-ui:      "Inter", "Helvetica Neue", system-ui, sans-serif;
+
+  /* Type Scale */
+  --size-nav:           9px;   /* Shop / About / Contact / Cart */
+  --size-filter:        13px;  /* Ceramics / Paintings etc */
+  --size-product-title: 26px;  /* Product name in detail panel */
+  --size-product-price: 15px;  /* Price in detail panel */
+  --size-body:          16px;  /* Description text */
+  --size-card-label:    11px;  /* Name/price on product cards */
 }
 
 *, *::before, *::after {
@@ -15,10 +30,10 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #fff;
-  color: #222;
-  font-size: 13px;
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -172,38 +187,57 @@ main {
   opacity: 1;
 }
 
-/* Hover overlay */
+/* Hover overlay — Gallery White scrim */
 .product-overlay {
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background: rgba(0, 0, 0, 0.7);
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: var(--scrim-paper);
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transition: opacity 280ms ease;
   pointer-events: none;
-  padding: 16px;
-  text-align: center;
+  padding: 22px;
 }
 
 .product-card:hover .product-overlay {
   opacity: 1;
 }
 
+/* Slide-up container */
+.product-overlay-meta {
+  transform: translateY(8px);
+  transition: transform 320ms ease 60ms;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.product-card:hover .product-overlay-meta {
+  transform: translateY(0);
+}
+
 .product-name {
-  font-size: var(--size-card-label);
+  font-family: var(--font-display);
+  font-size: 26px;
   font-weight: 400;
-  letter-spacing: 0.08em;
-  color: #fff;
+  line-height: 1.15;
+  color: var(--ink);
+  letter-spacing: normal;
+  order: 2;
 }
 
 .product-price {
-  font-size: var(--size-card-label);
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.06em;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  text-align: right;
+  order: 1;
 }
 
 /* Caption — mobile only, below image */
@@ -235,10 +269,13 @@ main {
 }
 
 .product-detail-panel h2 {
+  font-family: var(--font-display);
   font-size: var(--size-product-title);
   font-weight: 400;
-  letter-spacing: 0.05em;
-  margin: 0 0 8px;
+  line-height: 1.15;
+  letter-spacing: normal;
+  margin: 0 0 12px;
+  color: var(--ink);
 }
 
 .detail-divider {
@@ -384,19 +421,22 @@ main {
 }
 
 .product-detail-price {
+  font-family: var(--font-ui);
   font-size: var(--size-product-price);
-  color: #888;
+  font-weight: 500;
   letter-spacing: 0.04em;
+  color: var(--ink);
   margin-bottom: 28px;
 }
 
 .product-detail-description {
+  font-family: var(--font-body);
   font-size: var(--size-body);
-  line-height: 1.9;
-  color: #555;
+  line-height: 1.7;
+  color: var(--muted);
   white-space: pre-line;
   margin-bottom: 36px;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--rule);
   padding-top: 24px;
 }
 
@@ -407,11 +447,12 @@ main {
   color: #fff;
   border: none;
   padding: 13px 24px;
-  font-size: 11px;
-  letter-spacing: 0.14em;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: inherit;
   transition: background 0.2s;
 }
 
