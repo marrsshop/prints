@@ -23,8 +23,8 @@ function renderProducts(products) {
         <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
         <div class="product-overlay">
           <div class="product-overlay-meta">
-            <div class="product-price">${product.available ? '£' + product.price.toFixed(2) : 'Sold Out'}</div>
             <div class="product-name">${product.name}</div>
+            <div class="product-price">${product.available ? '£' + product.price.toFixed(2) : 'Sold Out'}</div>
           </div>
         </div>
       </div>

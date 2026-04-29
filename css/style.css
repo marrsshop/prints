@@ -211,8 +211,10 @@ main {
   transform: translateY(8px);
   transition: transform 320ms ease 60ms;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
   width: 100%;
 }
 
@@ -227,7 +229,6 @@ main {
   line-height: 1.15;
   color: var(--ink);
   letter-spacing: normal;
-  order: 2;
 }
 
 .product-price {
@@ -236,8 +237,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--ink);
-  text-align: right;
-  order: 1;
+  white-space: nowrap;
 }
 
 /* Caption — mobile only, below image */
