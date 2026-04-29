@@ -71,6 +71,7 @@ nav {
 }
 
 nav a {
+  font-family: var(--font-ui);
   font-size: var(--size-nav);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -96,6 +97,7 @@ nav a.active {
 .filter-btn {
   background: none;
   border: none;
+  font-family: var(--font-ui);
   font-size: var(--size-filter);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -103,7 +105,6 @@ nav a.active {
   color: #999;
   padding: 0;
   transition: color 0.15s;
-  font-family: inherit;
   white-space: nowrap;
 }
 
