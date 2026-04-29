@@ -158,19 +158,15 @@ main {
     letter-spacing: 0.04em;
   }
   .filters {
-    gap: 0;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 16px 0 8px;
-    justify-content: flex-start;
   }
   .filter-btn {
-    font-size: 13px;
+    font-size: 16px;
     text-transform: none;
     letter-spacing: 0.04em;
-    flex-shrink: 0;
-    padding: 0 12px 0 0;
   }
 }
 
