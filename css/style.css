@@ -297,6 +297,9 @@ main {
     overflow: hidden;
     max-width: 100vw;
   }
+  .product-detail-description {
+    font-size: 22px;
+  }
   .product-detail-panel {
     grid-template-columns: 1fr;
     gap: 24px;
