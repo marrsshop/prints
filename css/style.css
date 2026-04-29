@@ -443,7 +443,7 @@ main {
 .btn-add-to-cart {
   display: block;
   width: 100%;
-  background: #ff00ff;
+  background: #ca6755;
   color: #fff;
   border: none;
   padding: 13px 24px;
@@ -457,7 +457,7 @@ main {
 }
 
 .btn-add-to-cart:hover {
-  background: #cc00cc;
+  background: #b05644;
 }
 
 .btn-sold-out {

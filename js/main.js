@@ -138,6 +138,9 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.classList.add('active');
       activeCategory = btn.dataset.category;
     }
+    // Close any open product panel when switching category
+    const panel = document.getElementById('product-detail-panel');
+    if (panel) panel.style.display = 'none';
     renderProducts(allProducts);
   });
 });
