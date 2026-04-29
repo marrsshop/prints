@@ -323,7 +323,8 @@ main {
     gap: 24px;
     width: 100%;
     max-width: 100%;
-    padding: 28px 0 36px;
+    padding: 0 0 36px;
+    margin-top: 0;
   }
   .carousel-column {
     min-height: unset;
