@@ -299,6 +299,7 @@ main {
   }
   .product-detail-description {
     font-size: 22px;
+    font-weight: 500;
   }
   .product-detail-panel {
     grid-template-columns: 1fr;
