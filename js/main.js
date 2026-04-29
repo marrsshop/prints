@@ -122,7 +122,7 @@ function showProduct(id) {
 
   panel.style.display = 'grid';
   const headerHeight = document.querySelector('header').offsetHeight;
-  const gap = 40;
+  const gap = 32;
   const panelTop = panel.getBoundingClientRect().top + window.scrollY - headerHeight - gap;
   window.scrollTo({ top: panelTop, behavior: 'smooth' });
 }
