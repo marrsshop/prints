@@ -294,7 +294,13 @@ main {
   .carousel-row { gap: 4px; }
   .product-detail-image {
     width: 100%;
+    aspect-ratio: unset;
+    height: auto;
     margin: 0;
+  }
+  .carousel-track img {
+    height: auto;
+    object-fit: contain;
   }
   .product-detail-info {
     padding: 0 4px;
