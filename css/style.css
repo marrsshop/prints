@@ -153,8 +153,26 @@ main {
   header { padding: 24px 24px 0; }
   main { padding: 0 12px; }
   nav { gap: 16px; }
-  .filters { gap: 12px; }
-  .filter-btn { font-size: 10px; letter-spacing: 0.06em; }
+  nav a {
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+  }
+  .filters {
+    gap: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 0 8px;
+    justify-content: flex-start;
+  }
+  .filter-btn {
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+    padding: 0 12px 0 0;
+  }
 }
 
 /* On touch/mobile: hide overlay, show text below image instead */
