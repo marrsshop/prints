@@ -684,8 +684,8 @@ main {
 
 @media (max-width: 560px) {
   .text-page { margin: 36px auto; padding: 0 20px 60px; }
-  .text-section p { font-size: 22px; font-weight: 500; }
-  .text-section h2 { font-size: 32px; }
+  .text-section p { font-size: 26px; font-weight: 500; }
+  .text-section h2 { font-size: 36px; }
 }
 
 /* ── Footer ── */
