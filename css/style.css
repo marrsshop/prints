@@ -298,8 +298,14 @@ main {
     height: auto;
     margin: 0;
   }
-  .carousel-track img {
+  /* Break the height:100% chain so images size from their natural dimensions */
+  .product-detail-image .carousel,
+  .product-detail-image .carousel-track {
     height: auto;
+  }
+  .product-detail-image .carousel-track img {
+    height: auto;
+    width: 100%;
     object-fit: contain;
   }
   .product-detail-info {
