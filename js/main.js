@@ -7,7 +7,7 @@ async function loadProducts() {
   allProducts = data.products;
 
   // Pick a random category on each visit
-  const categories = ['ceramics', 'paintings', 'collages', 'prints', 'drawings'];
+  const categories = ['ceramics', 'paintings', 'collages', 'prints'];
   activeCategory = categories[Math.floor(Math.random() * categories.length)];
   document.querySelectorAll('.filter-btn').forEach(btn => {
     if (btn.dataset.category === activeCategory) btn.classList.add('active');
