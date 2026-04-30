@@ -118,7 +118,7 @@ function showProduct(id) {
   buildCarousel(product.images, product.name);
   document.getElementById('detail-name').textContent = product.name;
   document.getElementById('detail-price').textContent = product.available ? '£' + product.price.toFixed(2) : 'Sold Out';
-  document.getElementById('detail-description').innerHTML = product.description.replace(/\n/g, '<br>');
+  document.getElementById('detail-description').innerHTML = product.description.replace(/\n\n+/g, '<br>').replace(/\n/g, '<br>');
 
   const cartBtn = document.getElementById('detail-add-to-cart');
   if (product.available) {
