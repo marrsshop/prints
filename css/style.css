@@ -115,6 +115,14 @@ nav a.active {
   -webkit-font-smoothing: antialiased;
 }
 
+.filter-btn:not(:last-child)::after {
+  content: '|';
+  margin-left: 18px;
+  color: #ccc;
+  font-weight: 300;
+  pointer-events: none;
+}
+
 .filter-btn:hover {
   color: #222;
 }
