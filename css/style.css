@@ -308,10 +308,6 @@ main {
     overflow: hidden;
     max-width: 100vw;
   }
-  .product-detail-description {
-    font-size: 50px;
-    font-weight: 500;
-  }
   .product-detail-panel {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -499,6 +495,13 @@ main {
   margin-bottom: 36px;
   border-top: 1px solid var(--rule);
   padding-top: 24px;
+}
+
+@media (max-width: 700px) {
+  .product-detail-description {
+    font-size: 50px;
+    font-weight: 500;
+  }
 }
 
 .btn-add-to-cart {
