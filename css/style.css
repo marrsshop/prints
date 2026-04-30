@@ -553,8 +553,8 @@ main {
 }
 
 .size-btn.active {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: #ca6755;
+  border-color: #ca6755;
   color: #fff;
 }
 

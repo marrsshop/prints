@@ -142,8 +142,8 @@ function showProduct(id) {
     variantEl.className = 'detail-variants';
     variantEl.innerHTML = `
       <div class="size-selector">
-        <button class="size-btn" data-size="A3" data-price="40">A3 £40</button>
-        <button class="size-btn" data-size="A2" data-price="80">A2 £80</button>
+        <button class="size-btn" data-size="A3" data-price="40">A3 — £40</button>
+        <button class="size-btn" data-size="A2" data-price="80">A2 — £80</button>
       </div>
       <div class="qty-stepper">
         <button class="qty-btn qty-minus" disabled>−</button>
