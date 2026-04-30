@@ -112,6 +112,7 @@ nav a.active {
   padding: 0;
   transition: color 0.15s;
   white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 }
 
 .filter-btn:hover {
