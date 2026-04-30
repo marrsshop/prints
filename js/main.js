@@ -142,11 +142,9 @@ function showProduct(id) {
     variantEl.className = 'detail-variants';
     variantEl.innerHTML = `
       <div class="size-selector">
-        <select class="size-select">
-          <option value="">Select size</option>
-          <option value="A3" data-price="40">A3 — £40.00</option>
-          <option value="A2" data-price="80">A2 — £80.00</option>
-        </select>
+        <button class="size-btn" data-size="A3" data-price="40">A3</button>
+        <span class="size-dot">·</span>
+        <button class="size-btn" data-size="A2" data-price="80">A2</button>
       </div>
       <div class="qty-stepper">
         <button class="qty-btn qty-minus" disabled>−</button>
@@ -160,25 +158,18 @@ function showProduct(id) {
     let selectedPrice = null;
     let qty = 1;
 
-    variantEl.querySelector('.size-select').addEventListener('change', function() {
-      const opt = this.options[this.selectedIndex];
-      if (this.value) {
-        selectedSize = this.value;
-        selectedPrice = parseFloat(opt.dataset.price);
+    variantEl.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        variantEl.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSize = btn.dataset.size;
+        selectedPrice = parseFloat(btn.dataset.price);
         priceEl.textContent = '£' + selectedPrice.toFixed(2);
         cartBtn.disabled = false;
         cartBtn.style.opacity = '1';
         variantEl.querySelector('.qty-minus').disabled = qty <= 1;
         variantEl.querySelector('.qty-plus').disabled = false;
-      } else {
-        selectedSize = null;
-        selectedPrice = null;
-        priceEl.textContent = 'from £40.00';
-        cartBtn.disabled = true;
-        cartBtn.style.opacity = '0.4';
-        variantEl.querySelector('.qty-minus').disabled = true;
-        variantEl.querySelector('.qty-plus').disabled = true;
-      }
+      });
     });
 
     variantEl.querySelector('.qty-minus').addEventListener('click', () => {
