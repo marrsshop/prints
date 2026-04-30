@@ -528,7 +528,7 @@ main {
 .detail-variants {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
