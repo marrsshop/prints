@@ -322,8 +322,6 @@ main {
     max-width: 100%;
     overflow: hidden;
   }
-  /* Hide side arrows on mobile — swipe handles navigation */
-  .carousel-btn { display: none; }
   .carousel-row { gap: 0; width: 100%; }
   .product-detail-image {
     width: 100%;
@@ -448,6 +446,11 @@ main {
 
 .carousel-btn:hover { color: #333; }
 .carousel-btn.hidden { visibility: hidden; }
+
+@media (max-width: 700px) {
+  /* Hide side arrows on mobile — swipe handles navigation */
+  .carousel-btn { display: none; }
+}
 
 .carousel-dots {
   display: flex;
