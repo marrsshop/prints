@@ -20,9 +20,10 @@ function renderProducts(products) {
   const grid = document.getElementById('product-grid');
   if (!grid) return;
 
-  const filtered = activeCategory === 'all'
+  const filtered = (activeCategory === 'all'
     ? products
-    : products.filter(p => p.category === activeCategory);
+    : products.filter(p => p.category === activeCategory))
+    .filter(p => !p.hidden);
 
   grid.innerHTML = filtered.map(product => `
     <div class="product-card ${product.available ? '' : 'sold-out'}"
