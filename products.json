@@ -122,17 +122,6 @@
       ]
     },
     {
-      "id": "air-beast-print",
-      "name": "Air Beast A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "images": [
-        "images/prints/air-beast-print.jpg"
-      ]
-    },
-    {
       "id": "colour-head-print",
       "name": "Colour Head A3 Print",
       "category": "prints",
@@ -328,12 +317,7 @@
       "available": true,
       "description": "Framed Painting. Acrylic on 5mm board.\n\n48cm x 58cm Framed (39cm x 49cm painting size).\n\nSigned and in Vintage Frame.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678725909109-STHVVZSIH0IUD8S4P37R/Girder+houses.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678795075241-UYD77UAM2BG01FUMOFSC/Girder-Canvy1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678793654746-09WE2MHJ1UIMG3LAZ54B/Girder2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678793710160-IY05JTIA1A66BHABEFBY/Girder5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678793620612-AN2I4T9V3E0IM070MAU1/Girder3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678793620539-L81HPBY481E6NXHXUDLN/Girder4.jpg"
+        "images/paintings/time-now-for-ghosts.jpg"
       ]
     },
     {
@@ -344,10 +328,7 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678366343623-BF788TMYCGOWI2FSQETJ/Rust+Concrete1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678366343249-5HJYAMSNCS4PGRS251PC/Rust+Concrete4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678366344443-DHXN3YUZJV01P4XWF26U/Rust+Concrete2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678366344466-U75YRWN3G1KE2ZHLDXZO/Rust+Concrete3.jpg"
+        "images/paintings/a-place-to-hide.jpg"
       ]
     },
     {
@@ -358,11 +339,7 @@
       "available": true,
       "description": "Acrylic paint on 5mm board.\n\n61cm x 48cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678797513445-GZWBBFGILG397VRNEM1S/Red+Stick.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678797513290-5OT4NVST9RNWXT6RGVFL/Red+Stick5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678796175190-VRS9DTCZPPOQRSJJZIAI/Red+Stick4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678372017835-R4G8KZSAY59SHOIIPSN1/Red+Stick2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678372017720-O3FLTZAQAVBGR2ANJOB0/Red+Stick3.jpg"
+        "images/paintings/behind-these-eyes.jpg"
       ]
     },
     {
@@ -384,10 +361,7 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678806618210-KBF3HXI2H2Y875V9IAC5/Concrete+Wood1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678806618481-H9H2TV8Z1JDKM2Q0JGSP/Concrete+Wood4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678806618810-R4GJMLNMBJ3DUJ8M701F/Concrete+Wood2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678806618989-LKO3Q1QVP1Q77MVS8MBX/Concrete+Wood3.jpg"
+        "images/paintings/forgive-the-silence.jpg"
       ]
     },
     {
@@ -398,10 +372,7 @@
       "available": true,
       "description": "Acrylic on 3mm board.\n\n59cm x 49cm\n\nSigned and unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678805860429-S46BDLZ81B4C8DQ8I149/Snow+Red1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678805860282-L2M08J3GK9MH7B79VET0/Snow+Red4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678805860981-TSKPPSQUPPKPBGGT8U46/Snow+Red2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678805860948-HUSRG4BZW6MAK2GMKJC3/Snow+Red3.jpg"
+        "images/paintings/almost-none.jpg"
       ]
     },
     {
@@ -412,11 +383,7 @@
       "available": true,
       "description": "Acrylics on 13mm recycled board.\n\n57.5cm x 36cm approx.\n\nSigned and unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678798503158-3O6AL70Q6PGIFGELU3EM/Beach+Red1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678799201846-TDALW9GWI8EXCN8H3CA3/Beach+Red5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678798503776-AWUDOHKMN1DU0C68L4GU/Beach+Red2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678798503956-34F3AX92LF9V4YEKKFCN/Beach+Red4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678798504120-YRBTUEA7GXJ9QYTL7DIS/Beach+Red3.jpg"
+        "images/paintings/the-beginning-of-something.jpg"
       ]
     },
     {
@@ -427,13 +394,7 @@
       "available": true,
       "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678377244678-547DGUK1XKF3TE5ORME8/Pink+Door1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678804056056-R8DMCB62ESB5AG3SQ2XS/Ice123-canvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802308864-LPB4KNUN4CTYNPF2WVPT/Pink+Door2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802308815-T29JI9HKJX0ROG287GXB/Pink+Door3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802308762-J94YXHWS00SHW9LIXXY2/Pink+Door4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802308198-SLF89013Q7EZJKB3DWV7/Pink+Door5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802308648-78GVN1A30HU7GZWPXGN2/Pink+Door6.jpg"
+        "images/paintings/on-ice-1.jpg"
       ]
     },
     {
@@ -444,11 +405,7 @@
       "available": true,
       "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678377350045-FC6M8386188DCPODNPVN/Red+Door1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678804056056-R8DMCB62ESB5AG3SQ2XS/Ice123-canvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678803062295-44GF6HNNCHEX9A4JIA94/Red+Door2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678803062295-YHXZNAVRRZK9M0JWXEU7/Red+Door3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678803062175-VHHRLRPJFGQGAVLSMQPH/Wine+Door4.jpg"
+        "images/paintings/on-ice-2.jpg"
       ]
     },
     {
@@ -459,11 +416,7 @@
       "available": true,
       "description": "Acrylic on irregular recycled 12mm board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678377413360-WEYESAU5RATOG257U4E1/Wine+Door1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678804056056-R8DMCB62ESB5AG3SQ2XS/Ice123-canvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802782704-F8CZX6MWPTNV05LB6DV8/Wine+Door2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802782719-WX9M1HT857BCC2FTSUAF/Wine+Door3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678802782724-TJ50ASN9ICHF10QWTJE3/Wine+Door5.jpg"
+        "images/paintings/on-ice-3.jpg"
       ]
     },
     {
@@ -474,10 +427,7 @@
       "available": true,
       "description": "Acrylic paint on 5mm board.\n\n60.5cm x 40cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678724987820-1FIEHF9H0I0EN08LU545/Pink+Green.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678801446579-HT56E7SKFIW6CAQ45F4F/Pink+Green2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678801413627-0JIUTA6F4HLAKQ42JOUO/Pink+Green+3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678801413764-SQSSITV5XVR13AF8F0J1/Pink+Green+4.jpg"
+        "images/paintings/silent-sorrow.jpg"
       ]
     },
     {
@@ -488,9 +438,7 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678807484606-39VOKA3ZVPUTMDJA5V9T/Wood+Snow1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678807485687-8ICW87215K2YDBYCHGVP/Wood+Snow3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678807485651-1KXHMH43JNW7HVS73MW6/Wood+Snow2.jpg"
+        "images/paintings/dark-outside-the-world.jpg"
       ]
     },
     {
@@ -501,10 +449,7 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371340448-V9NT82J9BSR56GO9OIST/CoastalRedDoor1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371339529-JAO27VDKCOU716E82YEY/CoastalRedDoor4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371337905-EM3Z7OS50LB0ROVJDM03/CoastalRedDoor2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371339261-2TV6K00OHVBUFTLBNQ4U/CoastalRedDoor3.jpg"
+        "images/paintings/coastal-red-door.jpg"
       ]
     },
     {
@@ -515,12 +460,7 @@
       "available": true,
       "description": "Acrylic on found 3mm thick board.\n\n63cm x 41.5cm approx.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069130537-V1AOH47LFTVY3TSTB8U3/HengeHouse1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069129476-3LWYC311QCYMZ1RSPGMN/HengeHouse2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069132078-BD6AE7NSHT3LDGZTXO1J/HengeHouse3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069132596-UBQH6NEZGD8XIZSVU61G/HengeHouse4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069132466-QYJGQBZKKR26H9VSERE5/HengeHouse5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616069132744-IYDWNFYQAC9RGTHXPU5N/HengeHouse6.jpg"
+        "images/paintings/henge-house.jpg"
       ]
     },
     {
@@ -531,11 +471,7 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges — these are about the whole object of the painting.\n\nUnframed, signed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608379222856-MGBPKBN2F0SFUSLU8LWO/DoubleBeach.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612272088259-Z7CSI6YPHDWJT5HW9TZ3/DoubleBeach4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611931611129-23G84FCMIJOSGHFQ22X3/DoubleBeach3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612272315614-T304UH5WMXPRL8K2NQ1R/DoubleBeach5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612272315455-1W938HBTX3B6KXTR555W/DoubleBeach6.jpg"
+        "images/paintings/double-beach.jpg"
       ]
     },
     {
@@ -546,11 +482,7 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n59cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608313351717-X14QQO03PY258EG8CW04/BlueShack1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612270346606-62668MJMXT960MDQAUK9/BlueShack6.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611931725944-0G2DEYS7HR0L5IOWMXY3/BlueShack5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608312858824-XXZJJ9QAAHMU6GFIR2ML/BlueShack2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608312857558-8B95TZZJPWL9YTBBA4X9/BlueShack3.jpg"
+        "images/paintings/blue-shack.jpg"
       ]
     },
     {
@@ -561,10 +493,7 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1613753180917-ECLO7DH55VOVT4ANASX5/DesertNight1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1613753181286-LW9BS8NEB2SMIHEGKUIU/DesertNight4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1613753180261-LEXPT86XOQN8BUH0XYCA/DesertNight2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1613753180906-LB0Z3XP1IVN0V0IT33L8/DesertNight3.jpg"
+        "images/paintings/desert-night.jpg"
       ]
     },
     {
@@ -575,11 +504,7 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611856029264-MQAS2W58D2NC32IJPO0P/DoubleDesert1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269473067-U1VDW21Z1INJTTBS2Z3W/DoubleDesert5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611931542172-SO068EUYVP9OS689KDQ7/DoubleDesert2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269244575-B5TEURZI5DHJYEGLEQHR/DoubleDesert3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269244582-ULHYGDOMAF08QQC6FYPY/DoubleDesert4.jpg"
+        "images/paintings/double-desert.jpg"
       ]
     },
     {
@@ -590,13 +515,7 @@
       "available": false,
       "description": "Acrylic on 6mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068764446-EKKMY1MDHKH5Y3GKQC8Y/WintersKeep1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068763679-NYOQSF3M2RT8V3L3H0G3/WintersKeep2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068765950-J6IIPEHQ2RJWN21IUEI0/WintersKeep3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068765759-QONY5O54QTVKZXXIWV5U/WintersKeep4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068766139-7Q1RDJX9SX1QN8V6NPPY/WintersKeep5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068766458-3SYXNBQYIBESFSSJ0HFP/WintersKeep6.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1616068765360-TO9DCKNM7X2RR0AOWXKN/WintersKeep7.jpg"
+        "images/paintings/winters-keep.jpg"
       ]
     },
     {
@@ -607,10 +526,7 @@
       "available": false,
       "description": "Acrylic on board. Painted on found hardboard, 3mm thick.\n\n63cm x 41.5cm\n\nHas intentional defects such as irregular cut top edge.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371139522-HNNN9CZA4K3NNCLFI49K/SnowYellow1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371139582-GYXPW2S64STDX3NCAKAJ/SnowYellow4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371139229-5SC1CHC23E0FD9DLFJOB/SnowYellow2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612371138363-I8HPD0LOOZW05RJQHUX7/SnowYellow3.jpg"
+        "images/paintings/snow-yellow.jpg"
       ]
     },
     {
@@ -621,12 +537,7 @@
       "available": false,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608315362792-3R3RNSCNGJKKED1G2UEV/RedBarn1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612270763283-ETBQHBUMQDJU0LRNUYKV/RedBarn6.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608315362701-EJBINWMQBJV9ZFW4PYWC/RedBarn4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611931684761-LTS7R142J7M28XC43DH3/RedBarn5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608315361747-D4VPTNB5L9VRS569I816/RedBarn3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608315361050-T26D736TPZAHTTMD06J7/RedBarn2.jpg"
+        "images/paintings/red-barn.jpg"
       ]
     },
     {
@@ -637,11 +548,7 @@
       "available": false,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n56cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611855839685-A8GH948CV8CCG7MFPEFM/BlackRedShack1.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269840863-H3WG99RN8KGHKWO0DVJG/BlackRedShack5.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611931574297-TSOKIKBCLANP3E2Z9X81/BlackRedShack2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269840053-WM14BU4GPHZY3MK5FFYT/BlackRedShack3.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612269840794-AU4RJNWI0LQACNP5VK33/BlackRedShack4.jpg"
+        "images/paintings/black-red-shack.jpg"
       ]
     },
     {
@@ -652,11 +559,7 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679494950200-PFQ6GRA7TDSLYFYI7179/Winter+Collage1_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679494949657-D5HD5558NUO43MK0TLWG/Winter+Collage1_C.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679494950359-NF3111BKM9OLVZE5IRY2/Winter+Collage1_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679494950070-XM30843SYUEL4NBZ6KVB/Winter+Collage1-2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679494949797-JJE2QGMJ5YUB59NKOA50/Winter+Collage_Group.jpg"
+        "images/collages/abandoned-ghosts-1.jpg"
       ]
     },
     {
@@ -667,12 +570,7 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495197077-VKNKG87YG9Q021TSUGYC/Winter+Collage2_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495196093-DGMZDQHM5ARP857IQP3G/Winter+Collage2_D.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495197441-TFL2JNZVXG9X0F2BGK3Y/Winter+Collage2_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495197440-7UBLK1BOB3DROS75YING/Winter+Collage2_C.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495196255-VEI6R6M7TMPQIATKUTO3/Winter+Collage_Group.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495196019-3KFOWVSEVB7JYYBXS7CH/Winter+Collage1-2.jpg"
+        "images/collages/abandoned-ghosts-2.jpg"
       ]
     },
     {
@@ -683,11 +581,7 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495317920-RFW5C94CTBIMHDFFXN9O/Winter+Collage3_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495414523-TVH0NYB4U8IAYICEA7YM/Winter+Collage4_C.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495318200-0FDGXH2N6SA10QMUSK7W/Winter+Collage3_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495317568-U86VA4X2HC72YY6HLI65/Winter+Collage3-4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495196255-VEI6R6M7TMPQIATKUTO3/Winter+Collage_Group.jpg"
+        "images/collages/abandoned-ghosts-3.jpg"
       ]
     },
     {
@@ -698,11 +592,7 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495510043-KKY2M5SHZ1BTWESLPIGU/Winter+Collage4_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495509265-T4IPSNHRP9WQ31XL7CRC/Winter+Collage3_C.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495510639-X6C7VRC5EM9FW30YOO1L/Winter+Collage4_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495317568-U86VA4X2HC72YY6HLI65/Winter+Collage3-4.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679495196255-VEI6R6M7TMPQIATKUTO3/Winter+Collage_Group.jpg"
+        "images/collages/abandoned-ghosts-4.jpg"
       ]
     },
     {
@@ -713,8 +603,7 @@
       "available": false,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645252855-AON2PAZUIRTMF7CQWBMO/Cabin1_chink.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645023308-9341FQRTJUUDGQLR69PH/MockUp_1.jpg"
+        "images/collages/cabin-red-brown-1.jpg"
       ]
     },
     {
@@ -725,8 +614,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645570426-03DE0SIUYHMZLXPD65TO/Cabin4_PinkAqua.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645570215-FRGP62T5RNWQVB7CK5T6/MockUp_4.jpg"
+        "images/collages/cabin-pink-green.jpg"
       ]
     },
     {
@@ -737,8 +625,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645529335-JBV699LIU291AD2526QV/Cabin3_snow+gold.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645529474-YUCJUAMQD65DVAGAWA3T/MockUp_3.jpg"
+        "images/collages/cabin-snow-gold-orange.jpg"
       ]
     },
     {
@@ -749,8 +636,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645351157-OFAH6BZUH02W6YOOKGPD/Cabin2_bluechink.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1608645351300-OM013IOYMAR3XNX1EL2C/MockUp_2.jpg"
+        "images/collages/cabin-blue-brown.jpg"
       ]
     },
     {
@@ -761,8 +647,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612370809089-YVZBPX3JURV75IH053YW/Cabin7_SnowMauveBrown.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612370809204-E6PXSNYYYQC0TON2LYIW/MockUp_7.jpg"
+        "images/collages/cabin-mauve-snow.jpg"
       ]
     },
     {
@@ -773,8 +658,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611848863761-OHG6ASON70R8DADZ69M0/Cabin5_SnowGreyRed.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611848853326-2X0B7J0E3DYYAED1652B/MockUp_5.jpg"
+        "images/collages/cabin-red-brown-2.jpg"
       ]
     },
     {
@@ -785,8 +669,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611849032976-KA8SISKKJ30S4DRIJX9C/Cabin6_SnowRedBarn.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1611849039525-584QEVNWGDMCCAB54C96/MockUp_6.jpg"
+        "images/collages/red-snow-barn.jpg"
       ]
     },
     {
@@ -797,8 +680,7 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612370731473-WDQHMD8XUVJJXFJV8PBL/Cabin8_YellowMauve.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1612370731480-W84ZFJROYXVC62F7836L/MockUp_8.jpg"
+        "images/collages/cabin-mauve-yellow.jpg"
       ]
     },
     {
@@ -809,10 +691,7 @@
       "available": true,
       "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678372966805-A5FVIZETJMAW9JDU9AZ1/Cabin_Black-Red.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325266982-IVZSQ8IT3D3EQFHG62FZ/Cabin_BlackRed-Room.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325267861-V6IKG52SPXWU7ZU7M3HD/Cabin_BlackRed2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325267852-79GO6FGFXDRXWFTDJK4Y/Cabin+Prints_group.jpg"
+        "images/prints/cabin-print-black-red.jpg"
       ]
     },
     {
@@ -823,10 +702,7 @@
       "available": true,
       "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678374781791-FNC4DREZAS2UKD2MD4CF/Cabin_BlueRed-yellow.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325211226-WY7Q1G18VRGOGJ671A1M/Cabin_BlueRed-Room.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325184583-L2FHQOQVK7U49GTL04OY/Cabin_BlueRedYellow2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325267852-79GO6FGFXDRXWFTDJK4Y/Cabin+Prints_group.jpg"
+        "images/prints/cabin-print-blue-yellow.jpg"
       ]
     },
     {
@@ -837,10 +713,7 @@
       "available": true,
       "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678375047086-LG7DSC87212KVMHMV2Z0/Cabin_BrownRed-blue.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325430095-HCF1WSY7513N1FRVY5E6/Cabin_BrownRed-Room.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325436628-QI0W2RKP32X06E6FOH13/Cabin_BrownRed-blue2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325430401-BPZVMZE2P5N4EE796LNR/Cabin+Prints_group.jpg"
+        "images/prints/cabin-print-brown-blue.jpg"
       ]
     },
     {
@@ -851,13 +724,7 @@
       "available": true,
       "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678375242917-PPFBQVDU7LL53BNL84G3/5.Cabin_Aqua-yellow.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325591700-WRM4RCRAE9Q3TGB8RAVJ/Cabin_Aqua-Room.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325752180-AUXIBWWQZ4DULTAC4HGB/Cabin_Aqua2.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325267852-79GO6FGFXDRXWFTDJK4Y/Cabin+Prints_group.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325516194-WEX1WDFH64L5NZJ5V10E/Cabin_Aqua-Room.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325516316-JS5CGW2TP5U16HLH3WZ9/Cabin+Prints_group.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679325575473-1C5RKMXFPSRIA82SJPTW/Cabin_Aqua-Room.jpg"
+        "images/prints/cabin-print-aqua-yellow.jpg"
       ]
     },
     {
@@ -868,8 +735,7 @@
       "available": true,
       "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678970193487-9DLXKF8KEPFKLCGHCW42/Air+Beast.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678972893110-XD97Y2DJLG1W8VUU4ZML/Beasts-Canvy.jpg"
+        "images/prints/air-beast-sq.jpg"
       ]
     },
     {
@@ -880,8 +746,7 @@
       "available": true,
       "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678970151592-U7RDIIZBRJKJ137CZ5VY/Earth+Beast.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1678972266196-KS55NYH4TPAC6JI8S4M1/Beasts-Canvy.jpg"
+        "images/prints/earth-beast-print.jpg"
       ]
     },
     {
@@ -892,10 +757,7 @@
       "available": true,
       "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315708667-CCAWX5VKVSBFEKXOS035/IconHead1_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679333357243-JAQ4W86H5K0TMO4KZAV8/IconHead1_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315708605-O56ZU5SF0GCR0LNFCC2A/IconHead_TriptichCanvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315708085-ELMX5SZX0EG6XLJNJ3N1/IconHead1_C.jpg"
+        "images/prints/stone-head-1.jpg"
       ]
     },
     {
@@ -906,10 +768,7 @@
       "available": true,
       "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315857614-GMFEB0T1ZQF1AQ6NNIRQ/IconHead2_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679316206234-F3XSBM8FIG3GZS3EGC44/IconHead3_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315857519-MZS2MN79KRK274Y4SFAM/IconHead_TriptichCanvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679315856980-O5M97JV4DS4LHOC70SOI/IconHead2_C.jpg"
+        "images/prints/stone-head-2.jpg"
       ]
     },
     {
@@ -920,10 +779,7 @@
       "available": true,
       "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679317266664-T8KB1K62YWM05JYNGYCI/IconHead3_A.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679317265948-KGG018IXXXWMFKOYMD7N/IconHead2_B.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679317266819-3JGU0QBWYP75BLLDA8J0/IconHead_TriptichCanvy.jpg",
-        "https://images.squarespace-cdn.com/content/v1/5fd8eb65da68de4c3eba3d99/1679317267129-X1SS1XZILGWP67VZGCXS/IconHead3_C.jpg"
+        "images/prints/stone-head-3.jpg"
       ]
     },
     {
