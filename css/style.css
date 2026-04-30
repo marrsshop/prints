@@ -155,7 +155,7 @@ main {
   main { padding: 0 12px; }
   nav { gap: 16px; }
   nav a {
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.12em;
   }
   .filters {
