@@ -8,13 +8,13 @@ function saveCart(cart) {
   updateCartCount();
 }
 
-function addToCart(product) {
+function addToCart(product, qty = 1) {
   const cart = getCart();
   const existing = cart.find(item => item.id === product.id);
   if (existing) {
-    existing.quantity += 1;
+    existing.quantity += qty;
   } else {
-    cart.push({ ...product, quantity: 1 });
+    cart.push({ ...product, quantity: qty });
   }
   saveCart(cart);
   showToast(`${product.name} added to cart`);

@@ -118,19 +118,94 @@ function showProduct(id) {
   const panel = document.getElementById('product-detail-panel');
   buildCarousel(product.images, product.name);
   document.getElementById('detail-name').textContent = product.name;
-  document.getElementById('detail-price').textContent = product.available ? '£' + product.price.toFixed(2) : 'Sold Out';
   document.getElementById('detail-description').innerHTML = product.description
     .split('\n')
     .filter(line => line.trim() !== '')
     .map(line => `<p>${line}</p>`)
     .join('');
 
+  // Remove any existing variant selector
+  const existing = document.getElementById('detail-variants');
+  if (existing) existing.remove();
+
+  const priceEl = document.getElementById('detail-price');
   const cartBtn = document.getElementById('detail-add-to-cart');
-  if (product.available) {
+
+  if (product.category === 'prints') {
+    priceEl.textContent = 'from £40.00';
     cartBtn.style.display = 'block';
-    cartBtn.onclick = () => addToCart(product);
+    cartBtn.disabled = true;
+    cartBtn.style.opacity = '0.4';
+
+    const variantEl = document.createElement('div');
+    variantEl.id = 'detail-variants';
+    variantEl.className = 'detail-variants';
+    variantEl.innerHTML = `
+      <div class="size-selector">
+        <button class="size-btn" data-size="A3" data-price="40">A3</button>
+        <span class="size-pipe">|</span>
+        <button class="size-btn" data-size="A2" data-price="80">A2</button>
+      </div>
+      <div class="qty-stepper">
+        <button class="qty-btn qty-minus" disabled>−</button>
+        <span class="qty-value">1</span>
+        <button class="qty-btn qty-plus" disabled>+</button>
+      </div>
+    `;
+    cartBtn.before(variantEl);
+
+    let selectedSize = null;
+    let selectedPrice = null;
+    let qty = 1;
+
+    variantEl.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        variantEl.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSize = btn.dataset.size;
+        selectedPrice = parseFloat(btn.dataset.price);
+        priceEl.textContent = '£' + selectedPrice.toFixed(2);
+        cartBtn.disabled = false;
+        cartBtn.style.opacity = '1';
+        variantEl.querySelector('.qty-minus').disabled = qty <= 1;
+        variantEl.querySelector('.qty-plus').disabled = false;
+      });
+    });
+
+    variantEl.querySelector('.qty-minus').addEventListener('click', () => {
+      if (qty > 1) {
+        qty--;
+        variantEl.querySelector('.qty-value').textContent = qty;
+        variantEl.querySelector('.qty-minus').disabled = qty <= 1;
+      }
+    });
+
+    variantEl.querySelector('.qty-plus').addEventListener('click', () => {
+      qty++;
+      variantEl.querySelector('.qty-value').textContent = qty;
+      variantEl.querySelector('.qty-minus').disabled = false;
+    });
+
+    cartBtn.onclick = () => {
+      if (!selectedSize) return;
+      addToCart({
+        ...product,
+        id: `${product.id}-${selectedSize.toLowerCase()}`,
+        name: `${product.name} (${selectedSize})`,
+        price: selectedPrice
+      }, qty);
+    };
+
   } else {
-    cartBtn.style.display = 'none';
+    priceEl.textContent = product.available ? '£' + product.price.toFixed(2) : 'Sold Out';
+    cartBtn.disabled = false;
+    cartBtn.style.opacity = '1';
+    if (product.available) {
+      cartBtn.style.display = 'block';
+      cartBtn.onclick = () => addToCart(product);
+    } else {
+      cartBtn.style.display = 'none';
+    }
   }
 
   panel.style.display = 'grid';
