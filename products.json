@@ -13,7 +13,7 @@
         "images/ceramics/soul-searcher-3.jpg",
         "images/ceramics/soul-searcher-4.jpg"
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "id": "king",
