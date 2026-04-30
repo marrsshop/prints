@@ -143,7 +143,6 @@ function showProduct(id) {
     variantEl.innerHTML = `
       <div class="size-selector">
         <button class="size-btn" data-size="A3" data-price="40">A3</button>
-        <span class="size-dot">·</span>
         <button class="size-btn" data-size="A2" data-price="80">A2</button>
       </div>
       <div class="qty-stepper">
