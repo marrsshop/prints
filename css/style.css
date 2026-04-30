@@ -504,10 +504,17 @@ main {
   font-size: var(--size-body);
   line-height: 1.7;
   color: var(--ink);
-  white-space: pre-line;
   margin-bottom: 36px;
   border-top: 1px solid var(--rule);
   padding-top: 24px;
+}
+
+.product-detail-description p {
+  margin: 0 0 12px 0;
+}
+
+.product-detail-description p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 700px) {
