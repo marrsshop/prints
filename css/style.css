@@ -499,7 +499,7 @@ main {
 
 @media (max-width: 700px) {
   .product-detail-description {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 500;
   }
 }
