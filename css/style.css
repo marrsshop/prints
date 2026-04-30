@@ -94,7 +94,7 @@ nav a.active {
 .filters {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 4px;
   padding: 16px 0 8px;
   flex-wrap: wrap;
 }
@@ -117,7 +117,7 @@ nav a.active {
 
 .filter-btn:not(:last-child)::after {
   content: '|';
-  margin-left: 18px;
+  margin-left: 4px;
   color: #ccc;
   font-weight: 300;
   pointer-events: none;
@@ -167,7 +167,7 @@ main {
     letter-spacing: 0.12em;
   }
   .filters {
-    gap: 12px;
+    gap: 4px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 16px 0 8px;
