@@ -22,7 +22,7 @@ function renderCart() {
         </div>
         <div class="cart-right">
           <div class="cart-item-price">£${(item.price * item.quantity).toFixed(2)}</div>
-          <div style="font-size:12px;color:#aaa;margin-top:4px;">Qty: ${item.quantity}</div>
+          <div class="cart-item-qty">Qty: ${item.quantity}</div>
         </div>
       </div>
     `).join('')}
