@@ -149,7 +149,7 @@ main {
   .product-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 12px; }
   .product-image { margin-bottom: 0; }
   .product-caption { padding: 0 2px 4px; }
-  header { padding: 24px 24px 0; }
+  header { padding: 24px 24px 0; position: relative; }
   main { padding: 0 12px; }
   nav { gap: 16px; }
   nav a {
