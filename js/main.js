@@ -5,6 +5,14 @@ async function loadProducts() {
   const res = await fetch('products.json');
   const data = await res.json();
   allProducts = data.products;
+
+  // Pick a random category on each visit
+  const categories = ['ceramics', 'paintings', 'collages', 'prints', 'drawings'];
+  activeCategory = categories[Math.floor(Math.random() * categories.length)];
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    if (btn.dataset.category === activeCategory) btn.classList.add('active');
+  });
+
   renderProducts(allProducts);
 }
 
