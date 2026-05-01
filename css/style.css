@@ -528,7 +528,8 @@ main {
 .detail-variants {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 40px;
   margin-bottom: 20px;
 }
 
@@ -575,6 +576,7 @@ main {
   border: 1px solid var(--rule);
   width: 28px;
   height: 28px;
+  border-radius: 50%;
   font-family: var(--font-ui);
   font-size: 16px;
   cursor: pointer;
