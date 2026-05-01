@@ -522,6 +522,11 @@ main {
     font-size: 22px;
     font-weight: 500;
   }
+  .detail-variants {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 /* ── Print variants: size selector + quantity stepper ── */
