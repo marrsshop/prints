@@ -522,22 +522,6 @@ main {
     font-size: 22px;
     font-weight: 500;
   }
-  .detail-variants {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: nowrap;
-  }
-  .size-btn {
-    font-size: 14px;
-  }
-  .qty-btn {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 16px;
-  }
 }
 
 /* ── Print variants: size selector + quantity stepper ── */
@@ -848,4 +832,23 @@ footer {
 .toast.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .detail-variants {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+  .size-btn {
+    font-size: 14px;
+  }
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 16px;
+  }
 }
