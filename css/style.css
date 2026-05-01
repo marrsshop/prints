@@ -567,7 +567,7 @@ main {
 .qty-stepper {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
 }
 
 .qty-btn {
@@ -839,7 +839,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 40px;
     flex-wrap: nowrap;
   }
   .size-btn {
