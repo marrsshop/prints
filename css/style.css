@@ -525,14 +525,18 @@ main {
   .detail-variants {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     flex-wrap: nowrap;
   }
-  .qty-btn {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+  .size-btn {
     font-size: 14px;
+  }
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 16px;
   }
 }
 
