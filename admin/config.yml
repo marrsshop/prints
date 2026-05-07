@@ -40,7 +40,4 @@ collections:
               - { label: "Available", name: "available", widget: "boolean", default: true }
               - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false, hint: "Hide from shop without deleting — useful for gallery shows" }
               - { label: "Description", name: "description", widget: "text" }
-              - label: "Images"
-                name: "images"
-                widget: "list"
-                field: { label: "Image", name: "image", widget: "image" }
+              - { label: "Main Image", name: "image", widget: "image", hint: "The primary image shown in the grid. Carousel images are managed separately." }

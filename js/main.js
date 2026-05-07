@@ -2,9 +2,18 @@ let allProducts = [];
 let activeCategory = 'all';
 
 async function loadProducts() {
-  const res = await fetch('products.json');
-  const data = await res.json();
-  allProducts = data.products;
+  const [productsRes, imagesRes] = await Promise.all([
+    fetch('products.json'),
+    fetch('images.json')
+  ]);
+  const data = await productsRes.json();
+  const imagesMap = await imagesRes.json();
+
+  // Merge carousel images into each product
+  allProducts = data.products.map(p => ({
+    ...p,
+    images: imagesMap[p.id] || [p.image]
+  }));
 
   // Pick a random category on each visit
   const categories = ['ceramics', 'paintings', 'collages', 'prints'];
@@ -29,7 +38,7 @@ function renderProducts(products) {
     <div class="product-card ${product.available ? '' : 'sold-out'}"
          onclick="showProduct('${product.id}')">
       <div class="product-image">
-        <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
+        <img src="${product.image}" alt="${product.name}" loading="lazy">
         <div class="product-overlay">
           <div class="product-overlay-meta">
             <div class="product-name">${product.name}</div>
