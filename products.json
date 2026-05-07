@@ -340,7 +340,12 @@
       "available": true,
       "description": "Framed Painting. Acrylic on 5mm board.\n\n48cm x 58cm Framed (39cm x 49cm painting size).\n\nSigned and in Vintage Frame.",
       "images": [
-        "images/paintings/time-now-for-ghosts.jpg"
+        "images/paintings/time-now-for-ghosts-1.jpg",
+        "images/paintings/time-now-for-ghosts-2.jpg",
+        "images/paintings/time-now-for-ghosts-3.jpg",
+        "images/paintings/time-now-for-ghosts-4.jpg",
+        "images/paintings/time-now-for-ghosts-5.jpg",
+        "images/paintings/time-now-for-ghosts-6.jpg"
       ],
       "hidden": false
     },
@@ -352,7 +357,10 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/a-place-to-hide.jpg"
+        "images/paintings/a-place-to-hide-1.jpg",
+        "images/paintings/a-place-to-hide-2.jpg",
+        "images/paintings/a-place-to-hide-3.jpg",
+        "images/paintings/a-place-to-hide-4.jpg"
       ],
       "hidden": false
     },
@@ -364,7 +372,11 @@
       "available": true,
       "description": "Acrylic paint on 5mm board.\n\n61cm x 48cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/behind-these-eyes.jpg"
+        "images/paintings/behind-these-eyes-1.jpg",
+        "images/paintings/behind-these-eyes-2.jpg",
+        "images/paintings/behind-these-eyes-3.jpg",
+        "images/paintings/behind-these-eyes-4.jpg",
+        "images/paintings/behind-these-eyes-5.jpg"
       ],
       "hidden": false
     },
@@ -388,7 +400,10 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/forgive-the-silence.jpg"
+        "images/paintings/forgive-the-silence-1.jpg",
+        "images/paintings/forgive-the-silence-2.jpg",
+        "images/paintings/forgive-the-silence-3.jpg",
+        "images/paintings/forgive-the-silence-4.jpg"
       ],
       "hidden": false
     },
@@ -400,7 +415,10 @@
       "available": true,
       "description": "Acrylic on 3mm board.\n\n59cm x 49cm\n\nSigned and unframed.",
       "images": [
-        "images/paintings/almost-none.jpg"
+        "images/paintings/almost-none-1.jpg",
+        "images/paintings/almost-none-2.jpg",
+        "images/paintings/almost-none-3.jpg",
+        "images/paintings/almost-none-4.jpg"
       ],
       "hidden": false
     },
@@ -412,7 +430,11 @@
       "available": true,
       "description": "Acrylics on 13mm recycled board.\n\n57.5cm x 36cm approx.\n\nSigned and unframed.",
       "images": [
-        "images/paintings/the-beginning-of-something.jpg"
+        "images/paintings/the-beginning-of-something-1.jpg",
+        "images/paintings/the-beginning-of-something-2.jpg",
+        "images/paintings/the-beginning-of-something-3.jpg",
+        "images/paintings/the-beginning-of-something-4.jpg",
+        "images/paintings/the-beginning-of-something-5.jpg"
       ],
       "hidden": false
     },
@@ -424,7 +446,13 @@
       "available": true,
       "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "images/paintings/on-ice-1.jpg"
+        "images/paintings/on-ice-1-1.jpg",
+        "images/paintings/on-ice-1-2.jpg",
+        "images/paintings/on-ice-1-3.jpg",
+        "images/paintings/on-ice-1-4.jpg",
+        "images/paintings/on-ice-1-5.jpg",
+        "images/paintings/on-ice-1-6.jpg",
+        "images/paintings/on-ice-1-7.jpg"
       ],
       "hidden": false
     },
@@ -436,7 +464,11 @@
       "available": true,
       "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "images/paintings/on-ice-2.jpg"
+        "images/paintings/on-ice-2-1.jpg",
+        "images/paintings/on-ice-2-2.jpg",
+        "images/paintings/on-ice-2-3.jpg",
+        "images/paintings/on-ice-2-4.jpg",
+        "images/paintings/on-ice-2-5.jpg"
       ],
       "hidden": false
     },
@@ -448,7 +480,11 @@
       "available": true,
       "description": "Acrylic on irregular recycled 12mm board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
       "images": [
-        "images/paintings/on-ice-3.jpg"
+        "images/paintings/on-ice-3-1.jpg",
+        "images/paintings/on-ice-3-2.jpg",
+        "images/paintings/on-ice-3-3.jpg",
+        "images/paintings/on-ice-3-4.jpg",
+        "images/paintings/on-ice-3-5.jpg"
       ],
       "hidden": false
     },
@@ -460,7 +496,10 @@
       "available": true,
       "description": "Acrylic paint on 5mm board.\n\n60.5cm x 40cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/silent-sorrow.jpg"
+        "images/paintings/silent-sorrow-1.jpg",
+        "images/paintings/silent-sorrow-2.jpg",
+        "images/paintings/silent-sorrow-3.jpg",
+        "images/paintings/silent-sorrow-4.jpg"
       ],
       "hidden": false
     },
@@ -472,7 +511,9 @@
       "available": true,
       "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/dark-outside-the-world.jpg"
+        "images/paintings/dark-outside-the-world-1.jpg",
+        "images/paintings/dark-outside-the-world-2.jpg",
+        "images/paintings/dark-outside-the-world-3.jpg"
       ],
       "hidden": false
     },
@@ -482,9 +523,12 @@
       "category": "paintings",
       "price": 450,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges — these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/coastal-red-door.jpg"
+        "images/paintings/coastal-red-door-1.jpg",
+        "images/paintings/coastal-red-door-2.jpg",
+        "images/paintings/coastal-red-door-3.jpg",
+        "images/paintings/coastal-red-door-4.jpg"
       ],
       "hidden": false
     },
@@ -496,7 +540,12 @@
       "available": true,
       "description": "Acrylic on found 3mm thick board.\n\n63cm x 41.5cm approx.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/henge-house.jpg"
+        "images/paintings/henge-house-1.jpg",
+        "images/paintings/henge-house-2.jpg",
+        "images/paintings/henge-house-3.jpg",
+        "images/paintings/henge-house-4.jpg",
+        "images/paintings/henge-house-5.jpg",
+        "images/paintings/henge-house-6.jpg"
       ],
       "hidden": false
     },
@@ -506,9 +555,13 @@
       "category": "paintings",
       "price": 750,
       "available": true,
-      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges — these are about the whole object of the painting.\n\nUnframed, signed.",
+      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges \u2014 these are about the whole object of the painting.\n\nUnframed, signed.",
       "images": [
-        "images/paintings/double-beach.jpg"
+        "images/paintings/double-beach-1.jpg",
+        "images/paintings/double-beach-2.jpg",
+        "images/paintings/double-beach-3.jpg",
+        "images/paintings/double-beach-4.jpg",
+        "images/paintings/double-beach-5.jpg"
       ],
       "hidden": false
     },
@@ -520,7 +573,11 @@
       "available": true,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n59cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/blue-shack.jpg"
+        "images/paintings/blue-shack-1.jpg",
+        "images/paintings/blue-shack-2.jpg",
+        "images/paintings/blue-shack-3.jpg",
+        "images/paintings/blue-shack-4.jpg",
+        "images/paintings/blue-shack-5.jpg"
       ],
       "hidden": false
     },
@@ -530,9 +587,12 @@
       "category": "paintings",
       "price": 800,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/desert-night.jpg"
+        "images/paintings/desert-night-1.jpg",
+        "images/paintings/desert-night-2.jpg",
+        "images/paintings/desert-night-3.jpg",
+        "images/paintings/desert-night-4.jpg"
       ],
       "hidden": false
     },
@@ -542,9 +602,13 @@
       "category": "paintings",
       "price": 700,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/double-desert.jpg"
+        "images/paintings/double-desert-1.jpg",
+        "images/paintings/double-desert-2.jpg",
+        "images/paintings/double-desert-3.jpg",
+        "images/paintings/double-desert-4.jpg",
+        "images/paintings/double-desert-5.jpg"
       ],
       "hidden": false
     },
@@ -556,7 +620,13 @@
       "available": false,
       "description": "Acrylic on 6mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
       "images": [
-        "images/paintings/winters-keep.jpg"
+        "images/paintings/winters-keep-1.jpg",
+        "images/paintings/winters-keep-2.jpg",
+        "images/paintings/winters-keep-3.jpg",
+        "images/paintings/winters-keep-4.jpg",
+        "images/paintings/winters-keep-5.jpg",
+        "images/paintings/winters-keep-6.jpg",
+        "images/paintings/winters-keep-7.jpg"
       ],
       "hidden": false
     },
@@ -568,7 +638,10 @@
       "available": false,
       "description": "Acrylic on board. Painted on found hardboard, 3mm thick.\n\n63cm x 41.5cm\n\nHas intentional defects such as irregular cut top edge.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/snow-yellow.jpg"
+        "images/paintings/snow-yellow-1.jpg",
+        "images/paintings/snow-yellow-2.jpg",
+        "images/paintings/snow-yellow-3.jpg",
+        "images/paintings/snow-yellow-4.jpg"
       ],
       "hidden": false
     },
@@ -578,9 +651,14 @@
       "category": "paintings",
       "price": 450,
       "available": false,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge — these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/red-barn.jpg"
+        "images/paintings/red-barn-1.jpg",
+        "images/paintings/red-barn-2.jpg",
+        "images/paintings/red-barn-3.jpg",
+        "images/paintings/red-barn-4.jpg",
+        "images/paintings/red-barn-5.jpg",
+        "images/paintings/red-barn-6.jpg"
       ],
       "hidden": false
     },
@@ -592,7 +670,11 @@
       "available": false,
       "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n56cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
       "images": [
-        "images/paintings/black-red-shack.jpg"
+        "images/paintings/black-red-shack-1.jpg",
+        "images/paintings/black-red-shack-2.jpg",
+        "images/paintings/black-red-shack-3.jpg",
+        "images/paintings/black-red-shack-4.jpg",
+        "images/paintings/black-red-shack-5.jpg"
       ],
       "hidden": false
     },
@@ -604,7 +686,11 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "images/collages/abandoned-ghosts-1.jpg"
+        "images/collages/abandoned-ghosts-1-1.jpg",
+        "images/collages/abandoned-ghosts-1-2.jpg",
+        "images/collages/abandoned-ghosts-1-3.jpg",
+        "images/collages/abandoned-ghosts-1-4.jpg",
+        "images/collages/abandoned-ghosts-1-5.jpg"
       ],
       "hidden": false
     },
@@ -616,7 +702,12 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "images/collages/abandoned-ghosts-2.jpg"
+        "images/collages/abandoned-ghosts-2-1.jpg",
+        "images/collages/abandoned-ghosts-2-2.jpg",
+        "images/collages/abandoned-ghosts-2-3.jpg",
+        "images/collages/abandoned-ghosts-2-4.jpg",
+        "images/collages/abandoned-ghosts-2-5.jpg",
+        "images/collages/abandoned-ghosts-2-6.jpg"
       ],
       "hidden": false
     },
@@ -628,7 +719,11 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "images/collages/abandoned-ghosts-3.jpg"
+        "images/collages/abandoned-ghosts-3-1.jpg",
+        "images/collages/abandoned-ghosts-3-2.jpg",
+        "images/collages/abandoned-ghosts-3-3.jpg",
+        "images/collages/abandoned-ghosts-3-4.jpg",
+        "images/collages/abandoned-ghosts-3-5.jpg"
       ],
       "hidden": false
     },
@@ -640,7 +735,11 @@
       "available": true,
       "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
       "images": [
-        "images/collages/abandoned-ghosts-4.jpg"
+        "images/collages/abandoned-ghosts-4-1.jpg",
+        "images/collages/abandoned-ghosts-4-2.jpg",
+        "images/collages/abandoned-ghosts-4-3.jpg",
+        "images/collages/abandoned-ghosts-4-4.jpg",
+        "images/collages/abandoned-ghosts-4-5.jpg"
       ],
       "hidden": false
     },
@@ -652,7 +751,8 @@
       "available": false,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-red-brown-1.jpg"
+        "images/collages/cabin-red-brown-1-1.jpg",
+        "images/collages/cabin-red-brown-1-2.jpg"
       ],
       "hidden": false
     },
@@ -664,7 +764,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-pink-green.jpg"
+        "images/collages/cabin-pink-green-1.jpg",
+        "images/collages/cabin-pink-green-2.jpg"
       ],
       "hidden": false
     },
@@ -676,7 +777,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-snow-gold-orange.jpg"
+        "images/collages/cabin-snow-gold-orange-1.jpg",
+        "images/collages/cabin-snow-gold-orange-2.jpg"
       ],
       "hidden": false
     },
@@ -688,7 +790,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-blue-brown.jpg"
+        "images/collages/cabin-blue-brown-1.jpg",
+        "images/collages/cabin-blue-brown-2.jpg"
       ],
       "hidden": false
     },
@@ -700,7 +803,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-mauve-snow.jpg"
+        "images/collages/cabin-mauve-snow-1.jpg",
+        "images/collages/cabin-mauve-snow-2.jpg"
       ],
       "hidden": false
     },
@@ -712,7 +816,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-red-brown-2.jpg"
+        "images/collages/cabin-red-brown-2-1.jpg",
+        "images/collages/cabin-red-brown-2-2.jpg"
       ],
       "hidden": false
     },
@@ -724,7 +829,8 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/red-snow-barn.jpg"
+        "images/collages/red-snow-barn-1.jpg",
+        "images/collages/red-snow-barn-2.jpg"
       ],
       "hidden": false
     },
@@ -736,55 +842,71 @@
       "available": true,
       "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
       "images": [
-        "images/collages/cabin-mauve-yellow.jpg"
+        "images/collages/cabin-mauve-yellow-1.jpg",
+        "images/collages/cabin-mauve-yellow-2.jpg"
       ],
       "hidden": false
     },
     {
       "id": "cabin-print-black-red",
-      "name": "Cabin Print — Black/Red",
+      "name": "Cabin Print \u2014 Black/Red",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/cabin-print-black-red.jpg"
+        "images/prints/cabin-print-black-red-1.jpg",
+        "images/prints/cabin-print-black-red-2.jpg",
+        "images/prints/cabin-print-black-red-3.jpg",
+        "images/prints/cabin-print-black-red-4.jpg"
       ],
       "hidden": false
     },
     {
       "id": "cabin-print-blue-yellow",
-      "name": "Cabin Print — Blue/Yellow",
+      "name": "Cabin Print \u2014 Blue/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/cabin-print-blue-yellow.jpg"
+        "images/prints/cabin-print-blue-yellow-1.jpg",
+        "images/prints/cabin-print-blue-yellow-2.jpg",
+        "images/prints/cabin-print-blue-yellow-3.jpg",
+        "images/prints/cabin-print-blue-yellow-4.jpg"
       ],
       "hidden": false
     },
     {
       "id": "cabin-print-brown-blue",
-      "name": "Cabin Print — Brown/Blue",
+      "name": "Cabin Print \u2014 Brown/Blue",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/cabin-print-brown-blue.jpg"
+        "images/prints/cabin-print-brown-blue-1.jpg",
+        "images/prints/cabin-print-brown-blue-2.jpg",
+        "images/prints/cabin-print-brown-blue-3.jpg",
+        "images/prints/cabin-print-brown-blue-4.jpg"
       ],
       "hidden": false
     },
     {
       "id": "cabin-print-aqua-yellow",
-      "name": "Cabin Print — Aqua/Yellow",
+      "name": "Cabin Print \u2014 Aqua/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/cabin-print-aqua-yellow.jpg"
+        "images/prints/cabin-print-aqua-yellow-1.jpg",
+        "images/prints/cabin-print-aqua-yellow-2.jpg",
+        "images/prints/cabin-print-aqua-yellow-3.jpg",
+        "images/prints/cabin-print-aqua-yellow-4.jpg",
+        "images/prints/cabin-print-aqua-yellow-5.jpg",
+        "images/prints/cabin-print-aqua-yellow-6.jpg",
+        "images/prints/cabin-print-aqua-yellow-7.jpg"
       ],
       "hidden": false
     },
@@ -794,9 +916,10 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/air-beast-sq.jpg"
+        "images/prints/air-beast-sq-1.jpg",
+        "images/prints/air-beast-sq-2.jpg"
       ],
       "hidden": false
     },
@@ -806,9 +929,10 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/earth-beast-print.jpg"
+        "images/prints/earth-beast-print-1.jpg",
+        "images/prints/earth-beast-print-2.jpg"
       ],
       "hidden": false
     },
@@ -818,9 +942,12 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/stone-head-1.jpg"
+        "images/prints/stone-head-1-1.jpg",
+        "images/prints/stone-head-1-2.jpg",
+        "images/prints/stone-head-1-3.jpg",
+        "images/prints/stone-head-1-4.jpg"
       ],
       "hidden": false
     },
@@ -830,9 +957,12 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/stone-head-2.jpg"
+        "images/prints/stone-head-2-1.jpg",
+        "images/prints/stone-head-2-2.jpg",
+        "images/prints/stone-head-2-3.jpg",
+        "images/prints/stone-head-2-4.jpg"
       ],
       "hidden": false
     },
@@ -842,9 +972,12 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "images": [
-        "images/prints/stone-head-3.jpg"
+        "images/prints/stone-head-3-1.jpg",
+        "images/prints/stone-head-3-2.jpg",
+        "images/prints/stone-head-3-3.jpg",
+        "images/prints/stone-head-3-4.jpg"
       ],
       "hidden": false
     },
