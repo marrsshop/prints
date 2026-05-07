@@ -1289,6 +1289,22 @@
         "images/tree-hugger-vase-4.jpg",
         "images/tree-hugger-vase-5.jpg"
       ]
+    },
+    {
+      "available": true,
+      "hidden": false
+    },
+    {
+      "available": true,
+      "hidden": false,
+      "name": "Congregate 1",
+      "category": "drawings",
+      "description": "Part of a series exploring flat still lifes",
+      "id": "congregate-1",
+      "price": 80,
+      "images": [
+        "images/test_congreagate.jpg"
+      ]
     }
   ]
 }
