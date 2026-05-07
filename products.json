@@ -143,18 +143,6 @@
       ]
     },
     {
-      "id": "black-cabin-print",
-      "name": "Black Cabin A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "hidden": false,
-      "images": [
-        "images/black-cabin-print.jpg"
-      ]
-    },
-    {
       "id": "anomaly-light",
       "name": "Anomaly Light",
       "category": "ceramics",
@@ -523,7 +511,7 @@
       "category": "paintings",
       "price": 450,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "hidden": false,
       "images": [
         "images/coastal-red-door-1.jpg",
@@ -555,7 +543,7 @@
       "category": "paintings",
       "price": 750,
       "available": true,
-      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges \u2014 these are about the whole object of the painting.\n\nUnframed, signed.",
+      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges — these are about the whole object of the painting.\n\nUnframed, signed.",
       "hidden": false,
       "images": [
         "images/double-beach-1.jpg",
@@ -587,7 +575,7 @@
       "category": "paintings",
       "price": 800,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "hidden": false,
       "images": [
         "images/desert-night-1.jpg",
@@ -602,7 +590,7 @@
       "category": "paintings",
       "price": 700,
       "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "hidden": false,
       "images": [
         "images/double-desert-1.jpg",
@@ -651,7 +639,7 @@
       "category": "paintings",
       "price": 450,
       "available": false,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge \u2014 these are as much about the object as the painting itself.\n\nSigned, unframed.",
+      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge — these are as much about the object as the painting itself.\n\nSigned, unframed.",
       "hidden": false,
       "images": [
         "images/red-barn-1.jpg",
@@ -849,11 +837,11 @@
     },
     {
       "id": "cabin-print-black-red",
-      "name": "Cabin Print \u2014 Black/Red",
+      "name": "Cabin Print — Black/Red",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/cabin-print-black-red-1.jpg",
@@ -864,11 +852,11 @@
     },
     {
       "id": "cabin-print-blue-yellow",
-      "name": "Cabin Print \u2014 Blue/Yellow",
+      "name": "Cabin Print — Blue/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/cabin-print-blue-yellow-1.jpg",
@@ -879,11 +867,11 @@
     },
     {
       "id": "cabin-print-brown-blue",
-      "name": "Cabin Print \u2014 Brown/Blue",
+      "name": "Cabin Print — Brown/Blue",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/cabin-print-brown-blue-1.jpg",
@@ -894,11 +882,11 @@
     },
     {
       "id": "cabin-print-aqua-yellow",
-      "name": "Cabin Print \u2014 Aqua/Yellow",
+      "name": "Cabin Print — Aqua/Yellow",
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/cabin-print-aqua-yellow-1.jpg",
@@ -916,7 +904,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/air-beast-sq-1.jpg",
@@ -929,7 +917,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) \u2014 \u00a340\nA2 (59.4cm x 42cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/earth-beast-print-1.jpg",
@@ -942,7 +930,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/stone-head-1-1.jpg",
@@ -957,7 +945,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/stone-head-2-1.jpg",
@@ -972,7 +960,7 @@
       "category": "prints",
       "price": 40,
       "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) \u2014 \u00a340\nA2 (42cm x 59.4cm) \u2014 \u00a380\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
       "hidden": false,
       "images": [
         "images/stone-head-3-1.jpg",
