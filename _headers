@@ -3,3 +3,6 @@
 
 /js/*
   Cache-Control: no-cache, must-revalidate
+
+/images/*
+  Cache-Control: no-cache, must-revalidate
