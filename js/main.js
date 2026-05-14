@@ -1,10 +1,34 @@
 let allProducts = [];
 let activeCategory = 'all';
 
+// Sanity image ref → CDN URL
+// Ref format: "image-abc123-800x600-jpg"
+function sanityImageUrl(ref) {
+  if (!ref) return '';
+  // Strip "image-" prefix, replace last "-ext" with ".ext"
+  const parts = ref.replace(/^image-/, '').split('-');
+  const ext = parts.pop();
+  return `https://cdn.sanity.io/images/k5wutx18/production/${parts.join('-')}.${ext}`;
+}
+
 async function loadProducts() {
-  const res = await fetch('products.json');
+  const query = encodeURIComponent(`*[_type == "product"] | order(_createdAt asc) {
+    "id": id.current,
+    name,
+    category,
+    price,
+    available,
+    hidden,
+    description,
+    variants[]{ size, price },
+    "images": images[].asset._ref
+  }`);
+  const res = await fetch(`https://k5wutx18.api.sanity.io/v2024-01-01/data/query/production?query=${query}`);
   const data = await res.json();
-  allProducts = data.products;
+  allProducts = data.result.map(p => ({
+    ...p,
+    images: (p.images || []).map(sanityImageUrl)
+  }));
 
   // Pick a random category on each visit
   const categories = ['ceramics', 'paintings', 'collages', 'prints'];
