@@ -119,30 +119,6 @@
       ]
     },
     {
-      "id": "stone-giant-print",
-      "name": "Stone Giant A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "hidden": false,
-      "images": [
-        "images/stone-giant_display.jpg"
-      ]
-    },
-    {
-      "id": "colour-head-print",
-      "name": "Colour Head A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "hidden": false,
-      "images": [
-        "images/colourhead_display.jpg"
-      ]
-    },
-    {
       "id": "anomaly-light",
       "name": "Anomaly Light",
       "category": "ceramics",
@@ -836,69 +812,6 @@
       ]
     },
     {
-      "id": "cabin-print-black-red",
-      "name": "Cabin Print — Black/Red",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-black-red-1.jpg",
-        "images/cabin-print-black-red-2.jpg",
-        "images/cabin-print-black-red-3.jpg",
-        "images/cabin-print-black-red-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-blue-yellow",
-      "name": "Cabin Print — Blue/Yellow",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, signed, unframed.\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-blue-yellow-1.jpg",
-        "images/cabin-print-blue-yellow-2.jpg",
-        "images/cabin-print-blue-yellow-3.jpg",
-        "images/cabin-print-blue-yellow-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-brown-blue",
-      "name": "Cabin Print — Brown/Blue",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-brown-blue-1.jpg",
-        "images/cabin-print-brown-blue-2.jpg",
-        "images/cabin-print-brown-blue-3.jpg",
-        "images/cabin-print-brown-blue-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-aqua-yellow",
-      "name": "Cabin Print — Aqua/Yellow",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-aqua-yellow-1.jpg",
-        "images/cabin-print-aqua-yellow-2.jpg",
-        "images/cabin-print-aqua-yellow-3.jpg",
-        "images/cabin-print-aqua-yellow-4.jpg",
-        "images/cabin-print-aqua-yellow-5.jpg",
-        "images/cabin-print-aqua-yellow-6.jpg",
-        "images/cabin-print-aqua-yellow-7.jpg"
-      ]
-    },
-    {
       "id": "air-beast-sq",
       "name": "Air Beast",
       "category": "prints",
@@ -909,19 +822,6 @@
       "images": [
         "images/air-beast-sq-1.jpg",
         "images/air-beast-sq-2.jpg"
-      ]
-    },
-    {
-      "id": "earth-beast-print",
-      "name": "Earth Beast",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/earth-beast-print-1.jpg",
-        "images/earth-beast-print-2.jpg"
       ]
     },
     {
@@ -940,6 +840,34 @@
       ]
     },
     {
+      "id": "cabin-print-black-red",
+      "name": "Cabin Print — Black/Red",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "hidden": false,
+      "images": [
+        "images/cabin-print-black-red-1.jpg",
+        "images/cabin-print-black-red-2.jpg",
+        "images/cabin-print-black-red-3.jpg",
+        "images/cabin-print-black-red-4.jpg"
+      ]
+    },
+    {
+      "id": "earth-beast-print",
+      "name": "Earth Beast",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "hidden": false,
+      "images": [
+        "images/earth-beast-print-1.jpg",
+        "images/earth-beast-print-2.jpg"
+      ]
+    },
+    {
       "id": "stone-head-2",
       "name": "Stone Head 2",
       "category": "prints",
@@ -955,6 +883,33 @@
       ]
     },
     {
+      "id": "cabin-print-brown-blue",
+      "name": "Cabin Print — Brown/Blue",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "hidden": false,
+      "images": [
+        "images/cabin-print-brown-blue-1.jpg",
+        "images/cabin-print-brown-blue-2.jpg",
+        "images/cabin-print-brown-blue-3.jpg",
+        "images/cabin-print-brown-blue-4.jpg"
+      ]
+    },
+    {
+      "id": "stone-giant-print",
+      "name": "Stone Giant A3 Print",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
+      "hidden": false,
+      "images": [
+        "images/stone-giant_display.jpg"
+      ]
+    },
+    {
       "id": "stone-head-3",
       "name": "Stone Head 3",
       "category": "prints",
@@ -967,6 +922,51 @@
         "images/stone-head-3-2.jpg",
         "images/stone-head-3-3.jpg",
         "images/stone-head-3-4.jpg"
+      ]
+    },
+    {
+      "id": "cabin-print-blue-yellow",
+      "name": "Cabin Print — Blue/Yellow",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "Giclee Print, signed, unframed.\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80",
+      "hidden": false,
+      "images": [
+        "images/cabin-print-blue-yellow-1.jpg",
+        "images/cabin-print-blue-yellow-2.jpg",
+        "images/cabin-print-blue-yellow-3.jpg",
+        "images/cabin-print-blue-yellow-4.jpg"
+      ]
+    },
+    {
+      "id": "colour-head-print",
+      "name": "Colour Head A3 Print",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
+      "hidden": false,
+      "images": [
+        "images/colourhead_display.jpg"
+      ]
+    },
+    {
+      "id": "cabin-print-aqua-yellow",
+      "name": "Cabin Print — Aqua/Yellow",
+      "category": "prints",
+      "price": 40,
+      "available": true,
+      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
+      "hidden": false,
+      "images": [
+        "images/cabin-print-aqua-yellow-1.jpg",
+        "images/cabin-print-aqua-yellow-2.jpg",
+        "images/cabin-print-aqua-yellow-3.jpg",
+        "images/cabin-print-aqua-yellow-4.jpg",
+        "images/cabin-print-aqua-yellow-5.jpg",
+        "images/cabin-print-aqua-yellow-6.jpg",
+        "images/cabin-print-aqua-yellow-7.jpg"
       ]
     },
     {
