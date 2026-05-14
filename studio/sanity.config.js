@@ -38,6 +38,7 @@ export default defineConfig({
             ...categories.map(cat =>
               orderableDocumentListDeskItem({
                 type: 'product',
+                id: `orderable-product-${cat.value}`,
                 title: cat.title,
                 filter: '_type == "product" && category == $cat',
                 params: { cat: cat.value },
