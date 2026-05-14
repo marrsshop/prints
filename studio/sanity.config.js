@@ -1,6 +1,7 @@
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import {schemaTypes} from './schemaTypes'
 
 const categories = [
@@ -20,30 +21,29 @@ export default defineConfig({
 
   plugins: [
     structureTool({
-      structure: (S) =>
+      structure: (S, context) =>
         S.list()
           .title('Shop')
           .items([
-            // All products
+            // All products (non-orderable overview)
             S.listItem()
               .title('All Products')
               .child(
                 S.documentList()
                   .title('All Products')
                   .filter('_type == "product"')
-                  .defaultOrdering([{ field: 'category', direction: 'asc' }])
               ),
             S.divider(),
-            // One section per category
+            // One draggable section per category
             ...categories.map(cat =>
-              S.listItem()
-                .title(cat.title)
-                .child(
-                  S.documentList()
-                    .title(cat.title)
-                    .filter('_type == "product" && category == $cat')
-                    .params({ cat: cat.value })
-                )
+              orderableDocumentListDeskItem({
+                type: 'product',
+                title: cat.title,
+                filter: '_type == "product" && category == $cat',
+                params: { cat: cat.value },
+                S,
+                context
+              })
             )
           ])
     }),

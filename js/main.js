@@ -12,7 +12,7 @@ function sanityImageUrl(ref) {
 }
 
 async function loadProducts() {
-  const query = encodeURIComponent(`*[_type == "product"] | order(_createdAt asc) {
+  const query = encodeURIComponent(`*[_type == "product"] | order(orderRank asc) {
     "id": id.current,
     name,
     category,

@@ -1,8 +1,11 @@
+import {orderRankField} from '@sanity/orderable-document-list'
+
 export const product = {
   name: 'product',
   title: 'Product',
   type: 'document',
   fields: [
+    orderRankField({ type: 'product' }),
     {
       name: 'id',
       title: 'ID',
@@ -97,13 +100,13 @@ export const product = {
     select: {
       title: 'name',
       subtitle: 'category',
-      media: 'images.0'
+      images: 'images'
     },
-    prepare({ title, subtitle, media }) {
+    prepare({ title, subtitle, images }) {
       return {
         title,
-        subtitle: subtitle ? subtitle.charAt(0).toUpperCase() + subtitle.slice(1) : '',
-        media
+        subtitle,
+        media: images && images[0]
       }
     }
   },
