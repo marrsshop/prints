@@ -253,6 +253,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     const panel = document.getElementById('product-detail-panel');
     if (panel) panel.style.display = 'none';
     renderProducts(allProducts);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
 
