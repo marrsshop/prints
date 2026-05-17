@@ -59,7 +59,7 @@ header {
 
 .site-title {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .site-title img {
@@ -103,7 +103,7 @@ nav a.active {
   background: none;
   border: none;
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-transform: none;
@@ -173,7 +173,7 @@ main {
     padding: 16px 0 8px;
   }
   .filter-btn {
-    font-size: 28px;
+    font-size: 22px;
     letter-spacing: 0.01em;
   }
 }
