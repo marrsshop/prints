@@ -26,11 +26,10 @@ export const product = {
       type: 'string',
       options: {
         list: [
-          { title: 'Ceramics', value: 'ceramics' },
           { title: 'Paintings', value: 'paintings' },
-          { title: 'Collages', value: 'collages' },
+          { title: 'Ceramics', value: 'ceramics' },
           { title: 'Prints', value: 'prints' },
-          { title: 'Drawings', value: 'drawings' },
+          { title: 'On Paper', value: 'on-paper' },
         ],
         layout: 'radio'
       },

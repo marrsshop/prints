@@ -5,11 +5,10 @@ import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import {schemaTypes} from './schemaTypes'
 
 const categories = [
-  { title: 'Ceramics', value: 'ceramics' },
   { title: 'Paintings', value: 'paintings' },
-  { title: 'Collages', value: 'collages' },
+  { title: 'Ceramics', value: 'ceramics' },
   { title: 'Prints', value: 'prints' },
-  { title: 'Drawings', value: 'drawings' },
+  { title: 'On Paper', value: 'on-paper' },
 ]
 
 export default defineConfig({

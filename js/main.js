@@ -31,7 +31,7 @@ async function loadProducts() {
   }));
 
   // Pick a random category on each visit
-  const categories = ['ceramics', 'paintings', 'collages', 'prints'];
+  const categories = ['paintings', 'ceramics', 'prints', 'on-paper'];
   activeCategory = categories[Math.floor(Math.random() * categories.length)];
   document.querySelectorAll('.filter-btn').forEach(btn => {
     if (btn.dataset.category === activeCategory) btn.classList.add('active');
