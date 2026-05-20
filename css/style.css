@@ -761,7 +761,7 @@ main {
 /* ── Text Pages (About, Contact) ── */
 .text-page {
   max-width: 720px;
-  margin: 60px auto;
+  margin: 10px auto;
   padding: 0 32px 80px;
 }
 
