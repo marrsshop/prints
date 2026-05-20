@@ -132,7 +132,7 @@ nav a.active {
 }
 
 .filters--hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* ── Product Grid ── */
