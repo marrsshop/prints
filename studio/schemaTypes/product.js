@@ -28,8 +28,8 @@ export const product = {
         list: [
           { title: 'Paintings', value: 'paintings' },
           { title: 'Ceramics', value: 'ceramics' },
-          { title: 'Prints', value: 'prints' },
           { title: 'On Paper', value: 'on-paper' },
+          { title: 'Prints', value: 'prints' },
         ],
         layout: 'radio'
       },
