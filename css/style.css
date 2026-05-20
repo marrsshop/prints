@@ -830,8 +830,8 @@ footer {
 
 .footer-signup-label {
   font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: #aaa;
   margin: 0;
 }
