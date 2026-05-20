@@ -53,17 +53,17 @@ header {
   top: 0;
   background: #fff;
   z-index: 100;
-  padding: 40px 48px 0;
+  padding: 50px 48px 0;
   text-align: center;
 }
 
 .site-title {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .site-title img {
-  height: 74px;
+  height: 67px;
   width: auto;
 }
 
