@@ -782,7 +782,7 @@ main {
 .text-section p {
   font-family: var(--font-body);
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.2;
   color: var(--ink);
   margin-bottom: 14px;
 }
