@@ -28,7 +28,7 @@ function setupSignupForm(formId) {
       input.value = '';
       btn.textContent = 'Thanks!';
       setTimeout(() => {
-        btn.textContent = btn.closest('.footer-signup') ? 'Join mailing list' : 'Sign up';
+        btn.textContent = 'Sign up';
         btn.disabled = false;
       }, 3000);
     } else {
