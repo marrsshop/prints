@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=88">
+  <link rel="stylesheet" href="css/style.css?v=89">
 </head>
 <body>
 
@@ -29,10 +29,17 @@
   </main>
 
   <footer>
-    <p>&copy; Scott Garrett</p>
+    <form class="footer-signup" id="footer-signup">
+      <span class="footer-copyright">&copy; Scott Garrett</span>
+      <div class="footer-signup-form">
+        <input type="email" class="signup-input" placeholder="your@email.com" required>
+        <button type="submit" class="signup-btn">Join mailing list</button>
+      </div>
+    </form>
   </footer>
 
   <script src="js/cart.js?v=3"></script>
   <script src="js/cart-page.js"></script>
+  <script src="js/signup.js"></script>
 </body>
 </html>
