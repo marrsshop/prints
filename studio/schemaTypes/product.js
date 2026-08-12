@@ -82,10 +82,10 @@ export const product = {
       fields: [
         { name: 'a4Enabled', title: 'A4 (21cm × 29.7cm)', type: 'boolean', initialValue: false },
         { name: 'a4Price', title: 'A4 Price (£)', type: 'number' },
-        { name: 'a3Enabled', title: 'A3 (29.7cm × 42cm)', type: 'boolean', initialValue: false },
-        { name: 'a3Price', title: 'A3 Price (£)', type: 'number' },
-        { name: 'a2Enabled', title: 'A2 (42cm × 59.4cm)', type: 'boolean', initialValue: false },
-        { name: 'a2Price', title: 'A2 Price (£)', type: 'number' },
+        { name: 'a3Enabled', title: 'A3 (29.7cm × 42cm)', type: 'boolean', initialValue: true },
+        { name: 'a3Price', title: 'A3 Price (£)', type: 'number', initialValue: 40 },
+        { name: 'a2Enabled', title: 'A2 (42cm × 59.4cm)', type: 'boolean', initialValue: true },
+        { name: 'a2Price', title: 'A2 Price (£)', type: 'number', initialValue: 80 },
         { name: 'a1Enabled', title: 'A1 (59.4cm × 84.1cm)', type: 'boolean', initialValue: false },
         { name: 'a1Price', title: 'A1 Price (£)', type: 'number' },
       ]
