@@ -40,6 +40,20 @@ async function loadProducts() {
   renderProducts(allProducts);
 }
 
+function displayPrice(product) {
+  if (!product.available) return 'Sold Out';
+  const sv = product.sizeVariants || {};
+  const prices = [
+    sv.a4Enabled && sv.a4Price,
+    sv.a3Enabled && sv.a3Price,
+    sv.a2Enabled && sv.a2Price,
+    sv.a1Enabled && sv.a1Price,
+  ].filter(Boolean);
+  if (prices.length > 1) return 'from £' + Math.min(...prices).toFixed(2);
+  if (prices.length === 1) return '£' + prices[0].toFixed(2);
+  return '£' + product.price.toFixed(2);
+}
+
 function renderProducts(products) {
   const grid = document.getElementById('product-grid');
   if (!grid) return;
@@ -57,7 +71,7 @@ function renderProducts(products) {
         <div class="product-overlay">
           <div class="product-overlay-meta">
             <div class="product-name">${product.name}</div>
-            <div class="product-price">${product.available ? '£' + product.price.toFixed(2) : 'Sold Out'}</div>
+            <div class="product-price">${displayPrice(product)}</div>
           </div>
         </div>
       </div>
@@ -171,7 +185,7 @@ function showProduct(id) {
     cartBtn.style.opacity = '0.4';
 
     const sizeButtons = sizes.map(s =>
-      `<button class="size-btn" data-size="${s.size}" data-price="${s.price}">${s.size} – £${s.price}</button>`
+      `<button class="size-btn" data-size="${s.size}" data-price="${s.price}">${s.size} – £${parseFloat(s.price).toFixed(2)}</button>`
     ).join('');
 
     const variantEl = document.createElement('div');
