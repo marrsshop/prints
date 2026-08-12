@@ -870,6 +870,19 @@ footer {
   align-items: center;
 }
 
+.signup-popup .signup-input {
+  border-color: #222;
+  color: #222;
+}
+
+.signup-popup .signup-input::placeholder {
+  color: #aaa;
+}
+
+.signup-popup .signup-input:focus {
+  border-color: #000;
+}
+
 /* ── Footer ── */
 .footer-copyright {
   text-transform: none;
