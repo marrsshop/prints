@@ -839,7 +839,7 @@ footer {
   max-width: 480px;
   width: 90%;
   text-align: center;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #222;
 }
 
 .signup-popup-close {
@@ -849,18 +849,18 @@ footer {
   background: none;
   border: none;
   font-size: 22px;
-  color: #aaa;
+  color: #222;
   cursor: pointer;
   line-height: 1;
   padding: 0;
 }
 
 .signup-popup-close:hover {
-  color: #222;
+  color: #000;
 }
 
 .signup-popup .footer-signup-label {
-  color: #444;
+  color: #222;
   font-size: 13px;
   margin-bottom: 20px;
   display: block;
