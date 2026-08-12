@@ -974,6 +974,10 @@ footer {
   .contact-signup-row { flex-direction: column; }
   .contact-signup-row .signup-input { width: 100%; }
   .contact-signup-row .signup-btn { width: 100%; }
+  .signup-popup .signup-input { border-color: #222; color: #222; }
+  .signup-popup .signup-input::placeholder { color: #aaa; }
+  .signup-popup-close { color: #222; }
+  .signup-popup .footer-signup-label { color: #222; }
 }
 
 /* ── Toast ── */
