@@ -146,7 +146,7 @@ main {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 32px;
+  gap: 32px;
   margin-top: 24px;
   padding-bottom: 80px;
 }
@@ -196,7 +196,6 @@ main {
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #f4f4f4;
-  margin-bottom: 10px;
   position: relative;
 }
 
