@@ -49,9 +49,8 @@ function displayPrice(product) {
     sv.a2Enabled && sv.a2Price,
     sv.a1Enabled && sv.a1Price,
   ].filter(Boolean);
-  if (prices.length > 1) return 'from £' + Math.min(...prices).toFixed(2);
-  if (prices.length === 1) return '£' + prices[0].toFixed(2);
-  return '£' + product.price.toFixed(2);
+  if (prices.length >= 1) return '£' + Math.min(...prices);
+  return '£' + product.price;
 }
 
 function renderProducts(products) {
@@ -77,7 +76,7 @@ function renderProducts(products) {
       </div>
       <div class="product-caption">
         <div class="product-name">${product.name}</div>
-        <div class="product-price">${product.available ? '£' + product.price.toFixed(2) : 'Sold Out'}</div>
+        <div class="product-price">${product.available ? '£' + product.price : 'Sold Out'}</div>
       </div>
     </div>
   `).join('');
@@ -179,13 +178,13 @@ function showProduct(id) {
     ].filter(s => s.enabled && s.price);
 
     const minPrice = sizes.length ? Math.min(...sizes.map(s => s.price)) : product.price;
-    priceEl.textContent = sizes.length > 1 ? `from £${minPrice.toFixed(2)}` : `£${minPrice.toFixed(2)}`;
+    priceEl.textContent = `£${minPrice}`;
     cartBtn.style.display = 'block';
     cartBtn.disabled = true;
     cartBtn.style.opacity = '0.4';
 
     const sizeButtons = sizes.map(s =>
-      `<button class="size-btn" data-size="${s.size}" data-price="${s.price}">${s.size} – £${parseFloat(s.price).toFixed(2)}</button>`
+      `<button class="size-btn" data-size="${s.size}" data-price="${s.price}">${s.size} – £${s.price}</button>`
     ).join('');
 
     const variantEl = document.createElement('div');
@@ -211,7 +210,7 @@ function showProduct(id) {
         btn.classList.add('active');
         selectedSize = btn.dataset.size;
         selectedPrice = parseFloat(btn.dataset.price);
-        priceEl.textContent = '£' + selectedPrice.toFixed(2);
+        priceEl.textContent = '£' + selectedPrice;
         cartBtn.disabled = false;
         cartBtn.style.opacity = '1';
         variantEl.querySelector('.qty-minus').disabled = qty <= 1;
@@ -244,7 +243,7 @@ function showProduct(id) {
     };
 
   } else {
-    priceEl.textContent = product.available ? '£' + product.price.toFixed(2) : 'Sold Out';
+    priceEl.textContent = product.available ? '£' + product.price : 'Sold Out';
     cartBtn.disabled = false;
     cartBtn.style.opacity = '1';
     if (product.available) {
