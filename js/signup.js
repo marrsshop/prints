@@ -40,3 +40,21 @@ function setupSignupForm(formId) {
 
 setupSignupForm('footer-signup');
 setupSignupForm('contact-signup');
+setupSignupForm('popup-signup');
+
+const overlay = document.getElementById('signup-overlay');
+const closeBtn = document.getElementById('signup-popup-close');
+
+if (overlay && closeBtn) {
+  closeBtn.addEventListener('click', () => overlay.classList.add('hidden'));
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.classList.add('hidden');
+  });
+
+  const popupForm = document.getElementById('popup-signup');
+  if (popupForm) {
+    popupForm.addEventListener('submit', () => {
+      setTimeout(() => overlay.classList.add('hidden'), 2000);
+    });
+  }
+}

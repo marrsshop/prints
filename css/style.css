@@ -812,6 +812,60 @@ footer {
 }
 
 /* ── Footer signup ── */
+/* ── Mailing list popup ── */
+.signup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-overlay.hidden {
+  display: none;
+}
+
+.signup-popup {
+  position: relative;
+  background: #fff;
+  padding: 48px 56px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.signup-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.signup-popup-close:hover {
+  color: #222;
+}
+
+.signup-popup .footer-signup-label {
+  color: #444;
+  font-size: 13px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.signup-popup .footer-signup {
+  align-items: center;
+}
+
+/* ── Footer ── */
 .footer-copyright {
   text-transform: none;
   font-size: 11px;
