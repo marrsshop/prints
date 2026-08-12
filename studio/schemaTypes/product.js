@@ -74,24 +74,20 @@ export const product = {
       ]
     },
     {
-      name: 'variants',
+      name: 'sizeVariants',
       title: 'Size Variants (Prints only)',
-      type: 'array',
-      description: 'For prints with multiple sizes and prices. Leave empty for single-price products.',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            { name: 'size', title: 'Size', type: 'string' },
-            { name: 'price', title: 'Price (£)', type: 'number' }
-          ],
-          preview: {
-            select: { title: 'size', subtitle: 'price' },
-            prepare({ title, subtitle }) {
-              return { title, subtitle: subtitle ? `£${subtitle}` : '' }
-            }
-          }
-        }
+      description: 'Tick the sizes available for this print and set a price for each. Leave all unticked for single-price products.',
+      type: 'object',
+      options: { collapsible: false },
+      fields: [
+        { name: 'a4Enabled', title: 'A4 (21cm × 29.7cm)', type: 'boolean', initialValue: false },
+        { name: 'a4Price', title: 'A4 Price (£)', type: 'number' },
+        { name: 'a3Enabled', title: 'A3 (29.7cm × 42cm)', type: 'boolean', initialValue: false },
+        { name: 'a3Price', title: 'A3 Price (£)', type: 'number' },
+        { name: 'a2Enabled', title: 'A2 (42cm × 59.4cm)', type: 'boolean', initialValue: false },
+        { name: 'a2Price', title: 'A2 Price (£)', type: 'number' },
+        { name: 'a1Enabled', title: 'A1 (59.4cm × 84.1cm)', type: 'boolean', initialValue: false },
+        { name: 'a1Price', title: 'A1 Price (£)', type: 'number' },
       ]
     }
   ],

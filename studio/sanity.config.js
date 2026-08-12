@@ -3,6 +3,13 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import {schemaTypes} from './schemaTypes'
+import {
+  AllProductsDeleteList,
+  PaintingsDeleteList,
+  CeramicsDeleteList,
+  OnPaperDeleteList,
+  PrintsDeleteList,
+} from './components/DeletableProductList'
 
 const categories = [
   { title: 'Paintings', value: 'paintings' },
@@ -44,7 +51,26 @@ export default defineConfig({
                 S,
                 context
               })
-            )
+            ),
+            S.divider(),
+            // Delete products section
+            S.listItem()
+              .title('🗑 Delete Products')
+              .child(
+                S.list()
+                  .title('Delete Products')
+                  .items([
+                    S.listItem()
+                      .title('All Products')
+                      .child(S.component(AllProductsDeleteList).id('delete-all').title('All Products')),
+                    ...categories.map(cat => {
+                      const components = { paintings: PaintingsDeleteList, ceramics: CeramicsDeleteList, 'on-paper': OnPaperDeleteList, prints: PrintsDeleteList }
+                      return S.listItem()
+                        .title(cat.title)
+                        .child(S.component(components[cat.value]).id(`delete-${cat.value}`).title(cat.title))
+                    })
+                  ])
+              )
           ])
     }),
     visionTool()

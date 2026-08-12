@@ -20,7 +20,7 @@ async function loadProducts() {
     available,
     hidden,
     description,
-    variants[]{ size, price },
+    sizeVariants,
     "images": images[].asset._ref
   }`);
   const res = await fetch(`https://k5wutx18.api.sanity.io/v2024-01-01/data/query/production?query=${query}`);
@@ -156,19 +156,29 @@ function showProduct(id) {
   const cartBtn = document.getElementById('detail-add-to-cart');
 
   if (product.category === 'prints') {
-    priceEl.textContent = 'from £40.00';
+    const sv = product.sizeVariants || {};
+    const sizes = [
+      { size: 'A4', enabled: sv.a4Enabled, price: sv.a4Price },
+      { size: 'A3', enabled: sv.a3Enabled, price: sv.a3Price },
+      { size: 'A2', enabled: sv.a2Enabled, price: sv.a2Price },
+      { size: 'A1', enabled: sv.a1Enabled, price: sv.a1Price },
+    ].filter(s => s.enabled && s.price);
+
+    const minPrice = sizes.length ? Math.min(...sizes.map(s => s.price)) : product.price;
+    priceEl.textContent = sizes.length > 1 ? `from £${minPrice.toFixed(2)}` : `£${minPrice.toFixed(2)}`;
     cartBtn.style.display = 'block';
     cartBtn.disabled = true;
     cartBtn.style.opacity = '0.4';
+
+    const sizeButtons = sizes.map(s =>
+      `<button class="size-btn" data-size="${s.size}" data-price="${s.price}">${s.size} – £${s.price}</button>`
+    ).join('');
 
     const variantEl = document.createElement('div');
     variantEl.id = 'detail-variants';
     variantEl.className = 'detail-variants';
     variantEl.innerHTML = `
-      <div class="size-selector">
-        <button class="size-btn" data-size="A3" data-price="40">A3 – £40</button>
-        <button class="size-btn" data-size="A2" data-price="80">A2 – £80</button>
-      </div>
+      <div class="size-selector">${sizeButtons}</div>
       <div class="qty-stepper">
         <button class="qty-btn qty-minus" disabled>−</button>
         <span class="qty-value">1</span>
