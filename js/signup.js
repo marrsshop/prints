@@ -46,15 +46,24 @@ const overlay = document.getElementById('signup-overlay');
 const closeBtn = document.getElementById('signup-popup-close');
 
 if (overlay && closeBtn) {
-  closeBtn.addEventListener('click', () => overlay.classList.add('hidden'));
+  const dismiss = () => {
+    overlay.classList.add('hidden');
+    sessionStorage.setItem('popupSeen', '1');
+  };
+
+  if (sessionStorage.getItem('popupSeen')) {
+    overlay.classList.add('hidden');
+  }
+
+  closeBtn.addEventListener('click', dismiss);
   overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) overlay.classList.add('hidden');
+    if (e.target === overlay) dismiss();
   });
 
   const popupForm = document.getElementById('popup-signup');
   if (popupForm) {
     popupForm.addEventListener('submit', () => {
-      setTimeout(() => overlay.classList.add('hidden'), 2000);
+      setTimeout(dismiss, 2000);
     });
   }
 }
