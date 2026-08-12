@@ -15,7 +15,7 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 
 ---
 
-## Current Status (last updated: April 2026)
+## Current Status (last updated: August 2026)
 
 ### Done
 - Full shop with product grid, category filters, inline product detail panel
@@ -23,21 +23,30 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 - Mobile responsive layout
 - Site deployed to Scott's own Cloudflare account (not Gaz's)
 - Custom domain: scottgarrettartist.com purchased and connected
-- Decap CMS live at scottgarrettartist.com/admin — Scott logs in with GitHub (artofgarrett)
-- CMS image upload widget — Scott can upload images directly from his computer (no GitHub needed)
+- Decap CMS set up (now superseded by Sanity — see below)
+- Sanity CMS live at scott-garrett.sanity.studio — Scott logs in with his Sanity account
+- Sanity studio has: orderable product lists per category, Delete Products section (trash icon in sidebar)
 - Stripe checkout working — cart → Cloudflare Pages Function → Stripe hosted checkout → success.html
 - STRIPE_SECRET_KEY stored as encrypted environment variable in Cloudflare
-- 89 products total: 41 ceramics, 14 prints (inc. test), 22 paintings, 12 collages
-- All Big Cartel ceramics scraped and imported (sold-out items show with "Sold Out" label)
+- All Big Cartel ceramics imported (sold-out items show with "Sold Out" label)
 - Type scale CSS variables in place
+- About page updated with Scott's new bio text (August 2026)
+- Category order changed to: Ceramics, On Paper, Prints, Paintings
+- Grid gaps made equal — 32px horizontal and vertical (removed old margin-bottom from product images)
+- Mailing list popup added — appears once per session on first visit, black styling, centred, no overlay
+- Size variants redesigned — per-size toggles (A4/A3/A2/A1) with individual price fields in Sanity
+- Front-end reads sizeVariants dynamically — product grid shows lowest enabled price, detail panel shows all enabled size buttons
+- Delete Products section added to Sanity sidebar — Scott can delete products one at a time with a confirm dialog, without opening each product
 
 ### Still To Do
 - [ ] Delete test product (£1 item Scott added for testing) from CMS
-- [ ] Add A3/A2 size variant selector for 9 prints (£40/£80) — do alongside Stripe variants
 - [ ] Add www subdomain (www.scottgarrettartist.com) — small job
 - [ ] Migrate paintings, collages, remaining prints from Squarespace (need Squarespace admin access)
 - [ ] Cancel Big Cartel — safe to do now (all ceramics migrated)
 - [ ] Cancel Squarespace — only after Squarespace products are migrated
+- [ ] Investigate ~34 deleted images in git working tree — Scott may have removed products locally, check before committing
+- [ ] Wire up Mailchimp to the mailing list signup form (currently logs to console only)
+- [ ] Consider pointing garrettworld.co.uk → scottgarrett.format.com (Scott's illustration portfolio)
 
 ---
 
