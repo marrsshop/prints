@@ -261,17 +261,13 @@ function showProduct(id) {
   window.scrollTo({ top: panelTop, behavior: 'smooth' });
 }
 
-// Filter buttons — click active filter to deselect and show all
+// Filter buttons
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const isActive = btn.classList.contains('active');
+    if (btn.classList.contains('active')) return;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    if (isActive) {
-      activeCategory = 'all';
-    } else {
-      btn.classList.add('active');
-      activeCategory = btn.dataset.category;
-    }
+    btn.classList.add('active');
+    activeCategory = btn.dataset.category;
     // Close any open product panel when switching category
     const panel = document.getElementById('product-detail-panel');
     if (panel) panel.style.display = 'none';
