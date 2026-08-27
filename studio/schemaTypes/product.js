@@ -88,6 +88,10 @@ export const product = {
         { name: 'a2Price', title: 'A2 Price (£)', type: 'number', initialValue: 80 },
         { name: 'a1Enabled', title: 'A1 (59.4cm × 84.1cm)', type: 'boolean', initialValue: false },
         { name: 'a1Price', title: 'A1 Price (£)', type: 'number' },
+        { name: 's30Enabled', title: 'Square 30 (30cm × 30cm)', type: 'boolean', initialValue: false },
+        { name: 's30Price', title: 'Square 30 Price (£)', type: 'number' },
+        { name: 's50Enabled', title: 'Square 50 (50cm × 50cm)', type: 'boolean', initialValue: false },
+        { name: 's50Price', title: 'Square 50 Price (£)', type: 'number' },
       ]
     }
   ],

@@ -48,6 +48,8 @@ function displayPrice(product) {
     sv.a3Enabled && sv.a3Price,
     sv.a2Enabled && sv.a2Price,
     sv.a1Enabled && sv.a1Price,
+    sv.s30Enabled && sv.s30Price,
+    sv.s50Enabled && sv.s50Price,
   ].filter(Boolean);
   if (prices.length >= 1) return '£' + Math.min(...prices);
   return '£' + product.price;
@@ -175,6 +177,8 @@ function showProduct(id) {
       { size: 'A3', enabled: sv.a3Enabled, price: sv.a3Price },
       { size: 'A2', enabled: sv.a2Enabled, price: sv.a2Price },
       { size: 'A1', enabled: sv.a1Enabled, price: sv.a1Price },
+      { size: '30×30', enabled: sv.s30Enabled, price: sv.s30Price },
+      { size: '50×50', enabled: sv.s50Enabled, price: sv.s50Price },
     ].filter(s => s.enabled && s.price);
 
     const minPrice = sizes.length ? Math.min(...sizes.map(s => s.price)) : product.price;
