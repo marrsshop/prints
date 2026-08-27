@@ -23,7 +23,7 @@ async function loadProducts() {
     sizeVariants,
     "images": images[].asset._ref
   }`);
-  const res = await fetch(`https://k5wutx18.api.sanity.io/v2024-01-01/data/query/production?query=${query}`);
+  const res = await fetch(`https://k5wutx18.cdn.sanity.io/v2024-01-01/data/query/production?query=${query}`);
   const data = await res.json();
   allProducts = data.result.map(p => ({
     ...p,
