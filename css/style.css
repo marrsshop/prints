@@ -1013,11 +1013,13 @@ footer {
     margin: 0 auto;
   }
   .detail-variants {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
     flex-wrap: nowrap;
+  }
+  .size-selector {
+    flex-wrap: wrap;
   }
   .size-btn {
     font-size: 14px;
