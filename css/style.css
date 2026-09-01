@@ -353,6 +353,9 @@ main {
   }
   .product-detail-info {
     padding: 0 10px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
   }
 }
 
