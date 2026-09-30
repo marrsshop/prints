@@ -417,7 +417,6 @@ main {
 
 .product-detail-image {
   width: 500px;   /* desktop */
-  aspect-ratio: 1 / 1;
   background: #f4f4f4;
   overflow: hidden;
 }
@@ -430,21 +429,18 @@ main {
 /* ── Carousel ── */
 .carousel {
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
-  height: 100%;
   transition: transform 0.35s ease;
 }
 
 .carousel-track img {
   flex: 0 0 100%;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
   display: block;
 }
 
