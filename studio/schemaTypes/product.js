@@ -21,21 +21,6 @@ export const product = {
       validation: Rule => Rule.required()
     },
     {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Paintings', value: 'paintings' },
-          { title: 'Ceramics', value: 'ceramics' },
-          { title: 'On Paper', value: 'on-paper' },
-          { title: 'Prints', value: 'prints' },
-        ],
-        layout: 'radio'
-      },
-      validation: Rule => Rule.required()
-    },
-    {
       name: 'price',
       title: 'Price (£)',
       type: 'number',
@@ -75,7 +60,7 @@ export const product = {
     },
     {
       name: 'sizeVariants',
-      title: 'Size Variants (Prints only)',
+      title: 'Size Variants',
       description: 'Tick the sizes available for this print and set a price for each. Leave all unticked for single-price products.',
       type: 'object',
       options: { collapsible: false },
@@ -98,22 +83,22 @@ export const product = {
   preview: {
     select: {
       title: 'name',
-      subtitle: 'category',
+      price: 'price',
       images: 'images'
     },
-    prepare({ title, subtitle, images }) {
+    prepare({ title, price, images }) {
       return {
         title,
-        subtitle,
+        subtitle: price != null ? `£${price}` : '',
         media: images && images[0]
       }
     }
   },
   orderings: [
     {
-      title: 'Category',
-      name: 'categoryAsc',
-      by: [{ field: 'category', direction: 'asc' }, { field: 'name', direction: 'asc' }]
+      title: 'Name',
+      name: 'nameAsc',
+      by: [{ field: 'name', direction: 'asc' }]
     }
   ]
 }

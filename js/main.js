@@ -4,7 +4,6 @@ async function loadProducts() {
   const query = encodeURIComponent(`*[_type == "product"] | order(orderRank asc) {
     "id": id.current,
     name,
-    category,
     price,
     available,
     hidden,

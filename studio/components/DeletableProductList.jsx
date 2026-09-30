@@ -1,22 +1,20 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useClient } from 'sanity'
 
-function DeletableProductList({ category }) {
+function DeletableProductList() {
   const client = useClient({ apiVersion: '2024-01-01' })
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [deleting, setDeleting] = useState(null)
 
-  const query = category
-    ? `*[_type == "product" && category == $category] | order(orderRank) { _id, name, category, "image": images[0].asset->url }`
-    : `*[_type == "product"] | order(category, orderRank) { _id, name, category, "image": images[0].asset->url }`
+  const query = `*[_type == "product"] | order(orderRank) { _id, name, "image": images[0].asset->url }`
 
   const fetchProducts = useCallback(async () => {
     setLoading(true)
-    const data = await client.fetch(query, { category })
+    const data = await client.fetch(query)
     setProducts(data)
     setLoading(false)
-  }, [category])
+  }, [])
 
   useEffect(() => { fetchProducts() }, [fetchProducts])
 
@@ -60,9 +58,6 @@ function DeletableProductList({ category }) {
             <div style={{ fontSize: 13, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {product.name}
             </div>
-            {!category && (
-              <div style={{ fontSize: 11, color: '#999' }}>{product.category}</div>
-            )}
           </div>
           <button
             onClick={() => handleDelete(product._id, product.name)}
@@ -87,8 +82,4 @@ function DeletableProductList({ category }) {
   )
 }
 
-export function AllProductsDeleteList()  { return <DeletableProductList /> }
-export function PaintingsDeleteList()    { return <DeletableProductList category="paintings" /> }
-export function CeramicsDeleteList()     { return <DeletableProductList category="ceramics" /> }
-export function OnPaperDeleteList()      { return <DeletableProductList category="on-paper" /> }
-export function PrintsDeleteList()       { return <DeletableProductList category="prints" /> }
+export function ProductDeleteList() { return <DeletableProductList /> }
