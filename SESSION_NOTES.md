@@ -89,7 +89,7 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 
 ## Still to do
 
-1. **Tim adds his prints** in the studio (A3 proportions).
+1. **Tim adds the prints** in the studio (A3 proportions).
 2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links must use the final domain.
 3. **Custom domain: shop.timmarrs.co.uk** (on hold). Domain is registered at Network Solutions (Tim's account).
    1. Cloudflare Pages → `prints` → Custom domains → add `shop.timmarrs.co.uk` **first**.
