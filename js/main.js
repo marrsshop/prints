@@ -250,4 +250,3 @@ function showProduct(id) {
 }
 
 loadProducts();
-// test
