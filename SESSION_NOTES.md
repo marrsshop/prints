@@ -15,7 +15,7 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 
 ---
 
-## Current Status (last updated: August 2026)
+## Current Status (last updated: 12 August 2026)
 
 ### Done
 - Full shop with product grid, category filters, inline product detail panel
@@ -23,6 +23,7 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 - Mobile responsive layout
 - Site deployed to Scott's own Cloudflare account (not Gaz's)
 - Custom domain: scottgarrettartist.com purchased and connected
+- www subdomain live: www.scottgarrettartist.com — set up via Cloudflare Pages custom domains, www added to Sanity CORS origins
 - Decap CMS set up (now superseded by Sanity — see below)
 - Sanity CMS live at scott-garrett.sanity.studio — Scott logs in with his Sanity account
 - Sanity studio has: orderable product lists per category, Delete Products section (trash icon in sidebar)
@@ -40,7 +41,6 @@ E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CS
 
 ### Still To Do
 - [ ] Delete test product (£1 item Scott added for testing) from CMS
-- [ ] Add www subdomain (www.scottgarrettartist.com) — small job
 - [ ] Migrate paintings, collages, remaining prints from Squarespace (need Squarespace admin access)
 - [ ] Cancel Big Cartel — safe to do now (all ceramics migrated)
 - [ ] Cancel Squarespace — only after Squarespace products are migrated

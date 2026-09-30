@@ -1,42 +1,8 @@
 let allProducts = [];
-let activeCategory = 'all';
-
-// Sanity image ref → CDN URL
-// Ref format: "image-abc123-800x600-jpg"
-function sanityImageUrl(ref) {
-  if (!ref) return '';
-  // Strip "image-" prefix, replace last "-ext" with ".ext"
-  const parts = ref.replace(/^image-/, '').split('-');
-  const ext = parts.pop();
-  return `https://cdn.sanity.io/images/k5wutx18/production/${parts.join('-')}.${ext}`;
-}
 
 async function loadProducts() {
-  const query = encodeURIComponent(`*[_type == "product"] | order(orderRank asc) {
-    "id": id.current,
-    name,
-    category,
-    price,
-    available,
-    hidden,
-    description,
-    sizeVariants,
-    "images": images[].asset._ref
-  }`);
-  const res = await fetch(`https://k5wutx18.api.sanity.io/v2024-01-01/data/query/production?query=${query}`);
-  const data = await res.json();
-  allProducts = data.result.map(p => ({
-    ...p,
-    images: (p.images || []).map(sanityImageUrl)
-  }));
-
-  // Pick a random category on each visit
-  const categories = ['paintings', 'ceramics', 'on-paper', 'prints'];
-  activeCategory = categories[Math.floor(Math.random() * categories.length)];
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    if (btn.dataset.category === activeCategory) btn.classList.add('active');
-  });
-
+  const res = await fetch('products.json');
+  allProducts = await res.json();
   renderProducts(allProducts);
 }
 
@@ -52,19 +18,16 @@ function displayPrice(product) {
     sv.s50Enabled && sv.s50Price,
   ].filter(Boolean);
   if (prices.length >= 1) return '£' + Math.min(...prices);
-  return '£' + product.price;
+  return product.price ? '£' + product.price : '';
 }
 
 function renderProducts(products) {
   const grid = document.getElementById('product-grid');
   if (!grid) return;
 
-  const filtered = (activeCategory === 'all'
-    ? products
-    : products.filter(p => p.category === activeCategory))
-    .filter(p => !p.hidden);
+  const visible = products.filter(p => !p.hidden);
 
-  grid.innerHTML = filtered.map(product => `
+  grid.innerHTML = visible.map(product => `
     <div class="product-card ${product.available ? '' : 'sold-out'}"
          onclick="showProduct('${product.id}')">
       <div class="product-image">
@@ -78,7 +41,7 @@ function renderProducts(products) {
       </div>
       <div class="product-caption">
         <div class="product-name">${product.name}</div>
-        <div class="product-price">${product.available ? '£' + product.price : 'Sold Out'}</div>
+        <div class="product-price">${displayPrice(product)}</div>
       </div>
     </div>
   `).join('');
@@ -163,25 +126,24 @@ function showProduct(id) {
     .map(line => `<p>${line}</p>`)
     .join('');
 
-  // Remove any existing variant selector
   const existing = document.getElementById('detail-variants');
   if (existing) existing.remove();
 
   const priceEl = document.getElementById('detail-price');
   const cartBtn = document.getElementById('detail-add-to-cart');
 
-  if (product.category === 'prints') {
-    const sv = product.sizeVariants || {};
-    const sizes = [
-      { size: 'A4', enabled: sv.a4Enabled, price: sv.a4Price },
-      { size: 'A3', enabled: sv.a3Enabled, price: sv.a3Price },
-      { size: 'A2', enabled: sv.a2Enabled, price: sv.a2Price },
-      { size: 'A1', enabled: sv.a1Enabled, price: sv.a1Price },
-      { size: '30×30', enabled: sv.s30Enabled, price: sv.s30Price },
-      { size: '50×50', enabled: sv.s50Enabled, price: sv.s50Price },
-    ].filter(s => s.enabled && s.price);
+  const sv = product.sizeVariants || {};
+  const sizes = [
+    { size: 'A4',   enabled: sv.a4Enabled,  price: sv.a4Price  },
+    { size: 'A3',   enabled: sv.a3Enabled,  price: sv.a3Price  },
+    { size: 'A2',   enabled: sv.a2Enabled,  price: sv.a2Price  },
+    { size: 'A1',   enabled: sv.a1Enabled,  price: sv.a1Price  },
+    { size: '30×30', enabled: sv.s30Enabled, price: sv.s30Price },
+    { size: '50×50', enabled: sv.s50Enabled, price: sv.s50Price },
+  ].filter(s => s.enabled && s.price);
 
-    const minPrice = sizes.length ? Math.min(...sizes.map(s => s.price)) : product.price;
+  if (sizes.length > 0) {
+    const minPrice = Math.min(...sizes.map(s => s.price));
     priceEl.textContent = `£${minPrice}`;
     cartBtn.style.display = 'block';
     cartBtn.disabled = true;
@@ -264,20 +226,5 @@ function showProduct(id) {
   const panelTop = panel.getBoundingClientRect().top + window.scrollY - headerHeight - gap;
   window.scrollTo({ top: panelTop, behavior: 'smooth' });
 }
-
-// Filter buttons
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.classList.contains('active')) return;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeCategory = btn.dataset.category;
-    // Close any open product panel when switching category
-    const panel = document.getElementById('product-detail-panel');
-    if (panel) panel.style.display = 'none';
-    renderProducts(allProducts);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-});
 
 loadProducts();

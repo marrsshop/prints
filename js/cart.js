@@ -1,10 +1,10 @@
 // Cart stored in localStorage
 function getCart() {
-  return JSON.parse(localStorage.getItem('scott-cart') || '[]');
+  return JSON.parse(localStorage.getItem('tim-cart') || '[]');
 }
 
 function saveCart(cart) {
-  localStorage.setItem('scott-cart', JSON.stringify(cart));
+  localStorage.setItem('tim-cart', JSON.stringify(cart));
   updateCartCount();
 }
 

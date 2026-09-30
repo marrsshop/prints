@@ -1,1310 +1,182 @@
-{
-  "products": [
-    {
-      "id": "soul-searcher",
-      "name": "Soul Searcher",
-      "category": "ceramics",
-      "price": 120,
-      "available": true,
-      "description": "White clay head sculpture, with oxides and found object (great for displaying a small treasure on!)\n\n24cm x 11cm\n\nFree Shipping to the UK!!",
-      "hidden": false,
-      "images": [
-        "images/soul-searcher.jpg",
-        "images/soul-searcher-2.jpg",
-        "images/soul-searcher-3.jpg",
-        "images/soul-searcher-4.jpg"
-      ]
-    },
-    {
-      "id": "king",
-      "name": "King",
-      "category": "ceramics",
-      "price": 45,
-      "available": true,
-      "description": "Ceramic head (terracotta clay, white slip and oxides) with found metal objects, small hagstone and mounted on a beach stone.\n\nOnly available to UK... but FREE postage!",
-      "hidden": false,
-      "images": [
-        "images/king.jpg",
-        "images/king-2.jpg"
-      ]
-    },
-    {
-      "id": "fish-rx",
-      "name": "Fish RX",
-      "category": "ceramics",
-      "price": 65,
-      "available": true,
-      "description": "Fish and Slips! Terracotta clay, black and white slips and oxides. Hooked and ready to hang on your wall.\n\n24cm x 15cm\n\nComes wrapped in newspaper and takeaway box. Sorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/fish-rx.jpg",
-        "images/fish-rx-2.jpg",
-        "images/fish-rx-3.jpg",
-        "images/fish-rx-4.jpg",
-        "images/fish-rx-5.jpg"
-      ]
-    },
-    {
-      "id": "encrusted-head",
-      "name": "Encrusted Head",
-      "category": "ceramics",
-      "price": 110,
-      "available": true,
-      "description": "Dark clay with white slip and oxides\n\n16cm x 11cm\n\nUK purchase only, sorry... but Free Shipping!!",
-      "hidden": false,
-      "images": [
-        "images/encrusted-head.jpg",
-        "images/encrusted-head-2.jpg",
-        "images/encrusted-head-3.jpg",
-        "images/encrusted-head-4.jpg"
-      ]
-    },
-    {
-      "id": "hagfolk-2",
-      "name": "HagFolk #2",
-      "category": "ceramics",
-      "price": 90,
-      "available": true,
-      "description": "Terracotta clay, white slip and oxides\n\n12cm h x 9cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/hagfolk-2.jpg",
-        "images/hagfolk-2-2.jpg",
-        "images/hagfolk-2-3.jpg",
-        "images/hagfolk-2-4.jpg",
-        "images/hagfolk-2-5.jpg"
-      ]
-    },
-    {
-      "id": "anomaly-dark",
-      "name": "Anomaly Dark",
-      "category": "ceramics",
-      "price": 75,
-      "available": false,
-      "description": "Terracotta clay and oxides\n\n14.5cm x 9.5cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/anomaly-dark.jpg"
-      ]
-    },
-    {
-      "id": "encrusted-2",
-      "name": "Encrusted #2",
-      "category": "ceramics",
-      "price": 160,
-      "available": true,
-      "description": "Black clay with white slip and oxides\n\n21cm x 12cm\n\nAvailable to UK only, sorry... but Free Shipping!",
-      "hidden": false,
-      "images": [
-        "images/encrusted-2.jpg",
-        "images/encrusted-2-2.jpg",
-        "images/encrusted-2-3.jpg",
-        "images/encrusted-2-4.jpg"
-      ]
-    },
-    {
-      "id": "dark-side",
-      "name": "Dark Side",
-      "category": "ceramics",
-      "price": 35,
-      "available": true,
-      "description": "For all you Pink Floyd fans out there. Your own unique, one-of-a-kind, cup! featuring handwritten song titles of the classic The Dark Side of the Moon album.\n\nTerracotta clay, white slip with oxides and a warm, golden, honey glaze.\n\n8.5cm h x 9cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/dark-side.jpg",
-        "images/dark-side-2.jpg",
-        "images/dark-side-3.jpg",
-        "images/dark-side-4.jpg",
-        "images/dark-side-5.jpg"
-      ]
-    },
-    {
-      "id": "anomaly-light",
-      "name": "Anomaly Light",
-      "category": "ceramics",
-      "price": 75,
-      "available": false,
-      "description": "Terracotta clay, white slip and oxides\n\n15.5cm h x 10cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/anomaly-light.jpg",
-        "images/anomaly-light-2.jpg",
-        "images/anomaly-light-3.jpg",
-        "images/anomaly-light-4.jpg"
-      ]
-    },
-    {
-      "id": "stand",
-      "name": "Stand",
-      "category": "ceramics",
-      "price": 160,
-      "available": false,
-      "description": "Coarse black clay, white slip and oxides\n\n22.5cm x 11.5cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/stand.jpg",
-        "images/stand-2.jpg",
-        "images/stand-3.jpg",
-        "images/stand-4.jpg",
-        "images/stand-5.jpg"
-      ]
-    },
-    {
-      "id": "large-head",
-      "name": "Large Head",
-      "category": "ceramics",
-      "price": 240,
-      "available": false,
-      "description": "Large head sculpture. White earthenware clay with oxides.\n\n31cm x 16cm x 7cm\n\nFree shipping to UK!!",
-      "hidden": false,
-      "images": [
-        "images/large-head.jpg",
-        "images/large-head-2.jpg",
-        "images/large-head-3.jpg",
-        "images/large-head-4.jpg",
-        "images/large-head-5.jpg"
-      ]
-    },
-    {
-      "id": "crusted",
-      "name": "Crusted",
-      "category": "ceramics",
-      "price": 55,
-      "available": false,
-      "description": "Coarse black clay and oxides\n\n11cm x 8cm\n\nGreat displayed on a lump of something!! (try a few things, see what you can salvage and have fun!... i always do).\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/crusted.jpg",
-        "images/crusted-2.jpg",
-        "images/crusted-3.jpg",
-        "images/crusted-4.jpg"
-      ]
-    },
-    {
-      "id": "kates-cup",
-      "name": "Kate's Cup",
-      "category": "ceramics",
-      "price": 45,
-      "available": false,
-      "description": "For the true Kate Bush fan!! A one of a kind cup, featuring handwritten song titles of the classic Hounds of Love album.\n\nTerracotta clay, white slip and oxides with a honey glaze interior.\n\n9.5cm h x 8.5cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/kates-cup.jpg",
-        "images/kates-cup-2.jpg",
-        "images/kates-cup-3.jpg",
-        "images/kates-cup-4.jpg",
-        "images/kates-cup-5.jpg"
-      ]
-    },
-    {
-      "id": "hagfolk-1",
-      "name": "HagFolk #1",
-      "category": "ceramics",
-      "price": 90,
-      "available": false,
-      "description": "Terracotta clay with black and white slips\n\n13cm h x 9cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/hagfolk-1.jpg",
-        "images/hagfolk-1-2.jpg",
-        "images/hagfolk-1-3.jpg",
-        "images/hagfolk-1-4.jpg",
-        "images/hagfolk-1-5.jpg",
-        "images/hagfolk-1-6.jpg"
-      ]
-    },
-    {
-      "id": "the-look-2",
-      "name": "The Look #2",
-      "category": "ceramics",
-      "price": 75,
-      "available": false,
-      "description": "Terracotta clay, white and coarse black slips and oxides\n\n9cm x 8cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/the-look-2.jpg"
-      ]
-    },
-    {
-      "id": "coming-home",
-      "name": "Coming Home",
-      "category": "ceramics",
-      "price": 65,
-      "available": false,
-      "description": "Terracotta clay, white and coarse black clay slips and oxides\n\n15cm x 7cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/coming-home.jpg",
-        "images/coming-home-2.jpg",
-        "images/coming-home-3.jpg",
-        "images/coming-home-4.jpg"
-      ]
-    },
-    {
-      "id": "coarse",
-      "name": "Coarse",
-      "category": "ceramics",
-      "price": 60,
-      "available": false,
-      "description": "Coarse black clay, white slip and oxides. Great displayed on a lump of something as a plinth!! (try a few things, see what you can salvage and have fun!... i always do).\n\n8cm h x 9cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/coarse.jpg",
-        "images/coarse-2.jpg",
-        "images/coarse-3.jpg"
-      ]
-    },
-    {
-      "id": "beacon",
-      "name": "Beacon",
-      "category": "ceramics",
-      "price": 60,
-      "available": false,
-      "description": "Ceramic skull head and found objects.\n\n20cm x 7cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/beacon.jpg",
-        "images/beacon-2.jpg",
-        "images/beacon-3.jpg",
-        "images/beacon-4.jpg"
-      ]
-    },
-    {
-      "id": "sentry",
-      "name": "Sentry",
-      "category": "ceramics",
-      "price": 65,
-      "available": false,
-      "description": "Assemblage: Terracotta clay, coarse black slip and oxides, with found objects.\n\n17cm h x 14cm w\n\nSorry, shipping only to UK... but that's FREE!",
-      "hidden": false,
-      "images": [
-        "images/sentry.jpg"
-      ]
-    },
-    {
-      "id": "drifted",
-      "name": "Drifted",
-      "category": "ceramics",
-      "price": 65,
-      "available": false,
-      "description": "Terracotta clay, black and white slips\n\n12.5cm (22cm with driftwood) x 8cm\n\nSorry only shipping to the UK... but it's FREE!",
-      "hidden": false,
-      "images": [
-        "images/drifted.jpg",
-        "images/drifted-2.jpg",
-        "images/drifted-3.jpg",
-        "images/drifted-4.jpg"
-      ]
-    },
-    {
-      "id": "time-now-for-ghosts",
-      "name": "Time Now For Ghosts",
-      "category": "paintings",
-      "price": 600,
-      "available": true,
-      "description": "Framed Painting. Acrylic on 5mm board.\n\n48cm x 58cm Framed (39cm x 49cm painting size).\n\nSigned and in Vintage Frame.",
-      "hidden": false,
-      "images": [
-        "images/time-now-for-ghosts-1.jpg",
-        "images/time-now-for-ghosts-2.jpg",
-        "images/time-now-for-ghosts-3.jpg",
-        "images/time-now-for-ghosts-4.jpg",
-        "images/time-now-for-ghosts-5.jpg",
-        "images/time-now-for-ghosts-6.jpg"
-      ]
-    },
-    {
-      "id": "a-place-to-hide",
-      "name": "A Place to Hide",
-      "category": "paintings",
-      "price": 600,
-      "available": true,
-      "description": "Acrylic on 5mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/a-place-to-hide-1.jpg",
-        "images/a-place-to-hide-2.jpg",
-        "images/a-place-to-hide-3.jpg",
-        "images/a-place-to-hide-4.jpg"
-      ]
-    },
-    {
-      "id": "behind-these-eyes",
-      "name": "Behind These Eyes",
-      "category": "paintings",
-      "price": 550,
-      "available": true,
-      "description": "Acrylic paint on 5mm board.\n\n61cm x 48cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/behind-these-eyes-1.jpg",
-        "images/behind-these-eyes-2.jpg",
-        "images/behind-these-eyes-3.jpg",
-        "images/behind-these-eyes-4.jpg",
-        "images/behind-these-eyes-5.jpg"
-      ]
-    },
-    {
-      "id": "nothing-moves",
-      "name": "Nothing Moves",
-      "category": "paintings",
-      "price": 350,
-      "available": true,
-      "description": "Acrylic on 3mm board in lovely vintage, time-worn frame.\n\n47.5cm x 37cm framed (38.5cm x 29cm image size).\n\nSigned, framed.",
-      "hidden": false,
-      "images": [
-        "images/nothing-moves.jpg"
-      ]
-    },
-    {
-      "id": "forgive-the-silence",
-      "name": "Forgive The Silence",
-      "category": "paintings",
-      "price": 500,
-      "available": true,
-      "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/forgive-the-silence-1.jpg",
-        "images/forgive-the-silence-2.jpg",
-        "images/forgive-the-silence-3.jpg",
-        "images/forgive-the-silence-4.jpg"
-      ]
-    },
-    {
-      "id": "almost-none",
-      "name": "Almost None",
-      "category": "paintings",
-      "price": 450,
-      "available": true,
-      "description": "Acrylic on 3mm board.\n\n59cm x 49cm\n\nSigned and unframed.",
-      "hidden": false,
-      "images": [
-        "images/almost-none-1.jpg",
-        "images/almost-none-2.jpg",
-        "images/almost-none-3.jpg",
-        "images/almost-none-4.jpg"
-      ]
-    },
-    {
-      "id": "the-beginning-of-something",
-      "name": "The Beginning of Something",
-      "category": "paintings",
-      "price": 500,
-      "available": true,
-      "description": "Acrylics on 13mm recycled board.\n\n57.5cm x 36cm approx.\n\nSigned and unframed.",
-      "hidden": false,
-      "images": [
-        "images/the-beginning-of-something-1.jpg",
-        "images/the-beginning-of-something-2.jpg",
-        "images/the-beginning-of-something-3.jpg",
-        "images/the-beginning-of-something-4.jpg",
-        "images/the-beginning-of-something-5.jpg"
-      ]
-    },
-    {
-      "id": "on-ice-1",
-      "name": "On Ice 1",
-      "category": "paintings",
-      "price": 200,
-      "available": true,
-      "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
-      "hidden": false,
-      "images": [
-        "images/on-ice-1-1.jpg",
-        "images/on-ice-1-2.jpg",
-        "images/on-ice-1-3.jpg",
-        "images/on-ice-1-4.jpg",
-        "images/on-ice-1-5.jpg",
-        "images/on-ice-1-6.jpg",
-        "images/on-ice-1-7.jpg"
-      ]
-    },
-    {
-      "id": "on-ice-2",
-      "name": "On Ice 2",
-      "category": "paintings",
-      "price": 200,
-      "available": true,
-      "description": "Acrylic on irregular cut 12mm recycled board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
-      "hidden": false,
-      "images": [
-        "images/on-ice-2-1.jpg",
-        "images/on-ice-2-2.jpg",
-        "images/on-ice-2-3.jpg",
-        "images/on-ice-2-4.jpg",
-        "images/on-ice-2-5.jpg"
-      ]
-    },
-    {
-      "id": "on-ice-3",
-      "name": "On Ice 3",
-      "category": "paintings",
-      "price": 200,
-      "available": true,
-      "description": "Acrylic on irregular recycled 12mm board.\n\n25cm x 23cm approx.\n\nSigned and unframed.",
-      "hidden": false,
-      "images": [
-        "images/on-ice-3-1.jpg",
-        "images/on-ice-3-2.jpg",
-        "images/on-ice-3-3.jpg",
-        "images/on-ice-3-4.jpg",
-        "images/on-ice-3-5.jpg"
-      ]
-    },
-    {
-      "id": "silent-sorrow",
-      "name": "Silent Sorrow",
-      "category": "paintings",
-      "price": 450,
-      "available": true,
-      "description": "Acrylic paint on 5mm board.\n\n60.5cm x 40cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/silent-sorrow-1.jpg",
-        "images/silent-sorrow-2.jpg",
-        "images/silent-sorrow-3.jpg",
-        "images/silent-sorrow-4.jpg"
-      ]
-    },
-    {
-      "id": "dark-outside-the-world",
-      "name": "Dark Outside The World",
-      "category": "paintings",
-      "price": 450,
-      "available": true,
-      "description": "Acrylic on 5mm board.\n\n61cm x 44cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/dark-outside-the-world-1.jpg",
-        "images/dark-outside-the-world-2.jpg",
-        "images/dark-outside-the-world-3.jpg"
-      ]
-    },
-    {
-      "id": "coastal-red-door",
-      "name": "Coastal Red Door",
-      "category": "paintings",
-      "price": 450,
-      "available": true,
-      "description": "Acrylic on board. Painted on found board, 12mm thick.\n\n55cm x 36.5cm\n\nHas intentional defects such as irregular edges — these are as much about the object as the painting itself.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/coastal-red-door-1.jpg",
-        "images/coastal-red-door-2.jpg",
-        "images/coastal-red-door-3.jpg",
-        "images/coastal-red-door-4.jpg"
-      ]
-    },
-    {
-      "id": "henge-house",
-      "name": "Henge House",
-      "category": "paintings",
-      "price": 500,
-      "available": true,
-      "description": "Acrylic on found 3mm thick board.\n\n63cm x 41.5cm approx.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/henge-house-1.jpg",
-        "images/henge-house-2.jpg",
-        "images/henge-house-3.jpg",
-        "images/henge-house-4.jpg",
-        "images/henge-house-5.jpg",
-        "images/henge-house-6.jpg"
-      ]
-    },
-    {
-      "id": "double-beach",
-      "name": "Double Beach",
-      "category": "paintings",
-      "price": 750,
-      "available": true,
-      "description": "Acrylic on board. Painted on found board.\n\n74cm x 37cm\n\nHas intentional defects such as dented corners and rough edges — these are about the whole object of the painting.\n\nUnframed, signed.",
-      "hidden": false,
-      "images": [
-        "images/double-beach-1.jpg",
-        "images/double-beach-2.jpg",
-        "images/double-beach-3.jpg",
-        "images/double-beach-4.jpg",
-        "images/double-beach-5.jpg"
-      ]
-    },
-    {
-      "id": "blue-shack",
-      "name": "Blue Shack",
-      "category": "paintings",
-      "price": 450,
-      "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n59cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/blue-shack-1.jpg",
-        "images/blue-shack-2.jpg",
-        "images/blue-shack-3.jpg",
-        "images/blue-shack-4.jpg",
-        "images/blue-shack-5.jpg"
-      ]
-    },
-    {
-      "id": "desert-night",
-      "name": "Desert Night",
-      "category": "paintings",
-      "price": 800,
-      "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n87cm x 36.5cm\n\nHas intentional defects such as rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/desert-night-1.jpg",
-        "images/desert-night-2.jpg",
-        "images/desert-night-3.jpg",
-        "images/desert-night-4.jpg"
-      ]
-    },
-    {
-      "id": "double-desert",
-      "name": "Double Desert",
-      "category": "paintings",
-      "price": 700,
-      "available": true,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n78cm x 42cm\n\nHas intentional defects such as dented corners, rough edges and minor warps — these are as much about the object as the painting itself.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/double-desert-1.jpg",
-        "images/double-desert-2.jpg",
-        "images/double-desert-3.jpg",
-        "images/double-desert-4.jpg",
-        "images/double-desert-5.jpg"
-      ]
-    },
-    {
-      "id": "winters-keep",
-      "name": "Winters Keep",
-      "category": "paintings",
-      "price": 600,
-      "available": false,
-      "description": "Acrylic on 6mm board.\n\n61cm x 46cm\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/winters-keep-1.jpg",
-        "images/winters-keep-2.jpg",
-        "images/winters-keep-3.jpg",
-        "images/winters-keep-4.jpg",
-        "images/winters-keep-5.jpg",
-        "images/winters-keep-6.jpg",
-        "images/winters-keep-7.jpg"
-      ]
-    },
-    {
-      "id": "snow-yellow",
-      "name": "Snow Yellow",
-      "category": "paintings",
-      "price": 500,
-      "available": false,
-      "description": "Acrylic on board. Painted on found hardboard, 3mm thick.\n\n63cm x 41.5cm\n\nHas intentional defects such as irregular cut top edge.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/snow-yellow-1.jpg",
-        "images/snow-yellow-2.jpg",
-        "images/snow-yellow-3.jpg",
-        "images/snow-yellow-4.jpg"
-      ]
-    },
-    {
-      "id": "red-barn",
-      "name": "Red Barn",
-      "category": "paintings",
-      "price": 450,
-      "available": false,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n60cm x 37cm\n\nHas minor defects such as rough edge — these are as much about the object as the painting itself.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/red-barn-1.jpg",
-        "images/red-barn-2.jpg",
-        "images/red-barn-3.jpg",
-        "images/red-barn-4.jpg",
-        "images/red-barn-5.jpg",
-        "images/red-barn-6.jpg"
-      ]
-    },
-    {
-      "id": "black-red-shack",
-      "name": "Black/Red Shack",
-      "category": "paintings",
-      "price": 500,
-      "available": false,
-      "description": "Acrylic on board. Painted on found board, 6mm thick.\n\n56cm x 42cm\n\nHas intentional defects such as dented corners and rough edges.\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/black-red-shack-1.jpg",
-        "images/black-red-shack-2.jpg",
-        "images/black-red-shack-3.jpg",
-        "images/black-red-shack-4.jpg",
-        "images/black-red-shack-5.jpg"
-      ]
-    },
-    {
-      "id": "abandoned-ghosts-1",
-      "name": "Abandoned Ghosts 1",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/abandoned-ghosts-1-1.jpg",
-        "images/abandoned-ghosts-1-2.jpg",
-        "images/abandoned-ghosts-1-3.jpg",
-        "images/abandoned-ghosts-1-4.jpg",
-        "images/abandoned-ghosts-1-5.jpg"
-      ]
-    },
-    {
-      "id": "abandoned-ghosts-2",
-      "name": "Abandoned Ghosts 2",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/abandoned-ghosts-2-1.jpg",
-        "images/abandoned-ghosts-2-2.jpg",
-        "images/abandoned-ghosts-2-3.jpg",
-        "images/abandoned-ghosts-2-4.jpg",
-        "images/abandoned-ghosts-2-5.jpg",
-        "images/abandoned-ghosts-2-6.jpg"
-      ]
-    },
-    {
-      "id": "abandoned-ghosts-3",
-      "name": "Abandoned Ghosts 3",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/abandoned-ghosts-3-1.jpg",
-        "images/abandoned-ghosts-3-2.jpg",
-        "images/abandoned-ghosts-3-3.jpg",
-        "images/abandoned-ghosts-3-4.jpg",
-        "images/abandoned-ghosts-3-5.jpg"
-      ]
-    },
-    {
-      "id": "abandoned-ghosts-4",
-      "name": "Abandoned Ghosts 4",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Collaged papers, original one-off art.\n\nA3 (42cm x 29.7cm)\n\nSigned, unframed.",
-      "hidden": false,
-      "images": [
-        "images/abandoned-ghosts-4-1.jpg",
-        "images/abandoned-ghosts-4-2.jpg",
-        "images/abandoned-ghosts-4-3.jpg",
-        "images/abandoned-ghosts-4-4.jpg",
-        "images/abandoned-ghosts-4-5.jpg"
-      ]
-    },
-    {
-      "id": "cabin-red-brown-1",
-      "name": "Cabin Red & Brown",
-      "category": "collages",
-      "price": 140,
-      "available": false,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-red-brown-1-1.jpg",
-        "images/cabin-red-brown-1-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-pink-green",
-      "name": "Cabin Pink & Green",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-pink-green-1.jpg",
-        "images/cabin-pink-green-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-snow-gold-orange",
-      "name": "Cabin Snow Gold & Orange",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-snow-gold-orange-1.jpg",
-        "images/cabin-snow-gold-orange-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-blue-brown",
-      "name": "Cabin Blue & Brown",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-blue-brown-1.jpg",
-        "images/cabin-blue-brown-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-mauve-snow",
-      "name": "Cabin Mauve & Snow",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-mauve-snow-1.jpg",
-        "images/cabin-mauve-snow-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-red-brown-2",
-      "name": "Cabin Red & Brown II",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-red-brown-2-1.jpg",
-        "images/cabin-red-brown-2-2.jpg"
-      ]
-    },
-    {
-      "id": "red-snow-barn",
-      "name": "Red Snow Barn",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/red-snow-barn-1.jpg",
-        "images/red-snow-barn-2.jpg"
-      ]
-    },
-    {
-      "id": "cabin-mauve-yellow",
-      "name": "Cabin Mauve & Yellow",
-      "category": "collages",
-      "price": 140,
-      "available": true,
-      "description": "Coloured papers and card.\n\nA3 (42cm x 29.7cm)\n\nSigned by the artist, unframed.",
-      "hidden": false,
-      "images": [
-        "images/cabin-mauve-yellow-1.jpg",
-        "images/cabin-mauve-yellow-2.jpg"
-      ]
-    },
-    {
-      "id": "air-beast-sq",
-      "name": "Air Beast",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/air-beast-sq-1.jpg",
-        "images/air-beast-sq-2.jpg"
-      ]
-    },
-    {
-      "id": "stone-head-1",
-      "name": "Stone Head 1",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/stone-head-1-1.jpg",
-        "images/stone-head-1-2.jpg",
-        "images/stone-head-1-3.jpg",
-        "images/stone-head-1-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-black-red",
-      "name": "Cabin Print — Black/Red",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-black-red-1.jpg",
-        "images/cabin-print-black-red-2.jpg",
-        "images/cabin-print-black-red-3.jpg",
-        "images/cabin-print-black-red-4.jpg"
-      ]
-    },
-    {
-      "id": "earth-beast-print",
-      "name": "Earth Beast",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/earth-beast-print-1.jpg",
-        "images/earth-beast-print-2.jpg"
-      ]
-    },
-    {
-      "id": "stone-head-2",
-      "name": "Stone Head 2",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/stone-head-2-1.jpg",
-        "images/stone-head-2-2.jpg",
-        "images/stone-head-2-3.jpg",
-        "images/stone-head-2-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-brown-blue",
-      "name": "Cabin Print — Brown/Blue",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-brown-blue-1.jpg",
-        "images/cabin-print-brown-blue-2.jpg",
-        "images/cabin-print-brown-blue-3.jpg",
-        "images/cabin-print-brown-blue-4.jpg"
-      ]
-    },
-    {
-      "id": "stone-giant-print",
-      "name": "Stone Giant A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "hidden": false,
-      "images": [
-        "images/stone-giant_display.jpg"
-      ]
-    },
-    {
-      "id": "stone-head-3",
-      "name": "Stone Head 3",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border, signed, unframed.\n\nA3 (29.7cm x 42cm) — £40\nA2 (42cm x 59.4cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/stone-head-3-1.jpg",
-        "images/stone-head-3-2.jpg",
-        "images/stone-head-3-3.jpg",
-        "images/stone-head-3-4.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-blue-yellow",
-      "name": "Cabin Print — Blue/Yellow",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, signed, unframed.\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-blue-yellow-1.jpg",
-        "images/cabin-print-blue-yellow-2.jpg",
-        "images/cabin-print-blue-yellow-3.jpg",
-        "images/cabin-print-blue-yellow-4.jpg"
-      ]
-    },
-    {
-      "id": "colour-head-print",
-      "name": "Colour Head A3 Print",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "A3 Print\n42cm x 29.7cm\n\nPosted rolled in a tube.\n\nOnly available in the UK, but FREE shipping!",
-      "hidden": false,
-      "images": [
-        "images/colourhead_display.jpg"
-      ]
-    },
-    {
-      "id": "cabin-print-aqua-yellow",
-      "name": "Cabin Print — Aqua/Yellow",
-      "category": "prints",
-      "price": 40,
-      "available": true,
-      "description": "Giclee Print, no white border.\n\nA3 (42cm x 29.7cm) — £40\nA2 (59.4cm x 42cm) — £80\n\nPlease contact scott@garrettworld.co.uk to order A2 size.",
-      "hidden": false,
-      "images": [
-        "images/cabin-print-aqua-yellow-1.jpg",
-        "images/cabin-print-aqua-yellow-2.jpg",
-        "images/cabin-print-aqua-yellow-3.jpg",
-        "images/cabin-print-aqua-yellow-4.jpg",
-        "images/cabin-print-aqua-yellow-5.jpg",
-        "images/cabin-print-aqua-yellow-6.jpg",
-        "images/cabin-print-aqua-yellow-7.jpg"
-      ]
-    },
-    {
-      "id": "the-look-1",
-      "name": "The Look #1",
-      "category": "ceramics",
-      "price": 75,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/the-look-1.jpg"
-      ]
-    },
-    {
-      "id": "rugged-soul",
-      "name": "Rugged Soul",
-      "category": "ceramics",
-      "price": 125,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/rugged-soul.jpg",
-        "images/rugged-soul-2.jpg",
-        "images/rugged-soul-3.jpg",
-        "images/rugged-soul-4.jpg",
-        "images/rugged-soul-5.jpg"
-      ]
-    },
-    {
-      "id": "rewilded",
-      "name": "Rewilded",
-      "category": "ceramics",
-      "price": 160,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/rewilded.jpg",
-        "images/rewilded-2.jpg",
-        "images/rewilded-3.jpg",
-        "images/rewilded-4.jpg"
-      ]
-    },
-    {
-      "id": "untethered-soul",
-      "name": "Untethered Soul",
-      "category": "ceramics",
-      "price": 140,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/untethered-soul.jpg",
-        "images/untethered-soul-2.jpg",
-        "images/untethered-soul-3.jpg",
-        "images/untethered-soul-4.jpg",
-        "images/untethered-soul-5.jpg"
-      ]
-    },
-    {
-      "id": "knave",
-      "name": "Knave",
-      "category": "ceramics",
-      "price": 150,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/knave.jpg",
-        "images/knave-2.jpg",
-        "images/knave-3.jpg",
-        "images/knave-4.jpg",
-        "images/knave-5.jpg"
-      ]
-    },
-    {
-      "id": "loaded",
-      "name": "Loaded",
-      "category": "ceramics",
-      "price": 140,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/loaded.jpg",
-        "images/loaded-2.jpg",
-        "images/loaded-3.jpg",
-        "images/loaded-4.jpg",
-        "images/loaded-5.jpg"
-      ]
-    },
-    {
-      "id": "soul-boy",
-      "name": "Soul Boy",
-      "category": "ceramics",
-      "price": 90,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/soul-boy.jpg",
-        "images/soul-boy-2.jpg",
-        "images/soul-boy-3.jpg",
-        "images/soul-boy-4.jpg"
-      ]
-    },
-    {
-      "id": "beast-man",
-      "name": "Beast Man",
-      "category": "ceramics",
-      "price": 160,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/beast-man.jpg",
-        "images/beast-man-2.jpg",
-        "images/beast-man-3.jpg",
-        "images/beast-man-4.jpg",
-        "images/beast-man-5.jpg"
-      ]
-    },
-    {
-      "id": "spirit-beast",
-      "name": "Spirit Beast",
-      "category": "ceramics",
-      "price": 150,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/spirit-beast.jpg",
-        "images/spirit-beast-2.jpg",
-        "images/spirit-beast-3.jpg",
-        "images/spirit-beast-4.jpg",
-        "images/spirit-beast-5.jpg"
-      ]
-    },
-    {
-      "id": "brooding",
-      "name": "Brooding",
-      "category": "ceramics",
-      "price": 100,
-      "available": false,
-      "description": "Ceramic",
-      "hidden": false,
-      "images": [
-        "images/brooding.jpg",
-        "images/brooding-2.jpg",
-        "images/brooding-3.jpg",
-        "images/brooding-4.jpg"
-      ]
-    },
-    {
-      "id": "double-soul",
-      "name": "Double Soul",
-      "category": "ceramics",
-      "price": 140,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/double-soul.jpg",
-        "images/double-soul-2.jpg",
-        "images/double-soul-3.jpg",
-        "images/double-soul-4.jpg",
-        "images/double-soul-5.jpg"
-      ]
-    },
-    {
-      "id": "tall-bird",
-      "name": "Tall Bird",
-      "category": "ceramics",
-      "price": 70,
-      "available": true,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/tall-bird.jpg",
-        "images/tall-bird-2.jpg",
-        "images/tall-bird-3.jpg"
-      ]
-    },
-    {
-      "id": "black-bird-2",
-      "name": "Black Bird 2",
-      "category": "ceramics",
-      "price": 25,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/black-bird-2.jpg"
-      ]
-    },
-    {
-      "id": "bird-man",
-      "name": "Bird Man",
-      "category": "ceramics",
-      "price": 80,
-      "available": true,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/bird-man.jpg",
-        "images/bird-man-2.jpg",
-        "images/bird-man-3.jpg",
-        "images/bird-man-4.jpg",
-        "images/bird-man-5.jpg"
-      ]
-    },
-    {
-      "id": "the-birdy-man",
-      "name": "The Birdy Man",
-      "category": "ceramics",
-      "price": 85,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/the-birdy-man.jpg",
-        "images/the-birdy-man-2.jpg",
-        "images/the-birdy-man-3.jpg",
-        "images/the-birdy-man-4.jpg"
-      ]
-    },
-    {
-      "id": "foliate-face-birds-2",
-      "name": "Foliate Face & Birds 2",
-      "category": "ceramics",
-      "price": 90,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/foliate-face-birds-2.jpg",
-        "images/foliate-face-birds-2-2.jpg",
-        "images/foliate-face-birds-2-3.jpg",
-        "images/foliate-face-birds-2-4.jpg"
-      ]
-    },
-    {
-      "id": "foliate-illuminate",
-      "name": "Foliate Illuminate",
-      "category": "ceramics",
-      "price": 95,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/foliate-illuminate.jpg",
-        "images/foliate-illuminate-2.jpg",
-        "images/foliate-illuminate-3.jpg",
-        "images/foliate-illuminate-4.jpg",
-        "images/foliate-illuminate-5.jpg"
-      ]
-    },
-    {
-      "id": "campfire-bear",
-      "name": "Campfire Bear",
-      "category": "ceramics",
-      "price": 150,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/campfire-bear.jpg",
-        "images/campfire-bear-2.jpg",
-        "images/campfire-bear-3.jpg",
-        "images/campfire-bear-4.jpg",
-        "images/campfire-bear-5.jpg"
-      ]
-    },
-    {
-      "id": "eric-eve",
-      "name": "Eric & Eve",
-      "category": "ceramics",
-      "price": 180,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/eric-eve.jpg",
-        "images/eric-eve-2.jpg",
-        "images/eric-eve-3.jpg",
-        "images/eric-eve-4.jpg",
-        "images/eric-eve-5.jpg"
-      ]
-    },
-    {
-      "id": "biddenden-maids",
-      "name": "Biddenden Maids",
-      "category": "ceramics",
-      "price": 140,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/biddenden-maids.jpg",
-        "images/biddenden-maids-2.jpg",
-        "images/biddenden-maids-3.jpg",
-        "images/biddenden-maids-4.jpg",
-        "images/biddenden-maids-5.jpg"
-      ]
-    },
-    {
-      "id": "tree-hugger-vase",
-      "name": "Tree Hugger Vase",
-      "category": "ceramics",
-      "price": 120,
-      "available": false,
-      "description": "Slipware Pottery",
-      "hidden": false,
-      "images": [
-        "images/tree-hugger-vase.jpg",
-        "images/tree-hugger-vase-2.jpg",
-        "images/tree-hugger-vase-3.jpg",
-        "images/tree-hugger-vase-4.jpg",
-        "images/tree-hugger-vase-5.jpg"
-      ]
-    },
-    {
-      "available": true,
-      "hidden": false
-    },
-    {
-      "available": true,
-      "hidden": false,
-      "name": "Congregate 1",
-      "category": "drawings",
-      "description": "Part of a series exploring flat still lifes",
-      "id": "congregate-1",
-      "price": 80,
-      "images": [
-        "images/test_congreagate.jpg"
-      ]
+[
+  {
+    "id": "car-and-driver",
+    "name": "Car and Driver",
+    "description": "Editorial illustration for Car and Driver magazine.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2026/08/DEADCARS-27-_1.1-copy.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
     }
-  ]
-}
+  },
+  {
+    "id": "when-in-rome",
+    "name": "When in Rome",
+    "description": "Editorial illustration.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2026/07/2-uai-1192x1192.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "the-parliament-magazine",
+    "name": "The Parliament Magazine",
+    "description": "Cover illustration for The Parliament Magazine.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/07/PARL-MILL26-scaled-uai-2505x2505.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "pink-pantheress",
+    "name": "Pink Pantheress",
+    "description": "Portrait illustration.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/07/GLM-3-uai-1080x1080.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "red-bull-bulletin",
+    "name": "Red Bull Bulletin",
+    "description": "Illustration for Red Bull Bulletin magazine.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/04/IMG_0004-copy-scaled-uai-2222x2222.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "oasis-wonderwall",
+    "name": "Oasis – Wonderwall",
+    "description": "Illustration for Oasis Live 25.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/07/oasisww-uai-864x864.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "first-time",
+    "name": "First Time",
+    "description": "Illustration for First Time, Lawrence King Publishing.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2021/01/ELTON-FLAT-scaled-uai-1828x1828.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "cast-no-shadow",
+    "name": "Oasis – Cast No Shadow",
+    "description": "Illustration for Oasis Unplugged: Cast No Shadow.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/10/cast-1.3-uai-1260x1260.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "augusta-masters",
+    "name": "Augusta Masters",
+    "description": "Editorial illustration.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2025/04/MASTERS-copy-scaled-uai-2503x2503.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  },
+  {
+    "id": "rolling-stone",
+    "name": "Rolling Stone",
+    "description": "Illustration for Rolling Stone Magazine.",
+    "available": true,
+    "hidden": false,
+    "images": [
+      "https://www.timmarrs.co.uk/wp-content/uploads/2023/11/ROLLINGSTONE-FUTURE50-2-uai-800x800.jpg"
+    ],
+    "sizeVariants": {
+      "a4Enabled": false, "a4Price": null,
+      "a3Enabled": true,  "a3Price": 40,
+      "a2Enabled": true,  "a2Price": 80,
+      "a1Enabled": false, "a1Price": null,
+      "s30Enabled": false, "s30Price": null,
+      "s50Enabled": false, "s50Price": null
+    }
+  }
+]
