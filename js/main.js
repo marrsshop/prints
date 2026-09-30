@@ -1,9 +1,31 @@
 let allProducts = [];
 
 async function loadProducts() {
-  const res = await fetch('products.json');
-  allProducts = await res.json();
+  const query = encodeURIComponent(`*[_type == "product"] | order(orderRank asc) {
+    "id": id.current,
+    name,
+    category,
+    price,
+    available,
+    hidden,
+    description,
+    sizeVariants,
+    "images": images[].asset._ref
+  }`);
+  const res = await fetch(`https://i4ddie4h.api.sanity.io/v2024-01-01/data/query/production?query=${query}`);
+  const data = await res.json();
+  allProducts = data.result.map(p => ({
+    ...p,
+    images: (p.images || []).map(sanityImageUrl)
+  }));
   renderProducts(allProducts);
+}
+
+function sanityImageUrl(ref) {
+  if (!ref) return '';
+  const parts = ref.replace(/^image-/, '').split('-');
+  const ext = parts.pop();
+  return `https://cdn.sanity.io/images/i4ddie4h/production/${parts.join('-')}.${ext}`;
 }
 
 function displayPrice(product) {

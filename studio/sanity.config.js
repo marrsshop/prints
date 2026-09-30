@@ -20,9 +20,9 @@ const categories = [
 
 export default defineConfig({
   name: 'default',
-  title: 'Scott Garrett',
+  title: 'Tim Marrs',
 
-  projectId: 'k5wutx18',
+  projectId: 'i4ddie4h',
   dataset: 'production',
 
   plugins: [
