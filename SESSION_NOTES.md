@@ -1,148 +1,106 @@
-# Scott Garrett Site — Session Notes
+# Tim Marrs Print Shop — Session Notes
 
-Running summary of decisions, technical setup, and outstanding tasks. Update this at the end of each session.
+Running summary of setup, decisions and outstanding tasks. Update this at the end of each session.
+
+**Last updated:** 30 September 2026
 
 ---
 
 ## Project Overview
 
-E-commerce site for artist Scott Garrett (garrettware). Built with plain HTML/CSS/JS — no frameworks. Hosted on Cloudflare Pages, connected to GitHub for auto-deployment.
+Print shop for illustrator Tim Marrs. Plain HTML/CSS/JS, no frameworks. Same structure as Scott Garrett's site (`/Users/gaz/Desktop/CLAUDE/SCOTT`) — use it as the reference for any pattern, but note the differences below.
 
-- **Live site:** scottgarrettartist.com
-- **Admin/CMS:** scottgarrettartist.com/admin
-- **GitHub repo:** github.com/artofgarrett/artofgarrett (Scott owns it, Gaz is collaborator)
-- **Local files:** /Users/gaz/Desktop/CLAUDE/SCOTT
-
----
-
-## Current Status (last updated: 12 August 2026)
-
-### Done
-- Full shop with product grid, category filters, inline product detail panel
-- Sticky header with logo (logo.png) and navigation
-- Mobile responsive layout
-- Site deployed to Scott's own Cloudflare account (not Gaz's)
-- Custom domain: scottgarrettartist.com purchased and connected
-- www subdomain live: www.scottgarrettartist.com — set up via Cloudflare Pages custom domains, www added to Sanity CORS origins
-- Decap CMS set up (now superseded by Sanity — see below)
-- Sanity CMS live at scott-garrett.sanity.studio — Scott logs in with his Sanity account
-- Sanity studio has: orderable product lists per category, Delete Products section (trash icon in sidebar)
-- Stripe checkout working — cart → Cloudflare Pages Function → Stripe hosted checkout → success.html
-- STRIPE_SECRET_KEY stored as encrypted environment variable in Cloudflare
-- All Big Cartel ceramics imported (sold-out items show with "Sold Out" label)
-- Type scale CSS variables in place
-- About page updated with Scott's new bio text (August 2026)
-- Category order changed to: Ceramics, On Paper, Prints, Paintings
-- Grid gaps made equal — 32px horizontal and vertical (removed old margin-bottom from product images)
-- Mailing list popup added — appears once per session on first visit, black styling, centred, no overlay
-- Size variants redesigned — per-size toggles (A4/A3/A2/A1) with individual price fields in Sanity
-- Front-end reads sizeVariants dynamically — product grid shows lowest enabled price, detail panel shows all enabled size buttons
-- Delete Products section added to Sanity sidebar — Scott can delete products one at a time with a confirm dialog, without opening each product
-
-### Still To Do
-- [ ] Delete test product (£1 item Scott added for testing) from CMS
-- [ ] Migrate paintings, collages, remaining prints from Squarespace (need Squarespace admin access)
-- [ ] Cancel Big Cartel — safe to do now (all ceramics migrated)
-- [ ] Cancel Squarespace — only after Squarespace products are migrated
-- [ ] Investigate ~34 deleted images in git working tree — Scott may have removed products locally, check before committing
-- [ ] Wire up Mailchimp to the mailing list signup form (currently logs to console only)
-- [ ] Consider pointing garrettworld.co.uk → scottgarrett.format.com (Scott's illustration portfolio)
+| What | Where |
+|---|---|
+| Live site | https://prints-9nt.pages.dev (custom domain not set up yet) |
+| Sanity Studio (where Tim edits prints) | https://tim-marrs.sanity.studio — **no `www`**, the www version gives a certificate error |
+| GitHub repo | github.com/marrsshop/prints (Tim owns it, Gaz is collaborator) |
+| Cloudflare Pages project | `prints` — auto-deploys from the `main` branch |
+| Sanity project | ID `i4ddie4h`, dataset `production` |
+| Local site | `/Users/gaz/Desktop/CLAUDE/TIM/` |
+| Local studio | `/Users/gaz/Desktop/CLAUDE/TIM/studio/` |
+| Local preview | launch.json entry "Tim Marrs Site", port 3002 |
+| Cart storage key | `tim-cart` |
 
 ---
 
-## Cloudflare Setup
+## Differences from Scott's site
 
-- Site hosted on **Scott's** Cloudflare account
-- GitHub repo: artofgarrett/artofgarrett — Scott owns it, Gaz is collaborator
-- Environment variables in Cloudflare (Settings → Variables and Secrets):
-  - `GITHUB_CLIENT_ID` — from the GitHub OAuth App (Plaintext)
-  - `GITHUB_CLIENT_SECRET` — from the GitHub OAuth App (Plaintext)
-  - `STRIPE_SECRET_KEY` — from Stripe dashboard (Secret/encrypted)
-
----
-
-## Decap CMS Setup
-
-Working at scottgarrettartist.com/admin. Scott logs in with his GitHub account (artofgarrett).
-
-**How login works:**
-1. Go to /admin
-2. Click Login with GitHub
-3. Small popup appears — click Authorize artofgarrett
-4. Popup closes, CMS loads
-
-**Technical setup (for reference if rebuilding on a new site):**
-- GitHub OAuth App registered under artofgarrett GitHub account
-  - Homepage URL: https://scottgarrettartist.com
-  - Authorization callback URL: https://scottgarrettartist.com/api/callback
-- Two Cloudflare Pages Functions: functions/api/auth.js and functions/api/callback.js
-- GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET stored as Cloudflare environment variables
-- admin/index.html must NOT include the Netlify Identity widget script
-- **Critical:** The callback must implement Decap's two-phase handshake:
-  1. Popup sends "authorizing:github" to opener
-  2. Decap echoes "authorizing:github" back
-  3. Popup sends "authorization:github:success:{token, provider}"
-  Skipping steps 1-2 causes silent login failure in Safari
+- Text logo (`site-title--text` class), no image
+- No categories at all — no filter bar, and none in the studio
+- Grid: 3 across on desktop, 2 on tablet (under 960px), 1 on mobile
+- Grid images are **uncropped** — shown at whatever proportion Tim uploads. Tim uploads at A3 ratio so rows line up
+- Detail panel shows the full image, not a square crop
 
 ---
 
-## Stripe Setup
+## Logins
 
-Checkout is live. Flow:
-1. Customer clicks Checkout on cart page
-2. js/cart-page.js POSTs cart to /api/checkout (Cloudflare Pages Function)
-3. functions/api/checkout.js creates a Stripe checkout session using STRIPE_SECRET_KEY
-4. Customer redirected to Stripe-hosted payment page
-5. On success, redirected to success.html (cart cleared)
-6. On cancel, returned to cart.html
-
-**Keys:**
-- Publishable key (pk_live_...) — used in front-end (not currently needed as Stripe handles the UI)
-- Secret key — stored encrypted in Cloudflare as STRIPE_SECRET_KEY
-
-**Still to do:** 9 prints need A3 (£40) and A2 (£80) size variant selector
+- **Tim → Sanity:** logs in with **GitHub**. There's no Sanity password, so password-reset emails never arrive. If locked out, reset the GitHub password instead.
+- **Gaz → Sanity (Tim's project):** the **E-mail** account gary@garyneill.com (Administrator). This is a different Sanity account from the GitHub one Gaz uses for Scott's site.
+- **Sanity CORS origins:** `https://prints-9nt.pages.dev`, `http://localhost:3002`
 
 ---
 
-## Folder Structure
+## Sanity Studio
+
+Left-hand menu:
+- **Prints** — all prints; drag to set the order they appear on the site. If some are greyed out, use **⋯ → Reset Order** at the top right of the list.
+- **🗑 Delete Prints** — red Delete button next to each print (permanent).
+
+To take a print off the site without deleting it: open it, tick **Hidden**, Publish. Untick **Available** to show it as Sold Out.
+
+Older prints may show a harmless "Unknown field: category" note — leftover from when categories existed.
+
+### Deploying studio changes
+
+Claude can't deploy the studio — Gaz runs it in the Mac **Terminal** app:
 
 ```
-SCOTT/
-├── index.html              — Main shop page
-├── cart.html               — Cart page
-├── about.html              — About page
-├── contact.html            — Contact page
-├── success.html            — Post-payment confirmation page
-├── products.json           — All product data (89 products)
-├── HANDOVER.md             — Full project handover document
-├── GLOSSARY.md             — Plain English technical terms
-├── SESSION_NOTES.md        — This file
-├── admin/
-│   ├── index.html          — Decap CMS entry point
-│   └── config.yml          — CMS configuration
-├── functions/
-│   └── api/
-│       ├── auth.js         — OAuth: redirects to GitHub
-│       ├── callback.js     — OAuth: exchanges code for token, two-phase handshake
-│       └── checkout.js     — Stripe: creates checkout session
-├── css/
-│   └── style.css
-├── js/
-│   ├── main.js
-│   ├── cart.js
-│   └── cart-page.js
-└── images/
-    └── (all product images + logo.png)
+cd /Users/gaz/Desktop/CLAUDE/TIM/studio && npx sanity@latest deploy
 ```
+
+The Sanity command line must be logged in as the **E-mail** account. If it says *"missing required grant sanity.project.read"*, it's logged in as the wrong (GitHub/Scott) account:
+
+```
+npx sanity@latest logout
+npx sanity@latest login      ← choose "E-mail / password"
+```
+
+Switch back (log in with GitHub) before working on Scott's studio.
 
 ---
 
-## Key Decisions & Conventions
+## Website changes
 
-- Scott owns all his own accounts (GitHub, Cloudflare, Stripe) — Gaz is collaborator only
-- Products managed via Decap CMS, stored in products.json
-- Images live in /images folder in the repo (not a CDN)
-- No frameworks — plain HTML/CSS/JS only
-- Cloudflare Pages for hosting (free), Cloudflare Pages Functions for server-side logic (Stripe, OAuth)
-- Type scale uses CSS variables defined in :root in style.css
-- Sold-out products show in the shop with "Sold Out" label — Add to Cart button is hidden
+Edit files in the TIM folder → commit → push to GitHub → Cloudflare updates the live site in a minute or two. Bump the `?v=` number on `css/style.css` (currently **v=2**) in every HTML page when the CSS changes, so browsers don't show an old version.
+
+---
+
+## Done
+
+- Site built, deployed to Cloudflare Pages
+- Sanity connected; studio live at tim-marrs.sanity.studio
+- Categories removed — single Prints list (30 Sep 2026)
+- Grid images uncropped (30 Sep 2026)
+- GitHub pushing working
+- Tim can log into Sanity (via GitHub)
+- Tim has cleared out the example prints (only "TEST PIECE" left as of 30 Sep 2026). The original 10 scraped examples are still in `products.json` for reference
+
+## Still to do
+
+1. **Tim adds his prints** in the studio (A3 proportions).
+2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links must use the final domain.
+3. **Custom domain: shop.timmarrs.co.uk** (on hold). Domain is registered at Network Solutions (Tim's account).
+   1. Cloudflare Pages → `prints` → Custom domains → add `shop.timmarrs.co.uk` **first**.
+   2. Network Solutions → Advanced DNS → add a **CNAME**: host `shop`, points to `prints-9nt.pages.dev`. Don't change nameservers or touch existing records (Tim's main site and email depend on them).
+   3. Add `https://shop.timmarrs.co.uk` to Sanity CORS origins.
+
+---
+
+## Contacts
+
+| Person | Role |
+|---|---|
+| Gaz | Built the site, technical contact |
+| Tim Marrs | Site owner, illustrator |
