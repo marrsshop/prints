@@ -1,13 +1,13 @@
 /* ── Design Tokens — Gallery White ── */
 :root {
   /* Color */
-  --paper:       #ffffff;
+  --paper:       #cccccc;  /* 20% black */
   --ink:         #171413;
   --accent:      #8a3520;
   --soft:        #f3efe8;
   --rule:        rgb(23 20 19 / 0.13);
   --muted:       rgb(23 20 19 / 0.55);
-  --scrim-paper: rgb(255 255 255 / 0.75);
+  --scrim-paper: rgb(204 204 204 / 0.75);
 
   /* Type families */
   --font-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
@@ -51,7 +51,7 @@ a {
 header {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: var(--paper);
   z-index: 100;
   padding: 50px 48px 0;
   text-align: center;
@@ -479,7 +479,7 @@ main {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #ccc;
+  background: #999;
   border: none;
   cursor: pointer;
   padding: 0;

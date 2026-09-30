@@ -29,6 +29,7 @@ Print shop for illustrator Tim Marrs. Plain HTML/CSS/JS, no frameworks. Same str
 - Text logo (`site-title--text` class), no image
 - No categories at all — no filter bar, and none in the studio
 - Grid: 3 across on desktop, 2 on tablet (under 960px), 1 on mobile
+- Page background is 20% black grey (`#cccccc`, the `--paper` colour)
 - Grid images are **uncropped** — shown at whatever proportion Tim uploads. Tim uploads at A3 ratio so rows line up
 - Detail panel shows the full image, not a square crop
 
@@ -73,7 +74,7 @@ Switch back (log in with GitHub) before working on Scott's studio.
 
 ## Website changes
 
-Edit files in the TIM folder → commit → push to GitHub → Cloudflare updates the live site in a minute or two. Bump the `?v=` number on `css/style.css` (currently **v=2**) in every HTML page when the CSS changes, so browsers don't show an old version.
+Edit files in the TIM folder → commit → push to GitHub → Cloudflare updates the live site in a minute or two. Bump the `?v=` number on `css/style.css` (currently **v=3**) in every HTML page when the CSS changes, so browsers don't show an old version.
 
 ---
 
