@@ -95,8 +95,9 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
    - How it works: cart page collects name/email/UK address → `functions/api/checkout.js` re-prices everything from Sanity (never trusts the browser), saves the order in Cloudflare KV, creates a SumUp **Hosted Checkout** and sends the customer there → SumUp redirects back to `success.html?ref=…`, which asks `functions/api/order-status.js`; SumUp also calls `functions/api/sumup-webhook.js`. Both confirm with SumUp's API, then email Tim + the customer (via Resend) once. Shared code: `functions/_lib/orders.js`.
    - Postage: free, UK only. Orders email: tim@timmarrs.co.uk. Customer gets a confirmation.
    - SumUp merchant code: **MNC178ZE** (MARRS LIMITED). No API key created yet.
-   - ☐ Cloudflare → Storage & databases → KV → create namespace (e.g. `tim-orders`); Pages `prints` → Settings → Bindings → add KV binding **ORDERS**.
-   - ☐ SumUp sandbox (Settings → For developers → Sandboxes) → sandbox API key + merchant code → Cloudflare **Preview** variables; test with a branch preview.
+   - ✓ KV namespace `tim-orders` created; bound as **ORDERS** on both Production and Preview (8 Oct).
+   - ✓ SumUp sandbox "TIM MARRS PRINTS TEST" (merchant code **MB557Y5J**) — key + code in Cloudflare **Preview** variables. Test copy: https://checkout-test.prints-9nt.pages.dev (branch `checkout-test`). Full test order paid with test card 4200 0000 0000 0091 ✓ (8 Oct). SumUp shows its own success page; customer clicks "Back to merchant website". Safari card autofill blocks typing test cards — untick Safari → Settings → AutoFill → Credit cards while testing.
+   - ✓ Sanity CORS also allows `https://*.prints-9nt.pages.dev` (test copies).
    - ☐ Resend account; verify timmarrs.co.uk (DNS records at DreamHost); `RESEND_API_KEY`, `ORDER_EMAIL=tim@timmarrs.co.uk`, `FROM_EMAIL="Tim Marrs <shop@timmarrs.co.uk>"`.
    - ☐ Live SumUp API key → Cloudflare **Production** variables (`SUMUP_API_KEY` secret, `SUMUP_MERCHANT_CODE=MNC178ZE`); one real test order, then refund in SumUp.
    - Until those are set, the checkout button shows "Checkout isn't switched on yet".
