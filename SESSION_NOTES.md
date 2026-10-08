@@ -92,10 +92,14 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 
 1. **Tim adds the prints** in the studio (A3 proportions).
 2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links must use the final domain.
-3. **Custom domain: shop.timmarrs.co.uk** (on hold). Domain is registered at Network Solutions (Tim's account).
-   1. Cloudflare Pages → `prints` → Custom domains → add `shop.timmarrs.co.uk` **first**.
-   2. Network Solutions → Advanced DNS → add a **CNAME**: host `shop`, points to `prints-9nt.pages.dev`. Don't change nameservers or touch existing records (Tim's main site and email depend on them).
-   3. Add `https://shop.timmarrs.co.uk` to Sanity CORS origins.
+3. **Custom domain: shop.timmarrs.co.uk** (in progress, 8 Oct 2026)
+   - Domain is *registered* at Network Solutions, but its **DNS is at DreamHost** (nameservers ns1–3.dreamhost.com; DreamHost also hosts the main site at www.timmarrs.co.uk). Email runs through a separate provider (MX records `*.ik2.*`). Don't change nameservers at Network Solutions — it would break the main site and email.
+   - ✓ Cloudflare Pages → `prints` → Custom domains → `shop.timmarrs.co.uk` added via "My DNS provider" / CNAME setup.
+   - ☐ DreamHost (panel.dreamhost.com, Tim's login) → timmarrs.co.uk → DNS → add custom record: Name `shop`, Type `CNAME`, Value `prints-9nt.pages.dev`.
+   - ☐ Back in Cloudflare, click **Check DNS records**; wait for **Active**.
+   - ☐ Add `https://shop.timmarrs.co.uk` to Sanity CORS: `cd studio && npx sanity@latest cors add https://shop.timmarrs.co.uk --no-credentials`
+   - Network Solutions Web Forwarding expired (billing) — **not needed**: DreamHost already redirects timmarrs.co.uk → https://www.timmarrs.co.uk. Tim updated his payment card 8 Oct 2026.
+   - Cloudflare login doesn't work in the Claude app's built-in browser (bot check) — use Safari.
 
 ---
 
