@@ -12,7 +12,7 @@ Print shop for illustrator Tim Marrs. Plain HTML/CSS/JS, no frameworks. Same str
 
 | What | Where |
 |---|---|
-| Live site | https://prints-9nt.pages.dev (custom domain not set up yet) |
+| Live site | **https://shop.timmarrs.co.uk** (also still at https://prints-9nt.pages.dev) |
 | Sanity Studio (where Tim edits prints) | https://tim-marrs.sanity.studio — **no `www`**, the www version gives a certificate error |
 | GitHub repo | github.com/marrsshop/prints (Tim owns it, Gaz is collaborator) |
 | Cloudflare Pages project | `prints` — auto-deploys from the `main` branch |
@@ -39,7 +39,7 @@ Print shop for illustrator Tim Marrs. Plain HTML/CSS/JS, no frameworks. Same str
 
 - **Tim → Sanity:** logs in with **GitHub**. There's no Sanity password, so password-reset emails never arrive. If locked out, reset the GitHub password instead.
 - **Gaz → Sanity (Tim's project):** the **E-mail** account gary@garyneill.com (Administrator). This is a different Sanity account from the GitHub one Gaz uses for Scott's site.
-- **Sanity CORS origins:** `https://prints-9nt.pages.dev`, `http://localhost:3002`
+- **Sanity CORS origins:** `https://shop.timmarrs.co.uk`, `https://prints-9nt.pages.dev`, `http://localhost:3002`
 
 ---
 
@@ -91,13 +91,13 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 ## Still to do
 
 1. **Tim adds the prints** in the studio (A3 proportions).
-2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links must use the final domain.
-3. **Custom domain: shop.timmarrs.co.uk** (in progress, 8 Oct 2026)
+2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links should use https://shop.timmarrs.co.uk. Tim also has SumUp — its Hosted Checkout could replace Stripe, but SumUp doesn't collect a delivery address, so the site would need its own address form + order emails (checked 8 Oct 2026). Decision pending.
+3. ✅ **Custom domain: shop.timmarrs.co.uk** — LIVE 8 Oct 2026 (kept for reference)
    - Domain is *registered* at Network Solutions, but its **DNS is at DreamHost** (nameservers ns1–3.dreamhost.com; DreamHost also hosts the main site at www.timmarrs.co.uk). Email runs through a separate provider (MX records `*.ik2.*`). Don't change nameservers at Network Solutions — it would break the main site and email.
    - ✓ Cloudflare Pages → `prints` → Custom domains → `shop.timmarrs.co.uk` added via "My DNS provider" / CNAME setup.
-   - ☐ DreamHost (panel.dreamhost.com, Tim's login) → timmarrs.co.uk → DNS → add custom record: Name `shop`, Type `CNAME`, Value `prints-9nt.pages.dev`.
-   - ☐ Back in Cloudflare, click **Check DNS records**; wait for **Active**.
-   - ☐ Add `https://shop.timmarrs.co.uk` to Sanity CORS: `cd studio && npx sanity@latest cors add https://shop.timmarrs.co.uk --no-credentials`
+   - ✓ DreamHost (panel.dreamhost.com, Tim's login) → timmarrs.co.uk → DNS → add custom record: Name `shop`, Type `CNAME`, Value `prints-9nt.pages.dev`.
+   - ✓ Back in Cloudflare, click **Check DNS records**; wait for **Active**.
+   - ✓ Added `https://shop.timmarrs.co.uk` to Sanity CORS: `cd studio && npx sanity@latest cors add https://shop.timmarrs.co.uk --no-credentials`
    - Network Solutions Web Forwarding expired (billing) — **not needed**: DreamHost already redirects timmarrs.co.uk → https://www.timmarrs.co.uk. Tim updated his payment card 8 Oct 2026.
    - Cloudflare login doesn't work in the Claude app's built-in browser (bot check) — use Safari.
 
