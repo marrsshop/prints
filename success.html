@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order confirmed — Tim Marrs</title>
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
   <header>
     <a href="index.html" class="site-title site-title--text">Tim Marrs</a>
     <nav>
-      <a href="index.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
@@ -20,9 +22,10 @@
 
   <main>
     <div class="cart-page">
-      <h1>Order confirmed</h1>
-      <p>Thank you for your order. Tim will be in touch shortly with dispatch details.</p>
-      <p><a href="index.html">Continue shopping</a></p>
+      <h1>Confirming your payment…</h1>
+      <div id="order-status" class="order-status">
+        <p>Just checking with the payment provider — this only takes a moment.</p>
+      </div>
     </div>
   </main>
 
@@ -30,11 +33,8 @@
     <p>&copy; Tim Marrs</p>
   </footer>
 
-  <script src="js/cart.js"></script>
-  <script>
-    localStorage.removeItem('tim-cart');
-    updateCartCount();
-  </script>
+  <script src="js/cart.js?v=2"></script>
+  <script src="js/success.js?v=1"></script>
 
 </body>
 </html>

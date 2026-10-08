@@ -713,7 +713,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #bbb;
+  color: var(--muted);
   cursor: pointer;
   display: block;
   margin-top: 6px;
@@ -762,6 +762,117 @@ main {
 }
 
 .btn-checkout:hover { background: #b05644; }
+.btn-checkout:disabled { opacity: 0.6; cursor: default; }
+
+/* ── Checkout form (cart page) ── */
+.checkout-form {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+
+.checkout-heading {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+
+.checkout-field {
+  display: block;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.checkout-field span {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.checkout-field em {
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.checkout-field input {
+  width: 100%;
+  font-family: var(--font-ui);
+  font-size: 16px; /* 16px stops iPhones zooming in */
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.checkout-field input:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.checkout-row {
+  display: flex;
+  gap: 16px;
+}
+
+.checkout-note {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 8px 0 20px;
+}
+
+.checkout-error {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .checkout-row { display: block; }
+}
+
+/* ── Order confirmation page ── */
+.order-status p {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.order-status a { text-decoration: underline; }
+
+.order-lines {
+  list-style: none;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  margin: 24px 0 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.order-lines li { padding: 4px 0; }
+
+.order-status .order-total,
+.order-status .order-ref {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.order-status .order-ref { color: var(--muted); margin-bottom: 24px; }
 
 /* ── Text Pages (About, Contact) ── */
 .text-page {

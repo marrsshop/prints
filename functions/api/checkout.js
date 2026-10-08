@@ -1,55 +1,86 @@
+// POST /api/checkout
+// Body: { items: [{ productId, size, quantity }], customer: { name, email, address1, address2, city, postcode } }
+// Prices are looked up in Sanity here, saved as an order, and a SumUp hosted checkout is created.
+// Returns { url } — the SumUp payment page to send the customer to.
+
+import { json, priceItems, newOrderRef, saveOrder, sumupRequest, UserError } from '../_lib/orders.js';
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const UK_POSTCODE_RE = /^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/i;
+
+function cleanCustomer(c = {}) {
+  const field = (v, max = 100) => String(v ?? '').trim().slice(0, max);
+  const customer = {
+    name: field(c.name),
+    email: field(c.email, 200).toLowerCase(),
+    address1: field(c.address1),
+    address2: field(c.address2),
+    city: field(c.city),
+    postcode: field(c.postcode, 10).toUpperCase(),
+  };
+  if (!customer.name || !customer.address1 || !customer.city) {
+    throw new UserError('Please fill in your name and delivery address.');
+  }
+  if (!EMAIL_RE.test(customer.email)) throw new UserError('Please check your email address.');
+  if (!UK_POSTCODE_RE.test(customer.postcode)) throw new UserError('Please enter a valid UK postcode.');
+  return customer;
+}
+
 export async function onRequestPost(context) {
-  const { STRIPE_SECRET_KEY } = context.env;
+  const { env, request } = context;
+
+  if (!env.SUMUP_API_KEY || !env.SUMUP_MERCHANT_CODE || !env.ORDERS) {
+    return json({ error: "Checkout isn't switched on yet. Please try again soon." }, 503);
+  }
 
   try {
-    const { items } = await context.request.json();
+    const body = await request.json();
+    const items = Array.isArray(body.items) ? body.items.slice(0, 30) : [];
+    if (items.length === 0) throw new UserError('Your cart is empty.');
 
-    if (!items || items.length === 0) {
-      return new Response(JSON.stringify({ error: 'Cart is empty' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
-    }
+    const customer = cleanCustomer(body.customer);
+    const lines = await priceItems(items);
+    const totalPence = lines.reduce((sum, l) => sum + l.linePence, 0);
 
-    const params = new URLSearchParams();
-    params.append('mode', 'payment');
-    params.append('success_url', 'https://scottgarrettartist.com/success.html');
-    params.append('cancel_url', 'https://scottgarrettartist.com/cart.html');
-    params.append('shipping_address_collection[allowed_countries][0]', 'GB');
+    const origin = new URL(request.url).origin;
+    const ref = newOrderRef();
+    const order = {
+      ref,
+      status: 'pending',
+      createdAt: new Date().toISOString(),
+      customer,
+      lines,
+      totalPence,
+      checkoutId: null,
+      emailed: false,
+    };
+    await saveOrder(env, order);
 
-    items.forEach((item, i) => {
-      params.append(`line_items[${i}][price_data][currency]`, 'gbp');
-      params.append(`line_items[${i}][price_data][product_data][name]`, item.name);
-      params.append(`line_items[${i}][price_data][unit_amount]`, Math.round(item.price * 100));
-      params.append(`line_items[${i}][quantity]`, item.quantity);
-    });
-
-    const response = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+    const itemCount = lines.reduce((n, l) => n + l.quantity, 0);
+    const checkout = await sumupRequest(env, '/checkouts', {
       method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${STRIPE_SECRET_KEY}`,
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: params.toString(),
+      body: JSON.stringify({
+        checkout_reference: ref,
+        amount: totalPence / 100,
+        currency: 'GBP',
+        merchant_code: env.SUMUP_MERCHANT_CODE,
+        description: `Tim Marrs prints — ${itemCount} item${itemCount === 1 ? '' : 's'} — ${ref}`,
+        redirect_url: `${origin}/success.html?ref=${ref}`,
+        return_url: `${origin}/api/sumup-webhook`,
+        hosted_checkout: { enabled: true },
+      }),
     });
 
-    const session = await response.json();
+    if (!checkout.hosted_checkout_url) throw new Error('SumUp did not return a payment page');
 
-    if (!response.ok) {
-      return new Response(JSON.stringify({ error: session.error?.message || 'Stripe error' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      });
-    }
+    order.checkoutId = checkout.id;
+    await saveOrder(env, order);
 
-    return new Response(JSON.stringify({ url: session.url }), {
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return json({ url: checkout.hosted_checkout_url, ref });
 
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    if (err instanceof UserError) return json({ error: err.message }, 400);
+    console.error('Checkout error:', err.message);
+    return json({ error: 'Sorry, something went wrong starting the payment. Please try again.' }, 500);
   }
 }

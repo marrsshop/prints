@@ -91,7 +91,17 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 ## Still to do
 
 1. **Tim adds the prints** in the studio (A3 proportions).
-2. **Stripe** — Tim creates a Stripe account; add the secret key to Cloudflare Pages environment variables; wire up `functions/api/checkout.js`. Success/cancel links should use https://shop.timmarrs.co.uk. Tim also has SumUp — its Hosted Checkout could replace Stripe, but SumUp doesn't collect a delivery address, so the site would need its own address form + order emails (checked 8 Oct 2026). Decision pending.
+2. **Payments — SumUp (code built 8 Oct 2026, not switched on yet)**
+   - How it works: cart page collects name/email/UK address → `functions/api/checkout.js` re-prices everything from Sanity (never trusts the browser), saves the order in Cloudflare KV, creates a SumUp **Hosted Checkout** and sends the customer there → SumUp redirects back to `success.html?ref=…`, which asks `functions/api/order-status.js`; SumUp also calls `functions/api/sumup-webhook.js`. Both confirm with SumUp's API, then email Tim + the customer (via Resend) once. Shared code: `functions/_lib/orders.js`.
+   - Postage: free, UK only. Orders email: tim@timmarrs.co.uk. Customer gets a confirmation.
+   - SumUp merchant code: **MNC178ZE** (MARRS LIMITED). No API key created yet.
+   - ☐ Cloudflare → Storage & databases → KV → create namespace (e.g. `tim-orders`); Pages `prints` → Settings → Bindings → add KV binding **ORDERS**.
+   - ☐ SumUp sandbox (Settings → For developers → Sandboxes) → sandbox API key + merchant code → Cloudflare **Preview** variables; test with a branch preview.
+   - ☐ Resend account; verify timmarrs.co.uk (DNS records at DreamHost); `RESEND_API_KEY`, `ORDER_EMAIL=tim@timmarrs.co.uk`, `FROM_EMAIL="Tim Marrs <shop@timmarrs.co.uk>"`.
+   - ☐ Live SumUp API key → Cloudflare **Production** variables (`SUMUP_API_KEY` secret, `SUMUP_MERCHANT_CODE=MNC178ZE`); one real test order, then refund in SumUp.
+   - Until those are set, the checkout button shows "Checkout isn't switched on yet".
+   - Local test: launch.json "Tim Marrs Checkout Test" (wrangler pages dev, port 8789, fake key).
+   - Leftovers from Scott's site not used here: `functions/api/auth.js`, `functions/api/callback.js`, `admin/` (Decap CMS login).
 3. ✅ **Custom domain: shop.timmarrs.co.uk** — LIVE 8 Oct 2026 (kept for reference)
    - Domain is *registered* at Network Solutions, but its **DNS is at DreamHost** (nameservers ns1–3.dreamhost.com; DreamHost also hosts the main site at www.timmarrs.co.uk). Email runs through a separate provider (MX records `*.ik2.*`). Don't change nameservers at Network Solutions — it would break the main site and email.
    - ✓ Cloudflare Pages → `prints` → Custom domains → `shop.timmarrs.co.uk` added via "My DNS provider" / CNAME setup.

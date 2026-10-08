@@ -224,6 +224,8 @@ function showProduct(id) {
       addToCart({
         ...product,
         id: `${product.id}-${selectedSize.toLowerCase()}`,
+        productId: product.id,
+        size: selectedSize,
         name: `${product.name} (${selectedSize})`,
         price: selectedPrice
       }, qty);
@@ -235,7 +237,7 @@ function showProduct(id) {
     cartBtn.style.opacity = '1';
     if (product.available) {
       cartBtn.style.display = 'block';
-      cartBtn.onclick = () => addToCart(product);
+      cartBtn.onclick = () => addToCart({ ...product, productId: product.id, size: null });
     } else {
       cartBtn.style.display = 'none';
     }
