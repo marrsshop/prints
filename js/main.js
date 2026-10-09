@@ -141,7 +141,7 @@ function showProduct(id) {
   const panel = document.getElementById('product-detail-panel');
   buildCarousel(product.images, product.name);
   document.getElementById('detail-name').textContent = product.name;
-  document.getElementById('detail-description').innerHTML = product.description
+  document.getElementById('detail-description').innerHTML = (product.description || '')
     .split('\n')
     .filter(line => line.trim() !== '')
     .map(line => `<p>${line}</p>`)
