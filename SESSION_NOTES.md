@@ -91,7 +91,7 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 ## Still to do
 
 1. **Tim adds the prints** in the studio (A3 proportions).
-2. **Payments — SumUp (built + fully tested in sandbox 9 Oct 2026; live key still to add)**
+2. **Payments — SumUp: LIVE ✅ (first real payment 9 Oct 2026)**
    - How it works: cart page collects name/email/UK address → `functions/api/checkout.js` re-prices everything from Sanity (never trusts the browser), saves the order in Cloudflare KV, creates a SumUp **Hosted Checkout** and sends the customer there → SumUp redirects back to `success.html?ref=…`, which asks `functions/api/order-status.js`; SumUp also calls `functions/api/sumup-webhook.js`. Both confirm with SumUp's API, then email Tim + the customer (via Resend) once. Shared code: `functions/_lib/orders.js`.
    - Postage: free, UK only. Orders email: tim@timmarrs.co.uk. Customer gets a confirmation.
    - SumUp merchant code: **MNC178ZE** (MARRS LIMITED). No API key created yet.
@@ -103,7 +103,9 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
    - ✓ Sandbox order with emails (9 Oct, TM-261009-Y34W2Q, £90): customer confirmation landed in inbox (not spam); Tim's "New order" email arrived too.
    - ✓ Live SumUp key ("shop live") + `SUMUP_MERCHANT_CODE=MNC178ZE` saved in Cloudflare **Production** (9 Oct).
    - **ON/OFF SWITCH:** checkout only takes payments when `CHECKOUT_ENABLED=true`. Set on **Preview only** (test copy). Live shop shows "Checkout isn't switched on yet" until Tim's design is final.
-   - ☐ **To go live:** Cloudflare → prints → Settings → **Production** → Variables → add Text `CHECKOUT_ENABLED` = `true` → then push any commit to `main` (or Deployments → retry latest) so it rebuilds → £1 "TEST – do not buy" print in Sanity → buy with a real card → refund in SumUp (Sales → payment → Refund) → delete the test print.
+   - ✓ **Went live 9 Oct 2026:** `CHECKOUT_ENABLED=true` added to Production; real £1 test order ("TEST – do not buy", A4) paid to MARRS LIMITED, transaction TAAA6TP2EVM. (First attempt declined — card overdrawn, not a site problem.) Fixed bug: buy panel crashed for prints with no description.
+   - To switch the shop OFF again: delete `CHECKOUT_ENABLED` from Production, then rebuild.
+   - (Original go-live recipe:) Cloudflare → prints → Settings → **Production** → Variables → add Text `CHECKOUT_ENABLED` = `true` → then push any commit to `main` (or Deployments → retry latest) so it rebuilds → £1 "TEST – do not buy" print in Sanity → buy with a real card → refund in SumUp (Sales → payment → Refund) → delete the test print.
    - Local test: launch.json "Tim Marrs Checkout Test" (wrangler pages dev, port 8789, fake key).
    - Leftovers from Scott's site not used here: `functions/api/auth.js`, `functions/api/callback.js`, `admin/` (Decap CMS login).
 3. ✅ **Custom domain: shop.timmarrs.co.uk** — LIVE 8 Oct 2026 (kept for reference)
