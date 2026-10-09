@@ -101,8 +101,9 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
    - ✓ Resend account (login tim@timmarrs.co.uk, team "timmarrs"), domain timmarrs.co.uk **Verified**, region Ireland. DNS added at DreamHost: TXT `resend._domainkey`, CNAME `send` → send.forge.rmta.net, CNAME `rsend` → rsend-euw1.forge.rmta.net, TXT `_dmarc` = `v=DMARC1; p=none;`. "Enable Receiving" left OFF (Tim's mail MX untouched). API key "tim shop" (sending access).
    - ✓ Cloudflare vars on **both** Production and Preview: `RESEND_API_KEY` (secret), `ORDER_EMAIL=tim@timmarrs.co.uk`, `FROM_EMAIL=Tim Marrs <shop@timmarrs.co.uk>`.
    - ✓ Sandbox order with emails (9 Oct, TM-261009-Y34W2Q, £90): customer confirmation landed in inbox (not spam); Tim's "New order" email arrived too.
-   - ☐ Live SumUp API key → Cloudflare **Production** variables (`SUMUP_API_KEY` secret, `SUMUP_MERCHANT_CODE=MNC178ZE`); one real test order, then refund in SumUp.
-   - Until those are set, the checkout button shows "Checkout isn't switched on yet".
+   - ✓ Live SumUp key ("shop live") + `SUMUP_MERCHANT_CODE=MNC178ZE` saved in Cloudflare **Production** (9 Oct).
+   - **ON/OFF SWITCH:** checkout only takes payments when `CHECKOUT_ENABLED=true`. Set on **Preview only** (test copy). Live shop shows "Checkout isn't switched on yet" until Tim's design is final.
+   - ☐ **To go live:** Cloudflare → prints → Settings → **Production** → Variables → add Text `CHECKOUT_ENABLED` = `true` → then push any commit to `main` (or Deployments → retry latest) so it rebuilds → £1 "TEST – do not buy" print in Sanity → buy with a real card → refund in SumUp (Sales → payment → Refund) → delete the test print.
    - Local test: launch.json "Tim Marrs Checkout Test" (wrangler pages dev, port 8789, fake key).
    - Leftovers from Scott's site not used here: `functions/api/auth.js`, `functions/api/callback.js`, `admin/` (Decap CMS login).
 3. ✅ **Custom domain: shop.timmarrs.co.uk** — LIVE 8 Oct 2026 (kept for reference)

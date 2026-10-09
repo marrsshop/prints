@@ -29,7 +29,8 @@ function cleanCustomer(c = {}) {
 export async function onRequestPost(context) {
   const { env, request } = context;
 
-  if (!env.SUMUP_API_KEY || !env.SUMUP_MERCHANT_CODE || !env.ORDERS) {
+  // On/off switch: set CHECKOUT_ENABLED=true in Cloudflare to start taking payments.
+  if (env.CHECKOUT_ENABLED !== 'true' || !env.SUMUP_API_KEY || !env.SUMUP_MERCHANT_CODE || !env.ORDERS) {
     return json({ error: "Checkout isn't switched on yet. Please try again soon." }, 503);
   }
 

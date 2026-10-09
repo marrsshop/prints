@@ -8,6 +8,7 @@
 //   ORDER_EMAIL          where new-order emails go, e.g. tim@timmarrs.co.uk
 //   FROM_EMAIL           e.g. "Tim Marrs <shop@timmarrs.co.uk>"
 //   ORDERS               KV namespace binding — stores orders between checkout and payment
+//   CHECKOUT_ENABLED     "true" to take payments; anything else shows "Checkout isn't switched on yet"
 
 const SANITY_QUERY_URL = 'https://i4ddie4h.api.sanity.io/v2024-01-01/data/query/production';
 const SUMUP_API = 'https://api.sumup.com/v0.1';
