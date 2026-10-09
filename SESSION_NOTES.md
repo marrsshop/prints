@@ -104,6 +104,8 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
    - ✓ Live SumUp key ("shop live") + `SUMUP_MERCHANT_CODE=MNC178ZE` saved in Cloudflare **Production** (9 Oct).
    - **ON/OFF SWITCH:** checkout only takes payments when `CHECKOUT_ENABLED=true`. Set on **Preview only** (test copy). Live shop shows "Checkout isn't switched on yet" until Tim's design is final.
    - ✓ **Went live 9 Oct 2026:** `CHECKOUT_ENABLED=true` added to Production; real £1 test order ("TEST – do not buy", A4) paid to MARRS LIMITED, transaction TAAA6TP2EVM. (First attempt declined — card overdrawn, not a site problem.) Fixed bug: buy panel crashed for prints with no description.
+   - Two real £1 test orders (TM-261009-13W5IN, TM-261009-11WC1N), both paid, not refunded (Gaz's choice). All 4 emails delivered (Resend → Emails log). Test print deleted.
+   - **Tim decided 9 Oct: shop stays ON.**
    - To switch the shop OFF again: delete `CHECKOUT_ENABLED` from Production, then rebuild.
    - (Original go-live recipe:) Cloudflare → prints → Settings → **Production** → Variables → add Text `CHECKOUT_ENABLED` = `true` → then push any commit to `main` (or Deployments → retry latest) so it rebuilds → £1 "TEST – do not buy" print in Sanity → buy with a real card → refund in SumUp (Sales → payment → Refund) → delete the test print.
    - Local test: launch.json "Tim Marrs Checkout Test" (wrangler pages dev, port 8789, fake key).
