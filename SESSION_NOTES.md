@@ -91,14 +91,16 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 ## Still to do
 
 1. **Tim adds the prints** in the studio (A3 proportions).
-2. **Payments — SumUp (code built 8 Oct 2026, not switched on yet)**
+2. **Payments — SumUp (built + fully tested in sandbox 9 Oct 2026; live key still to add)**
    - How it works: cart page collects name/email/UK address → `functions/api/checkout.js` re-prices everything from Sanity (never trusts the browser), saves the order in Cloudflare KV, creates a SumUp **Hosted Checkout** and sends the customer there → SumUp redirects back to `success.html?ref=…`, which asks `functions/api/order-status.js`; SumUp also calls `functions/api/sumup-webhook.js`. Both confirm with SumUp's API, then email Tim + the customer (via Resend) once. Shared code: `functions/_lib/orders.js`.
    - Postage: free, UK only. Orders email: tim@timmarrs.co.uk. Customer gets a confirmation.
    - SumUp merchant code: **MNC178ZE** (MARRS LIMITED). No API key created yet.
    - ✓ KV namespace `tim-orders` created; bound as **ORDERS** on both Production and Preview (8 Oct).
    - ✓ SumUp sandbox "TIM MARRS PRINTS TEST" (merchant code **MB557Y5J**) — key + code in Cloudflare **Preview** variables. Test copy: https://checkout-test.prints-9nt.pages.dev (branch `checkout-test`). Full test order paid with test card 4200 0000 0000 0091 ✓ (8 Oct). SumUp shows its own success page; customer clicks "Back to merchant website". Safari card autofill blocks typing test cards — untick Safari → Settings → AutoFill → Credit cards while testing.
    - ✓ Sanity CORS also allows `https://*.prints-9nt.pages.dev` (test copies).
-   - ☐ Resend account; verify timmarrs.co.uk (DNS records at DreamHost); `RESEND_API_KEY`, `ORDER_EMAIL=tim@timmarrs.co.uk`, `FROM_EMAIL="Tim Marrs <shop@timmarrs.co.uk>"`.
+   - ✓ Resend account (login tim@timmarrs.co.uk, team "timmarrs"), domain timmarrs.co.uk **Verified**, region Ireland. DNS added at DreamHost: TXT `resend._domainkey`, CNAME `send` → send.forge.rmta.net, CNAME `rsend` → rsend-euw1.forge.rmta.net, TXT `_dmarc` = `v=DMARC1; p=none;`. "Enable Receiving" left OFF (Tim's mail MX untouched). API key "tim shop" (sending access).
+   - ✓ Cloudflare vars on **both** Production and Preview: `RESEND_API_KEY` (secret), `ORDER_EMAIL=tim@timmarrs.co.uk`, `FROM_EMAIL=Tim Marrs <shop@timmarrs.co.uk>`.
+   - ✓ Sandbox order with emails (9 Oct, TM-261009-Y34W2Q, £90): customer confirmation landed in inbox (not spam); Tim's "New order" email arrived too.
    - ☐ Live SumUp API key → Cloudflare **Production** variables (`SUMUP_API_KEY` secret, `SUMUP_MERCHANT_CODE=MNC178ZE`); one real test order, then refund in SumUp.
    - Until those are set, the checkout button shows "Checkout isn't switched on yet".
    - Local test: launch.json "Tim Marrs Checkout Test" (wrangler pages dev, port 8789, fake key).
