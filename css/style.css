@@ -205,7 +205,7 @@ main {
 .product-card.reveal {
   opacity: 0;
   transform: translateY(60px);
-  --reveal-speed: 10s; /* desktop and tablet — TEST value, was 3s */
+  --reveal-speed: 5s; /* desktop and tablet */
   transition: opacity var(--reveal-speed) ease, transform var(--reveal-speed) cubic-bezier(0.22, 1, 0.36, 1);
 }
 

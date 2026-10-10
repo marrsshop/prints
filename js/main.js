@@ -96,7 +96,12 @@ function revealOnScroll(cards) {
         observer.unobserve(card);
       });
     }
-  }, { threshold: 0.15, rootMargin: '0px 0px -12% 0px' }); // wait until a card is a little way up the screen
+  }, {
+    threshold: 0.15,
+    // Wait until a row has risen this far up the screen before revealing it
+    // (further on desktop so lower rows hold back; less on phones).
+    rootMargin: window.matchMedia('(max-width: 560px)').matches ? '0px 0px -12% 0px' : '0px 0px -30% 0px',
+  });
   // Cards already have their final size (see imageSizeAttrs), so they can be watched straight away.
   cards.forEach(card => {
     card.classList.add('reveal');
