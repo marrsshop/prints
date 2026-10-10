@@ -2,7 +2,7 @@
 
 Running summary of setup, decisions and outstanding tasks. Update this at the end of each session.
 
-**Last updated:** 30 September 2026
+**Last updated:** 10 October 2026
 
 ---
 
@@ -33,6 +33,7 @@ Print shop for illustrator Tim Marrs. Plain HTML/CSS/JS, no frameworks. Same str
 - Grid images are **uncropped** — shown at whatever proportion Tim uploads. Tim uploads at A3 ratio so rows line up
 - Detail panel shows the full image, not a square crop
 - **Fade-up reveal on the grid** (from Cadence "Fade-up Grid", cadence.rubenstom.com — free for commercial use). Each row fades + rises 60px together as it scrolls into view. Desktop: 2s, waits until the row is ~30% up the screen. Mobile (≤560px): 1.2s, starts ~12% up. "Reduce motion" users get the fade without the rise. Settings: `--reveal-speed` in css/style.css; `rootMargin` in `revealOnScroll()` in js/main.js. Image width/height come from the Sanity URL so cards have their real size before images load (needed for the reveal to work).
+- Clicking a print: its large image fades in over 2s every time (`.product-detail-image.fade-in`, re-triggered in `showProduct()`); name/price/sizes appear instantly
 - Shop always opens at the top on refresh (scroll position not restored)
 - No name/price captions under prints (mobile captions removed 10 Oct 2026)
 
@@ -90,6 +91,9 @@ Edit files in the TIM folder → commit → push to GitHub → Cloudflare update
 - GitHub pushing working
 - Tim can log into Sanity (via GitHub)
 - Tim has cleared out the example prints (only "TEST PIECE" left as of 30 Sep 2026). The original 10 scraped examples are still in `products.json` for reference
+
+## How we try design changes
+Make the change on a git branch → push it to `checkout-test` (`git push -f origin <branch>:checkout-test`) → view https://checkout-test.prints-9nt.pages.dev (test copy, SumUp sandbox) → when happy, merge into `main` and push (= live).
 
 ## Still to do
 
