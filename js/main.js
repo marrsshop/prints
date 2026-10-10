@@ -88,8 +88,13 @@ function revealOnScroll(cards) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;
-      entry.target.classList.add('is-in');
-      observer.unobserve(entry.target);
+      // Reveal the whole row together (cards sharing the same top edge).
+      const top = entry.target.offsetTop;
+      cards.forEach(card => {
+        if (card.offsetTop !== top || card.classList.contains('is-in')) return;
+        card.classList.add('is-in');
+        observer.unobserve(card);
+      });
     }
   }, { threshold: 0.15, rootMargin: '0px 0px -12% 0px' }); // wait until a card is a little way up the screen
   // Cards already have their final size (see imageSizeAttrs), so they can be watched straight away.
