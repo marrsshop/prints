@@ -1,5 +1,9 @@
 let allProducts = [];
 
+// Always open the shop at the top on refresh, so the first row's reveal is seen in full.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 async function loadProducts() {
   const query = encodeURIComponent(`*[_type == "product"] | order(orderRank asc) {
     "id": id.current,
@@ -87,7 +91,7 @@ function revealOnScroll(cards) {
       entry.target.classList.add('is-in');
       observer.unobserve(entry.target);
     }
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.15, rootMargin: '0px 0px -12% 0px' }); // wait until a card is a little way up the screen
   // Cards already have their final size (see imageSizeAttrs), so they can be watched straight away.
   cards.forEach(card => {
     card.classList.add('reveal');
