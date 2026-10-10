@@ -181,6 +181,12 @@ function showProduct(id) {
 
   const panel = document.getElementById('product-detail-panel');
   buildCarousel(product.images, product.name);
+
+  // Fade the print in every time one is opened (restart the animation each click).
+  const detailImage = panel.querySelector('.product-detail-image');
+  detailImage.classList.remove('fade-in');
+  void detailImage.offsetWidth;
+  detailImage.classList.add('fade-in');
   document.getElementById('detail-name').textContent = product.name;
   document.getElementById('detail-description').innerHTML = (product.description || '')
     .split('\n')

@@ -443,6 +443,16 @@ main {
   overflow: hidden;
 }
 
+/* Print fades in over 2s each time it's opened (main.js re-adds .fade-in) */
+.product-detail-image.fade-in {
+  animation: detail-fade-in 2s ease both;
+}
+
+@keyframes detail-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @media (max-width: 1000px) {
   .product-detail-image { width: 380px; } /* tablet */
   .product-detail-panel { gap: 40px; max-width: 860px; }
