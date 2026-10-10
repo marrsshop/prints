@@ -205,7 +205,12 @@ main {
 .product-card.reveal {
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 1.6s ease, transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+  --reveal-speed: 3s; /* desktop and tablet */
+  transition: opacity var(--reveal-speed) ease, transform var(--reveal-speed) cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (max-width: 560px) {
+  .product-card.reveal { --reveal-speed: 1.2s; } /* mobile */
 }
 
 .product-card.reveal.is-in {
