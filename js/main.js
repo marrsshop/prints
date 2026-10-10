@@ -66,6 +66,33 @@ function renderProducts(products) {
       </div>
     </div>
   `).join('');
+
+  revealOnScroll(grid.querySelectorAll('.product-card'));
+}
+
+// Fade each card up as it scrolls into view (once). Without IntersectionObserver
+// the cards simply show as normal.
+function revealOnScroll(cards) {
+  if (!('IntersectionObserver' in window)) return;
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add('is-in');
+      observer.unobserve(entry.target);
+    }
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  cards.forEach(card => {
+    card.classList.add('reveal');
+    // Images are uncropped, so a card has no height until its image loads —
+    // only start watching it once it has its real size and position.
+    const img = card.querySelector('img');
+    if (!img || img.complete) {
+      observer.observe(card);
+    } else {
+      img.addEventListener('load', () => observer.observe(card), { once: true });
+      img.addEventListener('error', () => card.classList.add('is-in'), { once: true });
+    }
+  });
 }
 
 let carouselIndex = 0;

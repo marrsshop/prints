@@ -200,6 +200,38 @@ main {
   position: relative;
 }
 
+/* ── Fade-up reveal (from Cadence "Fade-up Grid") ──
+   main.js adds .reveal to each card, then .is-in as it scrolls into view.
+   Cards in the same row arrive together, so --stagger walks each row left to right. */
+.product-card.reveal {
+  --stagger: 0s;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease var(--stagger), transform 0.7s ease var(--stagger);
+}
+
+.product-card.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.product-card.reveal:nth-child(3n + 2) { --stagger: 0.1s; }
+.product-card.reveal:nth-child(3n + 3) { --stagger: 0.2s; }
+
+@media (max-width: 960px) {
+  .product-card.reveal:nth-child(n) { --stagger: 0s; }
+  .product-card.reveal:nth-child(2n) { --stagger: 0.1s; }
+}
+
+@media (max-width: 560px) {
+  .product-card.reveal:nth-child(n) { --stagger: 0s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card.reveal:nth-child(n) { --stagger: 0s; }
+  .product-card.reveal { transform: none; transition: opacity 0.2s linear; }
+}
+
 .product-image {
   width: 100%;
   overflow: hidden;
