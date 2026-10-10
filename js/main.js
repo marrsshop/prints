@@ -27,6 +27,13 @@ function sanityImageUrl(ref) {
   return `https://cdn.sanity.io/images/i4ddie4h/production/${parts.join('-')}.${ext}`;
 }
 
+// Sanity image URLs end in the image's size, e.g. "...-598x846.jpg". Giving the <img>
+// that width/height lets the browser reserve the right space before the image loads.
+function imageSizeAttrs(url) {
+  const m = /-(\d+)x(\d+)\.\w+$/.exec(url || '');
+  return m ? `width="${m[1]}" height="${m[2]}"` : '';
+}
+
 function displayPrice(product) {
   if (!product.available) return 'Sold Out';
   const sv = product.sizeVariants || {};
@@ -52,7 +59,7 @@ function renderProducts(products) {
     <div class="product-card ${product.available ? '' : 'sold-out'}"
          onclick="showProduct('${product.id}')">
       <div class="product-image">
-        <img src="${product.images[0]}" alt="${product.name}" loading="lazy">
+        <img src="${product.images[0]}" alt="${product.name}" loading="lazy" ${imageSizeAttrs(product.images[0])}>
         <div class="product-overlay">
           <div class="product-overlay-meta">
             <div class="product-name">${product.name}</div>
@@ -81,17 +88,10 @@ function revealOnScroll(cards) {
       observer.unobserve(entry.target);
     }
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  // Cards already have their final size (see imageSizeAttrs), so they can be watched straight away.
   cards.forEach(card => {
     card.classList.add('reveal');
-    // Images are uncropped, so a card has no height until its image loads —
-    // only start watching it once it has its real size and position.
-    const img = card.querySelector('img');
-    if (!img || img.complete) {
-      observer.observe(card);
-    } else {
-      img.addEventListener('load', () => observer.observe(card), { once: true });
-      img.addEventListener('error', () => card.classList.add('is-in'), { once: true });
-    }
+    observer.observe(card);
   });
 }
 
